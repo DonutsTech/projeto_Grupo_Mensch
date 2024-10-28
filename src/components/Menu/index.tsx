@@ -41,7 +41,10 @@ const Menu = () => {
             })}>
               <p onClick={() => setSuspenso(!suspenso)}>Marcas</p>
 
-              <div className={Style.menuDesk__nav__list__item__dropdown}>
+              <div className={classNames({
+                [Style.menuDesk__nav__list__item__dropdown]: true,
+                [Style.menuDesk__nav__list__item__dropdown__open]: suspenso,
+              })}>
                 <ul className={Style.menuDesk__nav__list__item__dropdown__list}>
                   <li>
                     <Link href={"/"} title='Conheça a Mensch Energia Solar'>

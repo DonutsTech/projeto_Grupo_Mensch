@@ -135,29 +135,23 @@
                     z-index: 12;
                   }
                 }
-
               }
             }
-
-
           }
-
           &:hover {
             display: flex;
           }
         }
-
         &:hover {
           .menuDesk__nav__list__item__dropdown {
             display: flex;
-
           }
         }
-
-
+        .menuDesk__nav__list__item__dropdown__open {
+          display: flex;
+        }
       }
     }
-
     &__whatsapp {
       width: auto;
       height: 40px;
