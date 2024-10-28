@@ -11,16 +11,49 @@ import treinamentos from './assets/mensch_treinamentos.svg';
 import inteligencia from './assets/mensch_inteligencia.svg';
 import wise from './assets/mensch_wise.svg';
 
+// import grupoMenschBranco from './assets/grupo_mensh_white.svg';
 
-
+import menuBtn from './assets/mobile_btn.svg';
 
 import whatsapp from './assets/whatsapp.svg';
 import Link from 'next/link';
 import classNames from 'classnames';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Menu = () => {
   const [suspenso, setSuspenso] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [modal, setModal] = useState(false);
+  const [marcas, setMarcas] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (windowWidth < 840) {
+      setSuspenso(false)
+      setModal(false);
+      setMarcas(false);
+    }
+    else if (windowWidth > 840) {
+      setSuspenso(false);
+      setModal(false);
+      setMarcas(false);
+    }
+  }, [windowWidth]);
+
+
 
   return (
     <>
@@ -58,17 +91,17 @@ const Menu = () => {
                   </li>
                   <li>
                     {/* <Link href={"/"} title='Conheça a Mensch Instalar'> */}
-                      <Image src={instalar} alt="Instalar Logo" className={Style.img__breve} title='Em Breve!'/>
+                    <Image src={instalar} alt="Instalar Logo" className={Style.img__breve} title='Em Breve!' />
                     {/* </Link> */}
                   </li>
                   <li>
-                      <Image src={treinamentos} alt="Treinamentos Logo" className={Style.img__breve} title='Em Breve!'/>
+                    <Image src={treinamentos} alt="Treinamentos Logo" className={Style.img__breve} title='Em Breve!' />
                   </li>
                   <li>
-                    <Image src={inteligencia} alt='Inteligência Emocional Logo' className={Style.img__breve} title='Em Breve!'/>
+                    <Image src={inteligencia} alt='Inteligência Emocional Logo' className={Style.img__breve} title='Em Breve!' />
                   </li>
                   <li>
-                    <Image src={wise} alt='Wise Logo' className={Style.img__breve} title='Em Breve!'/>
+                    <Image src={wise} alt='Wise Logo' className={Style.img__breve} title='Em Breve!' />
                   </li>
                 </ul>
               </div>
@@ -96,6 +129,109 @@ const Menu = () => {
           </Link>
         </nav>
       </div>
+      <div className={Style.menuMobile}>
+        <Image
+          src={menuBtn}
+          alt='Botão Menu mobile'
+          className={Style.menuMobile__btn}
+          onClick={() => {
+            setModal(!modal);
+            setMarcas(false);
+          }}
+        />
+
+        <div className={classNames({
+          [Style.menuMobile__container]: true,
+          [Style.menuMobile__container__open]: modal
+        })}
+        >
+          <div className={Style.menuMobile__container__logoBox}>
+            <Image src={grupoMensch}
+              alt='Logo Grupo Mensch'
+              className={Style.menuMobile__container__logoBox__logo}
+              onClick={() => {
+                window.scrollY = 0;
+                setModal(!modal);
+              }}
+            />
+
+          </div>
+          <nav className={Style.menuMobile__container__nav}>
+            <ul className={Style.menuMobile__container__nav__list}>
+              <li className={Style.menuMobile__container__nav__list__item}>
+                <p onClick={() => setMarcas(!marcas)}>Marcas</p>
+              </li>
+              <li className={Style.menuMobile__container__nav__list__item}>
+                <Link href={"/"}>
+                  <p>Sobre Nós</p>
+                </Link>
+              </li>
+              <li className={Style.menuMobile__container__nav__list__item}>
+                <Link href={"/"}>
+                  <p>Vem Ser Mesch</p>
+                </Link>
+              </li>
+              <li className={Style.menuMobile__container__nav__list__item}>
+                <p>Fale conosco</p>
+              </li>
+            </ul>
+          </nav>
+          <Link href={"/"}>
+            <Image
+              src={whatsapp}
+              alt="Whatsapp Logo"
+              className={Style.menuMobile__container__whatsapp}
+            />
+          </Link>
+          <button className={Style.menuMobile__container__closeBtn} onClick={() => {
+            setModal(!modal);
+          }}>
+            X
+          </button>
+        </div>
+      </div>
+      <div className={classNames({
+        [Style.menuMobile__container__marcas]: true,
+        [Style.menuMobile__container__marcas__open]: modal && marcas,
+      })}>
+        <div className={Style.menuMobile__container__marcas__logoBox}>
+          <Link href={"/"} title='Conheça a Mensch Energia Solar'>
+            <Image src={solar} alt="Solar Logo" />
+          </Link>
+          <Link href={"/"} title='Conheça a Mensch Health'>
+            <Image src={health} alt='Health Logo' />
+          </Link>
+          {/* <Link href={"/"} title='Conheça a Mensch Instalar'>  */}
+          <Image src={instalar} alt='Instalar Logo' className={Style.img__breve} title='Em Breve!' />
+          {/* </Link> */}
+          {/* <Link href={"/"} title='Conheça a Mensch Treinamentos'>  */}
+          <Image src={treinamentos} alt='Treinamentos Logo' className={Style.img__breve} title='Em Breve!' />
+          {/* </Link> */}
+          {/* <Link href={"/"} title='Conheça a Mensch Inteligencia Emocional'>  */}
+          <Image src={inteligencia} alt='Inteligência Emocional Logo' className={Style.img__breve} title='Em Breve!' />
+          {/* </Link> */}
+          {/* <Link href={"/"} title='Conheça a Mensch Wise'>  */}
+          <Image src={wise} alt='Wise Logo' className={Style.img__breve} title='Em Breve!' />
+          {/* </Link> */}
+        </div>
+        <button className={Style.menuMobile__container__marcas__closeBtn} onClick={() => {
+          // setModal(!modal);
+          setMarcas(!marcas);
+        }}>
+          X
+        </button>
+
+      </div>
+      <div
+        className={classNames({
+          [Style.modal]: modal,
+        })}
+        onClick={() => {
+          setModal(!modal);
+          setMarcas(!marcas);
+        }
+        }
+      />
     </>
   )
 };

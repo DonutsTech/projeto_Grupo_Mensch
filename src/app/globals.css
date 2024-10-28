@@ -53,6 +53,7 @@ table {
 html,
 body {
   max-width: 100vw;
+	min-width: 320px;
   height: auto;
   min-height: 100vh;
   overflow-x: hidden;
