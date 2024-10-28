@@ -11,8 +11,6 @@ import treinamentos from './assets/mensch_treinamentos.svg';
 import inteligencia from './assets/mensch_inteligencia.svg';
 import wise from './assets/mensch_wise.svg';
 
-// import grupoMenschBranco from './assets/grupo_mensh_white.svg';
-
 import menuBtn from './assets/mobile_btn.svg';
 
 import whatsapp from './assets/whatsapp.svg';
