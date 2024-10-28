@@ -1,16 +1,21 @@
-import type { NextConfig } from "next";
 import path from "path";
+//@ts-expect-error @ts-ignore
+import withVideos from "next-videos";
+// import sass from "sass";
 
-
-const nextConfig: NextConfig = {
+/**@type {import('next').NextConfig} */
+const nextConfig = {
   /* config options here */
   sassOptions: {
-    includePaths: [path.join(process.cwd(), './src/style')],
+    includePaths: [path.join(process.cwd(), './src/styles')],
   },
   images: {
     domains: [],
   },
+
   
 };
 
-export default nextConfig;
+export default withVideos(nextConfig, {
+  assetsPrefix: '/assets/videos',
+});

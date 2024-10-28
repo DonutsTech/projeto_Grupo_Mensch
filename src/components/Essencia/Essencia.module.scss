@@ -1,0 +1,61 @@
+@use 'variaveis' as *;
+
+.essencia { 
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: $cor-mae-principal;
+
+  &__content { 
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 72px;
+
+    &__title { 
+      width: 60%;
+      min-width: 300px;
+      height: auto;
+      font-family: $font-titulo;
+      font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+      color: $cor-white;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__text { 
+      width: 60%;
+      min-width: 280px;
+      height: auto;
+      color: $cor-white;
+      line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
+      font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+    }
+
+    &__btn { 
+      width: 200px;
+      height: 56px;
+      background-color: $cor-white;
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      color: $cor-mae-principal;
+      cursor: pointer;
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+
+      &:hover { 
+        background-color: $cor-black;
+        color: $cor-white;
+        scale: 0.9;
+        box-shadow: none;
+        transition: all 300ms ease-in-out;
+
+      }
+    }
+  }
+}
