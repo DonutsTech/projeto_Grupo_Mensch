@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Style from './Essencia.module.scss';
-import equipe from './assets/equipe_mensch.jpg';
+import equipe from './image/equipe_mensch.jpg';
 
 const Essencia = () => {
 
