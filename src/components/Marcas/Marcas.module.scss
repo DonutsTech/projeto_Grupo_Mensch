@@ -32,6 +32,14 @@
     text-align: center;
     padding: 0 24px;
     color: $cor-black;
+    cursor: default;
+
+    span { 
+
+      &:hover {
+        color: $cor-mae-principal;
+      }
+    }
   }
 
   &__slide { 

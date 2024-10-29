@@ -52,7 +52,7 @@
       line-height: clamp(1.5rem, 1.275rem + 1.125vw, 2.625rem);
       font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
       font-weight: 700;
-      cursor: alias;
+      cursor: default;
       span {
         &:hover {
           color: $cor-mae-principal;
