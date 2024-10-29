@@ -7,9 +7,6 @@ import grupoMensch from './assets/grupo_mensch.svg';
 import solar from './assets/mesch_solar.svg';
 import health from './assets/mensch_health.svg';
 import instalar from './assets/mensch_instalar.svg';
-import treinamentos from './assets/mensch_treinamentos.svg';
-import inteligencia from './assets/mensch_inteligencia.svg';
-import wise from './assets/mensch_wise.svg';
 
 import menuBtn from './assets/mobile_btn.svg';
 
@@ -91,15 +88,6 @@ const Menu = () => {
                     {/* <Link href={"/"} title='Conheça a Mensch Instalar'> */}
                     <Image src={instalar} alt="Instalar Logo" className={Style.img__breve} title='Em Breve!' />
                     {/* </Link> */}
-                  </li>
-                  <li>
-                    <Image src={treinamentos} alt="Treinamentos Logo" className={Style.img__breve} title='Em Breve!' />
-                  </li>
-                  <li>
-                    <Image src={inteligencia} alt='Inteligência Emocional Logo' className={Style.img__breve} title='Em Breve!' />
-                  </li>
-                  <li>
-                    <Image src={wise} alt='Wise Logo' className={Style.img__breve} title='Em Breve!' />
                   </li>
                 </ul>
               </div>
@@ -202,15 +190,8 @@ const Menu = () => {
           {/* <Link href={"/"} title='Conheça a Mensch Instalar'>  */}
           <Image src={instalar} alt='Instalar Logo' className={Style.img__breve} title='Em Breve!' />
           {/* </Link> */}
-          {/* <Link href={"/"} title='Conheça a Mensch Treinamentos'>  */}
-          <Image src={treinamentos} alt='Treinamentos Logo' className={Style.img__breve} title='Em Breve!' />
-          {/* </Link> */}
-          {/* <Link href={"/"} title='Conheça a Mensch Inteligencia Emocional'>  */}
-          <Image src={inteligencia} alt='Inteligência Emocional Logo' className={Style.img__breve} title='Em Breve!' />
-          {/* </Link> */}
-          {/* <Link href={"/"} title='Conheça a Mensch Wise'>  */}
-          <Image src={wise} alt='Wise Logo' className={Style.img__breve} title='Em Breve!' />
-          {/* </Link> */}
+
+
         </div>
         <button className={Style.menuMobile__container__marcas__closeBtn} onClick={() => {
           // setModal(!modal);

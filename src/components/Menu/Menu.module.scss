@@ -86,7 +86,7 @@
           justify-content: center;
           position: absolute;
           width: auto;
-          height: 380px;
+          height: 200px;
           padding: 32px;
           overflow: hidden;
           background-color: $cor-white;
@@ -341,7 +341,7 @@
     }
 
     .img__breve {
-      height: 24px;
+      height: 40px;
       filter: grayscale(1);
     }
   }
@@ -386,7 +386,7 @@
 /// 
 @keyframes slideUP {
   0% {
-    height: 380px;
+    height: 200px;
     opacity: 1;
     display: block;
   }
@@ -405,7 +405,7 @@
   }
 
   100% {
-    height: 380px;
+    height: 200px;
     opacity: 1;
   }
 }
