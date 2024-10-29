@@ -128,7 +128,7 @@ const Menu = () => {
 
         <div className={classNames({
           [Style.menuMobile__container]: true,
-          [Style.menuMobile__container__open]: modal
+          [Style.menuMobile__container__open]: modal && (windowWidth < 840),
         })}
         >
           <div className={Style.menuMobile__container__logoBox}>
@@ -178,7 +178,7 @@ const Menu = () => {
       </div>
       <div className={classNames({
         [Style.menuMobile__container__marcas]: true,
-        [Style.menuMobile__container__marcas__open]: modal && marcas,
+        [Style.menuMobile__container__marcas__open]: modal && marcas && (windowWidth < 840),
       })}>
         <div className={Style.menuMobile__container__marcas__logoBox}>
           <Link href={"/"} title='Conheça a Mensch Energia Solar'>
@@ -194,7 +194,6 @@ const Menu = () => {
 
         </div>
         <button className={Style.menuMobile__container__marcas__closeBtn} onClick={() => {
-          // setModal(!modal);
           setMarcas(!marcas);
         }}>
           X
@@ -203,7 +202,7 @@ const Menu = () => {
       </div>
       <div
         className={classNames({
-          [Style.modal]: modal,
+          [Style.modal]: modal && (windowWidth < 840),
         })}
         onClick={() => {
           setModal(!modal);
