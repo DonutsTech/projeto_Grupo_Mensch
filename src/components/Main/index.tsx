@@ -1,6 +1,7 @@
 'use client';
 
 import Essencia from '../Essencia';
+import Marcas from '../Marcas';
 import Style from './Main.module.scss';
 
 
@@ -10,6 +11,7 @@ const Main = () => {
     <main className={Style.main}>
       <div className={Style.main__detalhe} />
       <Essencia />
+      <Marcas />
     </main>
   )
 };

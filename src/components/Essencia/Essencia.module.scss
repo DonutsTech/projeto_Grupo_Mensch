@@ -1,12 +1,16 @@
-@use 'variaveis' as *;
+@use 'variaveis'as *;
 
-.essencia { 
+.essencia {
   width: 100%;
   height: auto;
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: $cor-mae-principal;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &__content { 
+  &__content {
     width: 100%;
     min-height: 650px;
     display: flex;
@@ -15,7 +19,7 @@
     justify-content: space-around;
     padding-top: 72px;
 
-    &__title { 
+    &__title {
       width: 60%;
       min-width: 300px;
       height: auto;
@@ -26,16 +30,44 @@
       text-align: center;
     }
 
-    &__text { 
-      width: 60%;
-      min-width: 280px;
-      height: auto;
-      color: $cor-white;
-      line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
-      font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 32px ;
+
+      &__img {
+        width: 30%;
+        min-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+        // filter: drop-shadow(0 0 5px $cor-white);
+      }
+
+      &__text {
+        width: 60%;
+        min-width: 280px;
+        height: auto;
+        color: $cor-white;
+        line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
+        font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+        text-align: left;
+      }
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        gap: 16px;
+
+        &__text {
+          text-align: center;
+        }
+      }
     }
 
-    &__btn { 
+    &__btn {
       width: 200px;
       height: 56px;
       background-color: $cor-white;
@@ -48,7 +80,7 @@
       cursor: pointer;
       box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 
-      &:hover { 
+      &:hover {
         background-color: $cor-black;
         color: $cor-white;
         scale: 0.9;
@@ -57,5 +89,15 @@
 
       }
     }
+  }
+
+  &__detalhe {
+    clip-path: polygon(0 90%, 0% 100%, 100% 100%, 100% 0);
+    width: 100%;
+    height: 120px;
+    background-color: $cor-white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
