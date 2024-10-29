@@ -17,7 +17,6 @@ const Essencia = () => {
         </div>
         <button className={Style.essencia__content__btn}>Sobre Nós</button>
       </div>
-      <div className={Style.essencia__detalhe} />
     </section>
   )
 }

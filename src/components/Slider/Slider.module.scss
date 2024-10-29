@@ -1,0 +1,189 @@
+@use 'variaveis'as *;
+
+
+.slider {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 96px;
+
+
+
+
+  &__submarca {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+
+
+    &__content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      animation: fadeIn 800ms ease-in-out;
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+      }
+
+      &__logo {
+        width: auto;
+        height: clamp(5rem, 3.5rem + 7.5vw, 12.5rem);
+        margin: 0 auto;
+      }
+
+      &__text {
+        width: 40%;
+        min-width: 280px;
+        height: auto;
+        margin: 0 auto;
+        font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
+        line-height: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
+        align-self: flex-end;
+
+        @media (max-width: 840px) {
+          text-align: center;
+        }
+      }
+    }
+
+    &__btn {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+
+      &__btn {
+        width: 200px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          scale: 0.9;
+          background-color: $cor-black;
+          color: $cor-white;
+          box-shadow: none;
+          transition: all 200ms ease-in-out;
+        }
+
+        &_solar {
+          background-color: $cor-energia-principal;
+          color: $cor-black;
+        }
+
+        &_instalar {
+          background-color: $cor-black;
+          color: $cor-white;
+          box-shadow: none;
+
+          &:hover {
+            scale: 1;
+          }
+        }
+
+        &_health {
+          background-color: $cor-health-principal;
+          color: $cor-white;
+        }
+
+      }
+
+      &__redes {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        & a {
+
+          .slider__submarca__btn__redes__icon {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+
+            &:hover {
+              scale: 0.9;
+              filter: none;
+              transition: all 200ms ease-in-out;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+
+  &__dots {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    &__icon {
+      width: auto;
+      height: 48px;
+      object-fit: contain;
+      cursor: pointer;
+  
+      &:hover {
+        filter: drop-shadow(0px 0px 1px rgba(139, 6, 37, 0.5));
+      }
+
+      &_active {
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+      }
+      &_solar {
+        box-shadow: 0px 5px $cor-energia-principal;
+      }
+      &_instalar { 
+        box-shadow: 0px 5px $cor-instalar-principal;
+      }
+      &_health { 
+        box-shadow: 0px 5px $cor-health-principal;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
