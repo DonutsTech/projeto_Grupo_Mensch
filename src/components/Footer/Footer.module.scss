@@ -1,0 +1,139 @@
+@use 'variaveis'as *;
+
+.footer {
+  width: 100%;
+  height: auto;
+  min-height: 64px;
+  background-color: $cor-black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+
+  &__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 32px;
+
+    &__copy {
+      width: auto;
+      height: auto;
+      padding: 8px;
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+
+      &__link {
+
+        &__logo {
+          width: auto;
+          height: 48px;
+          object-fit: cover;
+        }
+
+        &:hover { 
+          scale: 0.9;
+          transition: all 200ms ease-in-out;
+        }
+      }
+
+      &__text { 
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        font-weight: 500;
+        color: $cor-white;
+      }
+    }
+
+    &__donuts { 
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+
+
+      &__text { 
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        color: $cor-white;
+      }
+
+      &__link { 
+        width: auto;
+        height: auto;
+        margin-bottom: -16px;
+
+        &__logo {
+          width: auto;
+          height: 48px;
+          object-fit: cover;
+        }
+
+        &:hover { 
+          scale: 0.9;
+          transition: all 200ms ease-in-out;
+        }
+      }
+    }
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+      gap: 24px;
+      padding: 32px 0 64px 0;
+      align-items: center;
+      justify-content: center;
+
+      &__copy { 
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        &__link {
+          margin: 0 auto;
+        }
+
+        &__text { 
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+
+      &__donuts { 
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 16px;
+
+        &__text { 
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        &__link { 
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  &__detalhe {
+    clip-path: polygon(100% 0, 0 90%, 0 100%, 100% 100%);
+    width: 100%;
+    height: 60px;
+    background-color: $cor-black;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    z-index: 1;
+  }
+}
