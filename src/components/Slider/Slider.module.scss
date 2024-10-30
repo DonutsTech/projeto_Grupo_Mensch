@@ -146,14 +146,14 @@
     justify-content: center;
     gap: 16px;
     position: absolute;
-    bottom: -48px;
+    bottom: clamp(-3rem, -2.1rem + -4.5vw, -7.5rem);
     left: 50%;
     transform: translateX(-50%);
     
     
     &__icon {
       width: auto;
-      height: 48px;
+      height: 32px;
       object-fit: contain;
       cursor: pointer;
   
@@ -162,7 +162,7 @@
       }
 
       &_active {
-        padding-bottom: 8px;
+        padding-bottom: 4px;
         margin-bottom: 16px;
       }
       &_solar {

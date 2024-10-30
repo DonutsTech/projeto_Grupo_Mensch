@@ -7,9 +7,9 @@ import solarLogo from './assets/mesch_solar.svg';
 import instalarLogo from './assets/mensch_instalar.svg';
 import healthLogo from './assets/mensch_health.svg';
 
-import solarIcon from './assets/icon_solar.svg';
-import instalarIcon from './assets/icon_instalar.svg';
-import healthIcon from './assets/icon_health.svg';
+import solarIcon from './assets/v_solar.svg';
+import instalarIcon from './assets/v_instalar.svg';
+import healthIcon from './assets/v_health.svg';
 
 
 import facebook from './assets/facebook.svg';
