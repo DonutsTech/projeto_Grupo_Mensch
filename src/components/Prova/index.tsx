@@ -6,7 +6,9 @@ const Prova = () => {
 
   return (
     <section className={Style.prova} aria-label='Provas Sociais'>
+      <div className={Style.prova__teste}>
 
+      </div>
     </section>
   )
 };
