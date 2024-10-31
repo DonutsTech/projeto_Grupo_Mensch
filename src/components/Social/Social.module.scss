@@ -1,4 +1,4 @@
-@use 'variaveis' as *;
+@use 'variaveis'as *;
 
 .social {
   width: 100%;
@@ -6,5 +6,125 @@
   min-height: 100vh;
   clip-path: polygon(0 10%, 0% 100%, 100% 100%, 100% 0%);
   background-color: $cor-white;
-  margin-top: -110px;
+  margin-top: -128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &__logo {
+    width: auto;
+    height: clamp(4rem, 2.6rem + 7vw, 11rem);
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    
+  }
+
+
+  &__video {
+    width: 100%;
+    height: clamp(12.5rem, 11.25rem + 6.25vw, 18.75rem);
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+
+  &__content { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 64px;
+    padding: 0 0 48px 0;
+    padding-top: clamp(13.75rem, 11.95rem + 9vw, 22.75rem);
+
+    &__titulo { 
+      font-family: $font-titulo;
+      font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+      line-height: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+      font-weight: 700;
+      color: $cor-mae-principal;
+      width: 80%;
+      min-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      cursor: default;
+
+      span {
+        &:hover { 
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+    &__box { 
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      &__text {
+        width: 50%;
+        min-width: 280px;
+        text-align: right;
+        font-weight: 500;
+        font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+        line-height: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+        color: $cor-black;
+        margin: 0 auto;
+      }
+
+      &__img {
+        width: 30%;
+        min-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
+        filter: drop-shadow(0px -32px $cor-mae-principal);
+      }
+
+      @media (max-width: 840px) {
+        flex-direction: column-reverse;
+
+        &__text { 
+          text-align: center;
+        }
+      }
+    }
+
+    &__btn { 
+      width: 200px;
+      height: 48px;
+      background-color: $cor-mae-principal;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: $cor-white;
+      border: none;
+      offset: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-black;
+        // color: $cor-white;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+
 }

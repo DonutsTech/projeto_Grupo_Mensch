@@ -6,11 +6,12 @@ import Style from './Slider.module.scss';
 import solarLogo from './assets/mesch_solar.svg';
 import instalarLogo from './assets/mensch_instalar.svg';
 import healthLogo from './assets/mensch_health.svg';
+import mindLogo from './assets/mensch_mind.svg';
 
 import solarIcon from './assets/v_solar.svg';
 import instalarIcon from './assets/v_instalar.svg';
 import healthIcon from './assets/v_health.svg';
-
+import mindIcon from './assets/v_mind.svg';
 
 import facebook from './assets/facebook.svg';
 import instagram from './assets/instagram.svg';
@@ -21,7 +22,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Slider = () => {
-  const [status, setStatus] = useState<string>('health');
+  const [status, setStatus] = useState<string>('mind');
 
 
   useEffect(() => {
@@ -31,6 +32,8 @@ const Slider = () => {
       } else if (status === 'instalar') {
         setStatus('health');
       } else if (status === 'health') {
+        setStatus('mind');
+      } else if (status === 'mind') { 
         setStatus('solar');
       }
     }, 10000);
@@ -145,6 +148,41 @@ const Slider = () => {
             </div>
           </div>
         )
+      },
+      {
+        status === 'mind' && (
+          <div className={classNames({
+            [Style.slider__submarca]: true,
+            [Style.slider__submarca_mind]: true,
+          })}>
+            <div className={Style.slider__submarca__content}>
+              <Image src={mindLogo} alt='Logo do Mensch Mind' className={Style.slider__submarca__content__logo} />
+              <p className={Style.slider__submarca__content__text}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt debitis magnam asperiores libero harum tenetur temporibus dignissimos, nostrum corrupti cupiditate necessitatibus autem voluptatem soluta, rem consequuntur molestiae voluptates maiores quia?</p>
+            </div>
+
+            <div className={Style.slider__submarca__btn}>
+
+              <button className={classNames({
+                [Style.slider__submarca__btn__btn]: true,
+                [Style.slider__submarca__btn__btn_mind]: true,
+              })}
+                title='Em Breve - site da Mensch Mind'
+              >Em Breve</button>
+
+              <div className={Style.slider__submarca__btn__redes} >
+
+                <Link href={'/'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Mind' >
+                  <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
+                </Link>
+
+                <Link href={'/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Mind' >
+                  <Image src={instagram} alt='Instagram' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
+                </Link>
+
+              </div>
+            </div>
+          </div>
+        )
       }
 
       <div className={Style.slider__dots}>
@@ -171,6 +209,14 @@ const Slider = () => {
             [Style.slider__dots__icon_health]: status === 'health',
           })} 
             onClick={() => setStatus('health')}
+          />
+        <Image src={mindIcon} alt='Icone do Mensch Mind'
+          className={classNames({
+            [Style.slider__dots__icon]: true,
+            [Style.slider__dots__icon_active]: status === 'mind',
+            [Style.slider__dots__icon_mind]: status === 'mind',
+          })} 
+            onClick={() => setStatus('mind')}
           />
       </div>
     </div>

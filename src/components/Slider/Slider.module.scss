@@ -99,6 +99,16 @@
           }
         }
 
+        &_mind {
+          background-color: $cor-black;
+          color: $cor-white;
+          box-shadow: none;
+
+          &:hover {
+            scale: 1;
+          }
+        }
+
         &_health {
           background-color: $cor-health-principal;
           color: $cor-white;
@@ -153,7 +163,7 @@
     
     &__icon {
       width: auto;
-      height: 32px;
+      height: 28px;
       object-fit: contain;
       cursor: pointer;
   
@@ -176,6 +186,10 @@
       &_health { 
         // box-shadow: 0px 5px $cor-health-principal;
         border-bottom: 4px solid $cor-health-principal;
+      }
+      &_mind { 
+        // box-shadow: 0px 5px $cor-health-principal;
+        border-bottom: 4px solid $cor-mind-principal;
       }
     }
   }

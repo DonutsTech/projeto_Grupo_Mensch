@@ -1,4 +1,4 @@
-@use 'variaveis' as *;
+@use 'variaveis'as *;
 
 .contatos {
   width: 100%;
@@ -7,4 +7,25 @@
   background-color: $cor-white;
   position: relative;
   margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 64px;
+
+  &__title {
+    font-family: $font-titulo;
+    font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+    line-height: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    font-weight: 700;
+    color: $cor-mae-principal;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    cursor: default;
+
+  }
 }

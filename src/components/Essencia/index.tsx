@@ -11,7 +11,7 @@ const Essencia = () => {
   return (
     <section className={Style.essencia} aria-label='Nossa Essência é Servir e Transformar Grupo Mensch'>
       <div className={Style.essencia__content} >
-        <h2 className={Style.essencia__content__title}>Construindo um Futuro Melhor com Integridade e Honra</h2>
+        <h2 className={Style.essencia__content__title}>Construindo um Futuro Melhor com <span>Integridade</span> e <span>Honra</span>.</h2>
         <div className={Style.essencia__content__box} >
           <div className={Style.essencia__content__box__img} >
             <Image src={selo} alt='Selo do Grupo Mensch' className={Style.essencia__content__box__img__selo} />

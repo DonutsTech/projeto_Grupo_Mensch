@@ -16,7 +16,7 @@ const Prova = () => {
   const coments = [
     {
       id: 1,
-      nome: "jonh Doo",
+      nome: "Thalizim Batata",
       foto: perfil,
       texto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",

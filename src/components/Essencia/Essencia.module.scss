@@ -32,6 +32,14 @@
       color: $cor-white;
       font-weight: 700;
       text-align: center;
+      cursor: default;
+
+      span {
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     &__box {
@@ -75,6 +83,7 @@
         line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
         font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
         text-align: left;
+        font-weight: 500;
       }
 
       @media (max-width: 840px) {

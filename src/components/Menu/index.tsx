@@ -58,7 +58,7 @@ const Menu = () => {
           alt="Logo Grupo Mensch"
           className={Style.menuDesk__logoMenu}
           onClick={() => {
-            window.scrollY = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         />
         <nav className={Style.menuDesk__nav}>
@@ -102,8 +102,10 @@ const Menu = () => {
                 <p>Vem Ser Mesch</p>
               </Link>
             </li>
-            <li className={Style.menuDesk__nav__list__item}>
+            <li className={Style.menuDesk__nav__list__item} >
+              <Link href={"#contatos__mensch"}> 
               <p>Fale conosco</p>
+              </Link>
             </li>
           </ul>
           <Link href={"/"}>
@@ -136,7 +138,7 @@ const Menu = () => {
               alt='Logo Grupo Mensch'
               className={Style.menuMobile__container__logoBox__logo}
               onClick={() => {
-                window.scrollY = 0;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
                 setModal(!modal);
               }}
             />
@@ -158,7 +160,9 @@ const Menu = () => {
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
+                <Link href={'#contatos__mensch'}>
                 <p>Fale conosco</p>
+                </Link>
               </li>
             </ul>
           </nav>
