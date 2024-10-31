@@ -52,8 +52,12 @@
     justify-content: flex-start;
     gap: 16px;
     overflow: auto;
-    // padding-top: 60px;
-    
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
     @media (max-width: 840px) {
       padding: 0 8px;
       justify-content: center;
@@ -62,9 +66,6 @@
     &::-webkit-scrollbar {
       display: none;
     };
-
-
-
 
       &__card {
         width: 260px;
@@ -172,7 +173,7 @@
 
 
 
-    
+
   }
 
 
@@ -191,4 +192,8 @@
     opacity: 0.5;
     filter: blur(10px);
   }
+}
+
+.swiper {
+  &::-webkit-scrollbar {      display: none;    };
 }
