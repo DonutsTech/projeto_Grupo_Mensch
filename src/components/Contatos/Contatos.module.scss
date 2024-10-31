@@ -11,7 +11,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 64px;
+  padding-top: 96px;
+  gap: 64px;
 
   &__title {
     font-family: $font-titulo;
@@ -27,5 +28,78 @@
     z-index: 2;
     cursor: default;
 
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+
+    &__form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+
+      &__input { 
+        width: 280px;
+        height: 32px;
+        border-radius: 8px;
+        outline: none;
+        border: 5px solid $cor-mae-principal;
+        box-shadow: -5px 5px $cor-mae-principal;
+        padding: 8px 16px;
+        font-family: $font-texto;
+        font-size: 16px;
+        font-weight: 500;
+        color: $cor-black;
+
+        &::placeholder { 
+          font-size: 16px;
+          font-weight: 500;
+          color: $cor-black;
+        }
+
+        &:focus { 
+          border: 3px solid $cor-black;
+          box-shadow: -3px 3px $cor-black;
+        }
+
+        &__mensagem { 
+          height: 128px;
+        }
+      }
+
+      &__btn { 
+        width: 128px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        background-color: $cor-mae-principal;
+        color: $cor-white;
+        font-family: $font-texto;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+
+        &:hover { 
+          background-color: $cor-black;
+          box-shadow: none;
+          transition: all 200ms ease-in-out;
+        }
+      }
+    }
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
   }
 }
