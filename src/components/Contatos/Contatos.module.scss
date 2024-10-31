@@ -46,7 +46,7 @@
       gap: 16px;
 
       &__input { 
-        width: 280px;
+        width: clamp(16.25rem, 15.3846rem + 3.8462vw, 20rem);
         height: 32px;
         border-radius: 8px;
         outline: none;
@@ -100,6 +100,10 @@
       flex-direction: column;
       align-items: center;
       gap: 32px;
+
+      &__form { 
+        align-items: center;
+      }
     }
   }
 }
