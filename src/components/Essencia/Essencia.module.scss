@@ -28,11 +28,18 @@
       min-width: 300px;
       height: auto;
       font-family: $font-titulo;
-      font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+      font-size: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem);
+      // font-size: 48px;
+      line-height: 48px;
       color: $cor-white;
       font-weight: 700;
       text-align: center;
       cursor: default;
+
+      @media (max-width: 840px) {
+        font-size: 32px;
+        line-height: 40px;
+      }
 
       span {
 
@@ -76,22 +83,24 @@
       }
 
       &__text {
-        width: 60%;
+        width: 50%;
         min-width: 280px;
         height: auto;
         color: $cor-white;
         line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
-        font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+        font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
         text-align: left;
-        font-weight: 500;
       }
 
       @media (max-width: 840px) {
         flex-direction: column;
+        // font-size: 16px;
         gap: 16px;
 
         &__text {
           text-align: center;
+          line-height: 20px;
+          font-size: 16px;
         }
       }
     }
