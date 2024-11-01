@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Style from './Essencia.module.scss';
 import equipe from './image/equipe_mensch.jpg';
 import selo from './image/selo_grupoMensch.svg';
+import Link from 'next/link';
 
 const Essencia = () => {
 
@@ -19,7 +20,9 @@ const Essencia = () => {
           </div>
           <p className={Style.essencia__content__box__text}>Ser Mensch vai além de uma filosofia de trabalho, é uma maneira de viver. Integridade é nossa bússola, a honra nos fortalece e o desejo de fazer o bem nos impulsiona. No Grupo Mensch, não apenas sonhamos com um futuro melhor, nós o construímos todos os dias. Com paixão, determinação e, acima de tudo, com honra. Acreditamos que cada ação pode transformar o mundo e é com essa visão que seguimos em frente, inspirando mudanças positivas e duradouras. <br />#SEJAMENSCH</p>
         </div>
+        <Link href={'/about'} title='Conheça o Grupo Mensh'>
         <button className={Style.essencia__content__btn}>Sobre Nós</button>
+        </Link>
       </div>
     </section>
   )

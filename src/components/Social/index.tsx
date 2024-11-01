@@ -2,22 +2,16 @@
 
 import Image from 'next/image';
 import Style from './Social.module.scss';
-// import logo from './logo_grupoMensch.svg';
 import image from './image.png';
-import Blobs from '../Blobs';
-import selo from './selo_white.svg';
+import selo from './selo_white_1.svg';
+import Link from 'next/link';
+
 
 const Social = () => {
 
   return (
     <section className={Style.social}>
-      {/* <Image src={logo} alt='Grupo Mensh' className={Style.social__logo} /> */}
-      <div className={Style.social__blobs}>
-        <div className={Style.social__blobs__box}>
-          <Image src={selo} alt='Selo Mensh' className={Style.social__blobs__box__img} />
-          <Blobs />
-        </div>
-      </div>
+      <Image src={selo} alt='Grupo Mensh' className={Style.social__logo} />
 
       <video autoPlay loop muted className={Style.social__video} >
         <source src="/assets/videos/video_social4.mp4" type="video/mp4" />
@@ -33,9 +27,15 @@ const Social = () => {
           </p>
           <Image src={image} alt='Mãos dadas' className={Style.social__content__box__img} />
         </div>
-        <button className={Style.social__content__btn} title='Vem ser Mensch!'>
+        <Link href={'/social'} >
+        <button
+          type='button' 
+          className={Style.social__content__btn} 
+          title='Vem ser Mensch!'           
+        >
           Vem Ser Mensch!
         </button>
+        </Link>
       </div>
     </section>
   )

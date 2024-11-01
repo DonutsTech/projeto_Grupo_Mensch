@@ -116,12 +116,15 @@ const Menu = ({ page }: IProps) => {
               [Style.menuDesk__nav__list__item]: true,
               [Style.menuDesk__nav__list__item__page]: page === 'social',
             })}>
-              <Link href={"/social"}>
+              <Link href={"/social"} >
                 <p>Vem Ser Mesch</p>
               </Link>
             </li>
-            <li className={Style.menuDesk__nav__list__item} >
-              <Link href={"#contatos__mensch"}>
+            <li 
+              className={Style.menuDesk__nav__list__item} >
+                <Link 
+                href={"/#contatos__mensch"}
+                >
                 <p>Fale conosco</p>
               </Link>
             </li>
