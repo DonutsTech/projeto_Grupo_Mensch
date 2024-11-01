@@ -189,7 +189,7 @@ const Menu = ({ page }: IProps) => {
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
-                <Link href={'#contatos__mensch'}>
+                <Link href={'/#contatos__mensch'}>
                   <p>Fale conosco</p>
                 </Link>
               </li>
