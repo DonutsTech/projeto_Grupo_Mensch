@@ -33,8 +33,8 @@ class Blob {
 
 
     const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height); 
-    gradient.addColorStop(0, 'rgba(139, 6, 37, 1)'); 
-    gradient.addColorStop(1, 'rgba(139, 6, 37, 1)'); 
+    gradient.addColorStop(0, 'rgba(244, 241, 248, 1)'); 
+    gradient.addColorStop(1, 'rgba(244, 241, 248, 1)'); 
 
     points[0].solveWith(points[points.length - 1], points[1]);
 
@@ -146,7 +146,7 @@ class Point {
   }
 
   get elasticity() {
-    return 0.002;
+    return 0.005;
   }
 
   get friction() {
@@ -160,13 +160,13 @@ const Blobs: React.FC = () => {
   useEffect(() => {
     const canvas = canvasRef.current!;
     const blob = new Blob(canvas);
-    canvas.width = 280;
-    canvas.height = 280; 
+    canvas.width = 300;
+    canvas.height = 300; 
     
     const resizeCanvas = () => {
-      canvas.width = 280;
-      canvas.height = 280;
-      blob.radius = 88;
+      canvas.width = 300;
+      canvas.height = 300;
+      blob.radius = 96;
       blob.init();
     };
 

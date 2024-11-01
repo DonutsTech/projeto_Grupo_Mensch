@@ -6,6 +6,7 @@ const MainSocial = () => {
 
   return (
     <main className={Style.main}>
+      <div className={Style.main__detalhe} />
     </main>
   )
 };
