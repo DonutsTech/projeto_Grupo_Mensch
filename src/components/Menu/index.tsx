@@ -15,7 +15,11 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 
-const Menu = () => {
+interface IProps {
+  page: string;
+}
+
+const Menu = ( { page }: IProps ) => {
   const [suspenso, setSuspenso] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
   const [modal, setModal] = useState(false);
@@ -92,12 +96,18 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
-            <li className={Style.menuDesk__nav__list__item}>
+            <li className={classNames({
+              [Style.menuDesk__nav__list__item]: true,
+              [Style.menuDesk__nav__list__item__page]: page === 'about',
+            })}>
               <Link href={"/"}>
                 <p>Sobre Nós</p>
               </Link>
             </li>
-            <li className={Style.menuDesk__nav__list__item}>
+            <li className={classNames({
+              [Style.menuDesk__nav__list__item]: true,
+              [Style.menuDesk__nav__list__item__page]: page === 'social',
+            })}>
               <Link href={"/"}>
                 <p>Vem Ser Mesch</p>
               </Link>

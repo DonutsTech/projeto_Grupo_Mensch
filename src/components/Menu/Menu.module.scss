@@ -172,6 +172,19 @@
           }
         }
       }
+
+      &__item__page { 
+
+        pointer-events: none;
+
+        a {
+
+          p {
+            color: $cor-mae-principal;
+            font-weight: 600;
+          }
+        }
+      }
     }
 
     &__whatsapp {
