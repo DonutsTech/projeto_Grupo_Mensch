@@ -58,6 +58,7 @@ const Menu = ( { page }: IProps ) => {
   return (
     <>
       <div className={Style.menuDesk}>
+      <Link href={"/"}>
         <Image
           src={grupoMensch}
           alt="Logo Grupo Mensch"
@@ -66,6 +67,7 @@ const Menu = ( { page }: IProps ) => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         />
+        </Link>
         <nav className={Style.menuDesk__nav}>
           <ul className={Style.menuDesk__nav__list}>
             <li className={classNames({
@@ -106,7 +108,7 @@ const Menu = ( { page }: IProps ) => {
               [Style.menuDesk__nav__list__item]: true,
               [Style.menuDesk__nav__list__item__page]: page === 'about',
             })}>
-              <Link href={"/"}>
+              <Link href={"/about"}>
                 <p>Sobre Nós</p>
               </Link>
             </li>
@@ -114,7 +116,7 @@ const Menu = ( { page }: IProps ) => {
               [Style.menuDesk__nav__list__item]: true,
               [Style.menuDesk__nav__list__item__page]: page === 'social',
             })}>
-              <Link href={"/"}>
+              <Link href={"/social"}>
                 <p>Vem Ser Mesch</p>
               </Link>
             </li>
@@ -150,6 +152,7 @@ const Menu = ( { page }: IProps ) => {
         })}
         >
           <div className={Style.menuMobile__container__logoBox}>
+            <Link href={"/"}>
             <Image src={grupoMensch}
               alt='Logo Grupo Mensch'
               className={Style.menuMobile__container__logoBox__logo}
@@ -158,6 +161,7 @@ const Menu = ( { page }: IProps ) => {
                 setModal(!modal);
               }}
             />
+            </Link>
 
           </div>
           <nav className={Style.menuMobile__container__nav}>
@@ -166,12 +170,12 @@ const Menu = ( { page }: IProps ) => {
                 <p onClick={() => setMarcas(!marcas)}>Marcas</p>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
-                <Link href={"/"}>
+                <Link href={"/about"}>
                   <p>Sobre Nós</p>
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
-                <Link href={"/"}>
+                <Link href={"/social"}>
                   <p>Vem Ser Mesch</p>
                 </Link>
               </li>

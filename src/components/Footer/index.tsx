@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className={Style.footer__box} >
         <div className={Style.footer__box__copy} >
-          <Link href='/' className={Style.footer__box__copy__link} >
+          <Link href={'/'} className={Style.footer__box__copy__link} >
             <Image src={mensch} alt="Grupo Mensch" className={Style.footer__box__copy__link__logo} />
           </Link>
           <p className={Style.footer__box__copy__text} >Todos os direitos reservados || &copy; 2025 Grupo Mensch</p>
