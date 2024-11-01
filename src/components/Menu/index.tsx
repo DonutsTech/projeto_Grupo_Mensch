@@ -20,7 +20,7 @@ interface IProps {
   page: string;
 }
 
-const Menu = ( { page }: IProps ) => {
+const Menu = ({ page }: IProps) => {
   const [suspenso, setSuspenso] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
   const [modal, setModal] = useState(false);
@@ -58,15 +58,15 @@ const Menu = ( { page }: IProps ) => {
   return (
     <>
       <div className={Style.menuDesk}>
-      <Link href={"/"}>
-        <Image
-          src={grupoMensch}
-          alt="Logo Grupo Mensch"
-          className={Style.menuDesk__logoMenu}
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-        />
+        <Link href={"/"}>
+          <Image
+            src={grupoMensch}
+            alt="Logo Grupo Mensch"
+            className={Style.menuDesk__logoMenu}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
         </Link>
         <nav className={Style.menuDesk__nav}>
           <ul className={Style.menuDesk__nav__list}>
@@ -121,8 +121,8 @@ const Menu = ( { page }: IProps ) => {
               </Link>
             </li>
             <li className={Style.menuDesk__nav__list__item} >
-              <Link href={"#contatos__mensch"}> 
-              <p>Fale conosco</p>
+              <Link href={"#contatos__mensch"}>
+                <p>Fale conosco</p>
               </Link>
             </li>
           </ul>
@@ -153,14 +153,14 @@ const Menu = ( { page }: IProps ) => {
         >
           <div className={Style.menuMobile__container__logoBox}>
             <Link href={"/"}>
-            <Image src={grupoMensch}
-              alt='Logo Grupo Mensch'
-              className={Style.menuMobile__container__logoBox__logo}
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setModal(!modal);
-              }}
-            />
+              <Image src={grupoMensch}
+                alt='Logo Grupo Mensch'
+                className={Style.menuMobile__container__logoBox__logo}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setModal(!modal);
+                }}
+              />
             </Link>
 
           </div>
@@ -187,7 +187,7 @@ const Menu = ( { page }: IProps ) => {
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
                 <Link href={'#contatos__mensch'}>
-                <p>Fale conosco</p>
+                  <p>Fale conosco</p>
                 </Link>
               </li>
             </ul>

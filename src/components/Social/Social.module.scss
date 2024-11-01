@@ -13,13 +13,23 @@
   position: relative;
   overflow: hidden;
 
-  &__logo {
+  &__blobs {
     width: auto;
-    height: clamp(4rem, 2.6rem + 7vw, 11rem);
+    height: auto;
     position: absolute;
     z-index: 2;
     top: 100px;
-    
+
+    &__box { 
+      position: relative;
+
+      &__img { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 
 
@@ -44,7 +54,10 @@
     justify-content: end;
     gap: 64px;
     padding: 0 0 48px 0;
-    padding-top: clamp(13.75rem, 11.95rem + 9vw, 22.75rem);
+    // padding-top: clamp(13.75rem, 11.95rem + 9vw, 22.75rem);
+    // padding-top: clamp(18.75rem, 20.3365rem + -7.0513vw, 11.875rem);
+    padding-top: 360px;
+
 
     &__titulo { 
       font-family: $font-titulo;
