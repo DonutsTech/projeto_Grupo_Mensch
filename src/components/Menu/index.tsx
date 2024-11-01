@@ -169,12 +169,18 @@ const Menu = ( { page }: IProps ) => {
               <li className={Style.menuMobile__container__nav__list__item}>
                 <p onClick={() => setMarcas(!marcas)}>Marcas</p>
               </li>
-              <li className={Style.menuMobile__container__nav__list__item}>
+              <li className={classNames({
+                [Style.menuMobile__container__nav__list__item]: true,
+                [Style.menuMobile__container__nav__list__item__page]: page === 'about',
+              })}>
                 <Link href={"/about"}>
                   <p>Sobre Nós</p>
                 </Link>
               </li>
-              <li className={Style.menuMobile__container__nav__list__item}>
+              <li className={classNames({
+                [Style.menuMobile__container__nav__list__item]: true,
+                [Style.menuMobile__container__nav__list__item__page]: page === 'social',
+              })}>
                 <Link href={"/social"}>
                   <p>Vem Ser Mesch</p>
                 </Link>

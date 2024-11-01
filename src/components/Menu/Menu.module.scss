@@ -283,13 +283,27 @@
         justify-content: flex-start;
         gap: 32px;
 
-        & li {
+        &__item {
           display: flex;
           align-items: center;
           padding-right: 24px;
 
           a {
             text-decoration: none;
+          }
+
+          &__page { 
+            pointer-events: none;
+            // text-decoration: underline;
+            a {
+              p {
+                color: $cor-mae-principal;
+                background-color: $cor-white;
+                padding: 4px 8px;
+                border-radius: 4px;
+              }
+            }
+
           }
 
         }
