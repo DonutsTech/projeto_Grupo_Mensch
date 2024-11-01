@@ -20,7 +20,7 @@ const Social = () => {
         </h2>
         <div className={Style.social__content__box}>
           <p className={Style.social__content__box__text}>
-          Em nossa jornada de transformação, apoiamos projetos que fazem a diferença e fortalecem a comunidade, promovendo sustentabilidade. Cada escolha nos leva a um futuro inclusivo e promissor, refletindo nosso compromisso com a mudança e o impacto positivo na sociedade. Trabalhamos para criar um ambiente justo e igualitário através de programas educacionais, responsabilidade ambiental e apoio a causas sociais, acreditando que juntos podemos construir um mundo melhor onde todos prosperem.
+          Em nossa jornada de transformação, apoiamos projetos que fazem a diferença e fortalecem a comunidade, promovendo sustentabilidade. Cada escolha nos leva a um futuro inclusivo e promissor, refletindo nosso compromisso com a mudança e o impacto positivo na sociedade. <br/>Venha ser Mensch você também!
           </p>
           <Image src={image} alt='Mãos dadas' className={Style.social__content__box__img} />
         </div>

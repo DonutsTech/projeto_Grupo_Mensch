@@ -7,6 +7,7 @@ import grupoMensch from './assets/grupo_mensch.svg';
 import solar from './assets/mesch_solar.svg';
 import health from './assets/mensch_health.svg';
 import instalar from './assets/mensch_instalar.svg';
+import mind from './assets/mensch_mind.svg';
 
 import menuBtn from './assets/mobile_btn.svg';
 
@@ -93,6 +94,11 @@ const Menu = ( { page }: IProps ) => {
                     <Image src={instalar} alt="Instalar Logo" className={Style.img__breve} title='Em Breve!' />
                     {/* </Link> */}
                   </li>
+                  <li>
+                    {/* <Link href={"/"} title='Conheça a Mensch Instalar'> */}
+                    <Image src={mind} alt="Mensch Mind Logo" className={Style.img__breve} title='Em Breve!' />
+                    {/* </Link> */}
+                  </li>
                 </ul>
               </div>
             </li>
@@ -118,7 +124,7 @@ const Menu = ( { page }: IProps ) => {
               </Link>
             </li>
           </ul>
-          <Link href={"/"}>
+          <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
               src={whatsapp}
               alt="Whatsapp Logo"
@@ -176,7 +182,7 @@ const Menu = ( { page }: IProps ) => {
               </li>
             </ul>
           </nav>
-          <Link href={"/"}>
+          <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
               src={whatsapp}
               alt="Whatsapp Logo"
@@ -196,13 +202,16 @@ const Menu = ( { page }: IProps ) => {
       })}>
         <div className={Style.menuMobile__container__marcas__logoBox}>
           <Link href={"/"} title='Conheça a Mensch Energia Solar'>
-            <Image src={solar} alt="Solar Logo" />
+            <Image src={solar} alt="Mesnch Solar Logo" />
           </Link>
           <Link href={"/"} title='Conheça a Mensch Health'>
-            <Image src={health} alt='Health Logo' />
+            <Image src={health} alt='Mensch Health Logo' />
           </Link>
           {/* <Link href={"/"} title='Conheça a Mensch Instalar'>  */}
-          <Image src={instalar} alt='Instalar Logo' className={Style.img__breve} title='Em Breve!' />
+          <Image src={instalar} alt='MenschInstalar Logo' className={Style.img__breve} title='Em Breve!' />
+          {/* </Link> */}
+          {/* <Link href={"/"} title='Conheça a Mensch Instalar'>  */}
+          <Image src={mind} alt='Mensch Mind Logo' className={Style.img__breve} title='Em Breve!' />
           {/* </Link> */}
 
 
