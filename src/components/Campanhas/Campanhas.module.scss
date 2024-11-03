@@ -64,7 +64,7 @@
       &__titulo { 
         width: 80%;
         min-width: 280px;
-        height: auto;
+        height: 96px;
         color: $cor-black;
         font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
         line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
@@ -128,7 +128,7 @@
 
     @media (max-width: 840px) {
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
   
       &__textBox {
         display: flex;
@@ -221,7 +221,7 @@
 
     @media (max-width: 840px) { 
 
-      top: 30%;
+      top: 37%;
     }
   }
 

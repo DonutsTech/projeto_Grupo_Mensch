@@ -69,16 +69,20 @@ const Campanhas = () => {
           setContFoto(0);
           setCrono(30);
         } else if (contSlide === 3) {
+          setContSlide(4);
+          setContFoto(0);
+          setCrono(30);
+        } else if (contSlide === 4) {
           setContSlide(1);
           setContFoto(0);
           setCrono(30);
         }
       }
     }, 30000);
-  
+
     return () => clearTimeout(timerSlide);
   }, [contSlide, pausado]);
-  
+
 
   const campanhas = [
     {
@@ -96,9 +100,9 @@ const Campanhas = () => {
     },
     {
       id: 2,
-      titulo: 'teste',
-      span: ' 02',
-      periodo: "Mensalmente",
+      titulo: 'Apoio ao ',
+      span: ' CTKO',
+      periodo: "Contínuo",
       descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
       fotos: [
         teste01,
@@ -109,9 +113,22 @@ const Campanhas = () => {
     },
     {
       id: 3,
-      titulo: 'teste',
-      span: ' 03',
-      periodo: "Mensalmente",
+      titulo: 'Apoio a ',
+      span: 'Escolinha',
+      periodo: "Contínuo",
+      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      fotos: [
+        teste01,
+        teste02,
+        teste03
+      ],
+      link: 'https://www.instagram.com/grupo.mensch/'
+    },
+    {
+      id: 4,
+      titulo: 'Diversas contribuiçoes ',
+      span: ' individuais',
+      periodo: "Pontuais",
       descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
       fotos: [
         teste01,
@@ -124,82 +141,82 @@ const Campanhas = () => {
   ];
 
 
-    return (
-      <div className={Style.campanhas}>
+  return (
+    <div className={Style.campanhas}>
 
-        {campanhas.map(c =>
-          <div className={classNames({
-            [Style.campanhas__slide]: true,
-            [Style.campanhas__slide__ativo]: contSlide === c.id,
+      {campanhas.map(c =>
+        <div className={classNames({
+          [Style.campanhas__slide]: true,
+          [Style.campanhas__slide__ativo]: contSlide === c.id,
 
-          })} key={c.id}>
-            <div className={Style.campanhas__slide__imagemBox}>
-              <Image src={c.fotos[contFoto]} alt='foto' className={Style.campanhas__slide__imagemBox__foto} />
-              <Image src={simbolo} alt='simbolo' className={Style.campanhas__slide__imagemBox__simbolo} />
-            </div>
-            <div className={Style.campanhas__slide__textBox}>
-              <h2 className={Style.campanhas__slide__textBox__titulo}>{c.titulo}<span>{c.span}</span></h2>
-              <h3 className={Style.campanhas__slide__textBox__periodo}>{c.periodo}</h3>
-              <p className={Style.campanhas__slide__textBox__texto}>{c.descricao}</p>
-              <Link href={c.link} target='_blank' rel='noreferrer' title={`Siga a pagina do instagram e siba mais sobre o ${c.titulo}`}>
-                Siga-nos <Image src={instagram} alt='instagram' />
-              </Link>
-            </div>
+        })} key={c.id}>
+          <div className={Style.campanhas__slide__imagemBox}>
+            <Image src={c.fotos[contFoto]} alt='foto' className={Style.campanhas__slide__imagemBox__foto} />
+            <Image src={simbolo} alt='simbolo' className={Style.campanhas__slide__imagemBox__simbolo} />
           </div>
-        )}
-
-        <div className={Style.campanhas__btn}>
-          <Image
-            src={arrow}
-            alt='arrow'
-            className={Style.campanhas__btn__prev}
-            title='Voltar para ação anterior'
-            onClick={() => {
-              setContFoto(0);
-              setCrono(30);
-              setPausado(false);
-              if (contSlide > 1) {
-                setContSlide(contSlide - 1);
-              } else {
-                setContSlide(campanhas.length);
-              }
-            }}
-          />
-          <Image
-            src={arrow}
-            alt='arrow'
-            className={Style.campanhas__btn__next}
-            title='Ir para a próxima ação'
-            onClick={() => {
-              setContFoto(0);
-              setCrono(30);
-              setPausado(false);
-              if (contSlide < campanhas.length) {
-                setContSlide(contSlide + 1);
-
-              } else {
-                setContSlide(1);
-              }
-            }}
-          />
+          <div className={Style.campanhas__slide__textBox}>
+            <h2 className={Style.campanhas__slide__textBox__titulo}>{c.titulo}<span>{c.span}</span></h2>
+            <h3 className={Style.campanhas__slide__textBox__periodo}>{c.periodo}</h3>
+            <p className={Style.campanhas__slide__textBox__texto}>{c.descricao}</p>
+            <Link href={c.link} target='_blank' rel='noreferrer' title={`Siga a pagina do instagram e siba mais sobre o ${c.titulo}`}>
+              Siga-nos <Image src={instagram} alt='instagram' />
+            </Link>
+          </div>
         </div>
+      )}
 
-        <div className={Style.campanhas__cronometro}
+      <div className={Style.campanhas__btn}>
+        <Image
+          src={arrow}
+          alt='arrow'
+          className={Style.campanhas__btn__prev}
+          title='Voltar para ação anterior'
           onClick={() => {
-            setPausado(!pausado)
+            setContFoto(0);
             setCrono(30);
+            setPausado(false);
+            if (contSlide > 1) {
+              setContSlide(contSlide - 1);
+            } else {
+              setContSlide(campanhas.length);
+            }
           }}
-        >
-          <div className={classNames({
-            [Style.campanhas__cronometro__borda]: true,
-            [Style.campanhas__cronometro__pausado]: pausado,
-          })} />
-          <p>{pausado ? ' | | ' : crono.toString().padStart(2, '0')}</p>
-        </div>
-      </div>
-    )
-  };
+        />
+        <Image
+          src={arrow}
+          alt='arrow'
+          className={Style.campanhas__btn__next}
+          title='Ir para a próxima ação'
+          onClick={() => {
+            setContFoto(0);
+            setCrono(30);
+            setPausado(false);
+            if (contSlide < campanhas.length) {
+              setContSlide(contSlide + 1);
 
-  export default Campanhas;
+            } else {
+              setContSlide(1);
+            }
+          }}
+        />
+      </div>
+
+      <div className={Style.campanhas__cronometro}
+        onClick={() => {
+          setPausado(!pausado)
+          setCrono(30);
+        }}
+      >
+        <div className={classNames({
+          [Style.campanhas__cronometro__borda]: true,
+          [Style.campanhas__cronometro__pausado]: pausado,
+        })} />
+        <p>{pausado ? ' | | ' : crono.toString().padStart(2, '0')}</p>
+      </div>
+    </div>
+  )
+};
+
+export default Campanhas;
 
 

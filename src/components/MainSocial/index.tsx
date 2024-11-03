@@ -1,6 +1,7 @@
 'use client';
 
 import Acao from '../Acao';
+import ChamadaSocial from '../ChamadaSocial';
 import Style from './MainSocial.module.scss';
 
 const MainSocial = () => { 
@@ -9,6 +10,7 @@ const MainSocial = () => {
     <main className={Style.main}>
       <div className={Style.main__detalhe} />
       <Acao />
+      <ChamadaSocial />
     </main>
   )
 };
