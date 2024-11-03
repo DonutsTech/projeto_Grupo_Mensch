@@ -185,7 +185,10 @@ const Campanhas = () => {
         </div>
 
         <div className={Style.campanhas__cronometro}
-          onClick={() => setPausado(!pausado)}
+          onClick={() => {
+            setPausado(!pausado)
+            setCrono(30);
+          }}
         >
           <div className={classNames({
             [Style.campanhas__cronometro__borda]: true,
