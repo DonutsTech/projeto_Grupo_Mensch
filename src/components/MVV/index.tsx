@@ -26,55 +26,68 @@ const MVV = () => {
             </p>
           </div>
         </div>
-      <div className={Style.mvv__content__valores}>
-        <h3 className={Style.mvv__content__valores__titulo}>
-          Nossos <span>Valores</span>: </h3>
-        <dl className={Style.mvv__content__valores__dl}>
+        <div className={Style.mvv__content__valores}>
+          <h3 className={Style.mvv__content__valores__titulo}>
+            Nossos <span>Valores</span>: </h3>
+          <dl className={Style.mvv__content__valores__dl}>
 
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
 
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
-          
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
 
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
 
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
 
-          <dt className={Style.mvv__content__valores__dl__dt}>
-            <Image src={pin} alt='pin' /> Titulo
-          </dt>
-          <dd className={Style.mvv__content__valores__dl__dt__dd}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-          </dd>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
 
-        </dl>
-      </div>
+            <div>
+              <dt className={Style.mvv__content__valores__dl__dt}>
+                <Image src={pin} alt='pin' /> Titulo
+              </dt>
+              <dd className={Style.mvv__content__valores__dl__dd}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              </dd>
+            </div>
+
+
+          </dl>
+        </div>
       </div>
     </section>
   )
