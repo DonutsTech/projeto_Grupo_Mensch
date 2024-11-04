@@ -4,7 +4,6 @@
 import Image from 'next/image';
 import Style from './BannerAbout.module.scss';
 import logo from './assets/grupo_mensh_white.svg';
-// import carimbo from './assets/carimbo_original.svg';
 
 
 const BannerAbout = () => {
@@ -19,7 +18,7 @@ const BannerAbout = () => {
     </h1>
     </div>
     <video  autoPlay loop muted className={Style.banner__video} >
-      <source src="/assets/videos/video_About.mp4" type="video/mp4" />
+      <source src="/assets/videos/video_about.mp4" type="video/mp4" />
     </video>
     
     </div>
