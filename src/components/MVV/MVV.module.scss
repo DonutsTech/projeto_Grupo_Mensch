@@ -1,0 +1,100 @@
+@use 'variaveis'as *;
+
+.mvv { 
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  padding: 24px 0 56px 0;
+
+
+  &__content { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    &__mv { 
+      width: 90%;
+      min-width: 300px;
+      height: auto;
+      display: flex;
+      
+      &__missao, &__visao { 
+        width: 45%;
+        min-width: 280px;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 16px;
+
+        &__titulo { 
+          width: 100%;
+          height: auto;
+          font-family: $font-titulo;
+          font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+          line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
+          font-weight: 800;
+          text-align: center;
+          color: $cor-black;
+
+          span {
+            color: $cor-mae-principal;
+          }
+        }
+
+        &__paragrafo { 
+          width: 100%;
+          height: auto;
+          font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+          line-height: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+          color: $cor-black;
+        }
+      }
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        
+      }
+    }
+
+    &__valores { 
+      width: 90%;
+      min-width: 300px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 16px;
+      padding-bottom: 56px;
+
+      &__titulo { 
+        width: 100%;
+        height: auto;
+        font-family: $font-titulo;
+        font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+        line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
+        font-weight: 800;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-mae-principal;
+        }
+      }
+
+
+    }
+  }
+
+
+}

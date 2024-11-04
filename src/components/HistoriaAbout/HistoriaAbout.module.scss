@@ -3,7 +3,149 @@
 .historia { 
   width: 100%;
   height: auto;
-  min-height: 50vh;
   padding: 24px 0 48px 0;
+  
+  &__titulo { 
+    width: 100%;
+    height: auto;
+    font-family: $font-titulo;
+    font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+    line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
+    font-weight: 800;
+    text-align: center;
+    padding: 0 24px;
+    color: $cor-black;
+    cursor: default;
+    margin-bottom: 32px;
+
+    span { 
+
+      &:hover {
+        color: $cor-mae-principal;
+      }
+    }
+
+    @media (max-width: 840px) {
+      
+      span {
+        color: $cor-mae-principal;
+      }
+    }
+  }
+
+  &__content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
+    
+    &__box { 
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: 0 auto;
+
+      &__img { 
+
+        position: relative;
+
+        &__img { 
+          width: clamp(18.75rem, 15rem + 16.6667vw, 35rem);
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 8px;
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+          transition: all 200ms ease-in-out;
+          animation: blimp 200ms ease-in-out alternate;
+        }
+      }
+      &__texto { 
+        width: 100%;
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        &__fase { 
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: clamp(1.25rem, 1.0769rem + 0.7692vw, 2rem);
+          line-height: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+          width: 100%;
+          height: auto;
+          font-weight: 700;
+          color: $cor-black;
+        }
+
+        &__paragrafo { 
+          width: 100%;
+          height: auto;
+          font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+          line-height: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+          color: $cor-black;
+        }
+
+      }
+
+      &_dir { 
+        flex-direction: row-reverse;
+        text-align: right;
+        
+        .historia__content__box__texto__fase {
+          justify-content: flex-end;
+          text-align: right;
+        }
+      }
+      @media (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+
+        &__img { 
+          margin: 0 auto;
+        }
+
+        &__texto { 
+
+          &__fase { 
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+          }
+
+          &__paragrafo { 
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+
+        &_dir { 
+
+          .historia__content__box__texto{
+
+            .historia__content__box__texto__fase {
+              justify-content: center;
+              flex-direction: row-reverse;
+            }
+          }
+        }
+      }
+    }
+  }
+
   
 }
