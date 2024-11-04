@@ -1,5 +1,6 @@
 'use client';
 
+import ContatosAbout from '../ContatosAbout';
 import HistoriaAbout from '../HistoriaAbout';
 import MVV from '../MVV';
 import SectionAbout01 from '../SectionAbout01';
@@ -13,6 +14,7 @@ const MainAbout = () => {
       <SectionAbout01 />
       <HistoriaAbout />
       <MVV />
+      <ContatosAbout />
     </main>
   )
 };

@@ -8,6 +8,7 @@
   margin-top: 110vh;
   background-color: $cor-white;
   z-index: 2;
+  padding-bottom: 64px;
 
   &__detalhe { 
     clip-path: polygon(0 90%, 100% 0%, 100% 100%, 0 100%);

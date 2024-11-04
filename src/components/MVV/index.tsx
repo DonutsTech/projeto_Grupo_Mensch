@@ -9,20 +9,29 @@ const MVV = () => {
   return (
     <section className={Style.mvv} aria-label='Missão Visão e Valores do Grupo Mensch'>
 
+      <div className={Style.mvv__textos}>
+        <h2 className={Style.mvv__textos__titulo}>
+          <span>Servir</span> e <span>Transformar</span>.
+        </h2>
+        <p className={Style.mvv__textos__paragrafo}>
+        Em nossa jornada, transformamos vidas com serviços e produtos sustentáveis. Servimos com amor e ética, priorizando segurança e excelência. Unidos, inspiramos responsabilidade social e consciência ambiental, para um futuro próspero e digno para todos.
+        </p>
+      </div>
+
       <div className={Style.mvv__content}>
         <div className={Style.mvv__content__mv}>
           <div className={Style.mvv__content__mv__missao}>
             <h3 className={Style.mvv__content__mv__missao__titulo}>
               Nossa <span>Missão</span>: </h3>
             <p className={Style.mvv__content__mv__missao__paragrafo}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?
+              Honrar a Deus através do nosso trabalho.
             </p>
           </div>
           <div className={Style.mvv__content__mv__visao}>
             <h3 className={Style.mvv__content__mv__visao__titulo}>
               Nossa <span>Visão</span>: </h3>
             <p className={Style.mvv__content__mv__visao__paragrafo}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?
+              Ser a inspiração para um mundo melhor.
             </p>
           </div>
         </div>
@@ -33,58 +42,48 @@ const MVV = () => {
 
             <div>
               <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
+                <Image src={pin} alt='pin' /> Amor:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+                Transformar as pessoas para criar um impacto duradouro nas gerações futuras.
               </dd>
             </div>
 
             <div>
               <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
+                <Image src={pin} alt='pin' /> Ética:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+                O sucesso verdadeiro só é alcançado seguindo o caminho da integridade.
               </dd>
             </div>
 
             <div>
               <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
+                <Image src={pin} alt='pin' /> Segurança:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+                Valorizamos a preservação da vida e reconhecemos que somos nosso maior patrimônio.
               </dd>
             </div>
 
             <div>
               <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
+                <Image src={pin} alt='pin' /> Excelência:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+                Buscamos a melhoria constante em nossos padrões de qualidade organizacional
               </dd>
             </div>
 
             <div>
               <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
+                <Image src={pin} alt='pin' /> União:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
+              Alcançamos objetivos comuns através do apoio mútuo e solidariedade.
               </dd>
             </div>
-
-            <div>
-              <dt className={Style.mvv__content__valores__dl__dt}>
-                <Image src={pin} alt='pin' /> Titulo
-              </dt>
-              <dd className={Style.mvv__content__valores__dl__dd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus.
-              </dd>
-            </div>
-
 
           </dl>
         </div>
