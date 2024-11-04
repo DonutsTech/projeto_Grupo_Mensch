@@ -14,7 +14,7 @@
   padding-bottom: 88px;
   clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
   margin: 0;
-  margin-top: -110px;
+  margin-top: -120px;
 
   &__detalhe { 
     clip-path: polygon(0 100%, 100% 10%, 100% 0, 0 0);
@@ -28,8 +28,9 @@
 
   &__titulo { 
     font-family: $font-titulo;
-    font-weight: 700;
-    font-size: clamp(1.25rem, 0.9rem + 1.75vw, 3rem);
+    font-size: $font-size-titulo-2;
+    line-height: $font-height-titulo-2;
+    font-weight: $font-weight-titulo-2;
     text-align: center;
     padding: 0 24px;
     color: $cor-black;

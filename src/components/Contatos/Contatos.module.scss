@@ -14,11 +14,11 @@
   padding-top: 96px;
   gap: 64px;
 
-  &__title {
+  &__titulo {
     font-family: $font-titulo;
-    font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
-    line-height: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
-    font-weight: 700;
+    font-size: $font-size-titulo-1;
+    line-height: $font-height-titulo-1;
+    font-weight: $font-weight-titulo-1;
     color: $cor-mae-principal;
     width: 80%;
     min-width: 300px;
@@ -122,8 +122,9 @@
         width: 80%;
         min-width: 280px;
         text-align: left;
-        font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
-        line-height: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        color: $cor-black;
 
         @media (max-width: 840px) {
           text-align: center;
@@ -161,8 +162,8 @@
             width: 90%;
             min-width: 300px;
             text-align: left;
-            font-size: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
-            line-height: clamp(1.125rem, 0.9808rem + 0.641vw, 1.75rem);
+            font-size: $font-size-texto-2;
+            line-height: $font-height-texto-2;
           }
         }
 
@@ -208,8 +209,8 @@
         width: 80%;
         min-width: 220px;
         text-align: left;
-        font-size: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
-        line-height: clamp(1.125rem, 0.9808rem + 0.641vw, 1.75rem);
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
       }
     }
 

@@ -23,16 +23,15 @@
     justify-content: space-around;
     padding-top: 72px;
 
-    &__title {
+    &__titulo {
       width: 60%;
       min-width: 300px;
       height: auto;
       font-family: $font-titulo;
-      font-size: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem);
-      // font-size: 48px;
-      line-height: 48px;
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
       color: $cor-white;
-      font-weight: 700;
+      font-weight: $font-weight-titulo-2;
       text-align: center;
       cursor: default;
 
@@ -82,13 +81,13 @@
         }
       }
 
-      &__text {
+      &__texto {
         width: 50%;
         min-width: 280px;
         height: auto;
         color: $cor-white;
-        line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
-        font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
         text-align: left;
       }
 

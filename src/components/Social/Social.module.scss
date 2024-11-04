@@ -48,9 +48,9 @@
 
     &__titulo { 
       font-family: $font-titulo;
-      font-size: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem);
-      // line-height: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
-      font-weight: 700;
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
+      font-weight: $font-weight-titulo-2;
       color: $cor-mae-principal;
       width: 80%;
       min-width: 300px;
@@ -74,18 +74,17 @@
       justify-content: center;
       gap: 32px;
 
-      &__text {
+      &__texto {
         width: 50%;
         min-width: 280px;
         text-align: right;
-        line-height: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
-        font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
         color: $cor-black;
         margin: 0 auto;
 
         @media (max-width: 840px) {
-          font-size: 16px;
-          line-height: 24px;
+          text-align: center;
         }
       }
 

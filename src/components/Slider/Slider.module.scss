@@ -41,16 +41,14 @@
       }
 
       &__text {
-        width: 50%;
+        width: 45%;
         min-width: 280px;
         height: auto;
         margin: 0 auto;
-        // font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
-        // line-height: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
-        font-size: 16px;
-        line-height: 24px;;
-        // align-self: flex-end;
-        font-weight: 500;
+        
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        font-weight: 400;
         color: $cor-black;
 
         @media (max-width: 840px) {

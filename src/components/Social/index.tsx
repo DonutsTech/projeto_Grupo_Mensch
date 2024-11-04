@@ -22,7 +22,7 @@ const Social = () => {
           Juntos pelo <span>futuro</span> e unidos pelo <span>propósito</span>.
         </h2>
         <div className={Style.social__content__box}>
-          <p className={Style.social__content__box__text}>
+          <p className={Style.social__content__box__texto}>
           Em nossa jornada de servir e transformar, apoiamos projetos que geram impacto real e cuidam de quem mais precisa. Acreditamos que ser Mensch é fazer o bem com integridade e amor, valorizando a vida acima de tudo. <br />Cada ação reforça nosso compromisso em construir um futuro inclusivo e promissor para todos. <br /><br />Venha ser Mensch você também.
           </p>
           <Image src={image} alt='Mãos dadas' className={Style.social__content__box__img} />

@@ -5,6 +5,44 @@
 $font-titulo: 'Lexend', serif;
 $font-texto: 'Poppins', serif;
 
+
+//Textos
+
+$font-weight-texto: 400;
+
+// 16 a 24 px
+$font-size-texto-3: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+$font-height-texto-3: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+
+
+//20 a 14 px
+$font-size-texto-2: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
+$font-height-texto-2: clamp(1.375rem, 1.2885rem + 0.3846vw, 1.75rem);
+
+//12 a 20 px
+$font-size-texto-1: clamp(0.75rem, 0.6346rem + 0.5128vw, 1.25rem);
+$font-height-texto-1: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
+
+//Títulos
+
+//52 a 28 px
+$font-size-titulo-3: clamp(1.75rem, 1.4038rem + 1.5385vw, 3.25rem);
+$font-height-titulo-3: clamp(2.25rem, 1.9038rem + 1.5385vw, 3.75rem);
+$font-weight-titulo-3: 900;
+
+//48 a 24 px
+$font-size-titulo-2: clamp(1.5rem, 1.1538rem + 1.5385vw, 3rem);
+$font-height-titulo-2: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem);
+$font-weight-titulo-2: 800;
+
+
+//40 a 20 px
+$font-size-titulo-1: clamp(1.25rem, 1.0769rem + 0.7692vw, 2.5rem);
+$font-height-titulo-1: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+$font-weight-titulo-1: 700;
+
+
+
 //Variaveis global de cores
 
 $cor-black: #1A2228;

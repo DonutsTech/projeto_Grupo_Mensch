@@ -58,7 +58,7 @@ const Prova = () => {
 
   return (
     <section className={Style.prova} aria-label="Provas Sociais">
-      <h2 className={Style.prova__title}>
+      <h2 className={Style.prova__titulo}>
         Veja o que nossos <span>parceiros</span> têm a dizer sobre nossa{" "}
         <span>jornada</span>.
       </h2>

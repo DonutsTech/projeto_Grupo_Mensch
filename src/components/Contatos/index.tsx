@@ -19,7 +19,7 @@ const Contatos = () => {
 
   return (
     <section className={Style.contatos} id='contatos__mensch' aria-label='Contatos do Grupo Mensch'>
-      <h2 className={Style.contatos__title}>
+      <h2 className={Style.contatos__titulo}>
         Fale Conosco
       </h2>
 
