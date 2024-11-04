@@ -63,9 +63,10 @@ const ContatosAbout = () => {
           </Link>
           <p>@grupo.mensch</p>
         </div>
-
-
       </div>
+      <Link href={"/#contatos__mensch"} className={Style.contatos__btn} > 
+        Entre em Contato
+      </Link>
     </section>
   )
 };
