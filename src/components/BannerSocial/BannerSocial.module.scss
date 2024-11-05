@@ -10,7 +10,6 @@
   z-index: 0;
   margin-bottom: -120px;
 
-
   &__overlay {
     position: fixed;
     z-index: 0;
@@ -35,7 +34,6 @@
     justify-content: center;
     text-align: center;
     gap: 24px;
-    // padding-bottom: 56px;
 
     &__logo { 
       width: clamp(17.5rem, 15.0481rem + 10.8974vw, 28.125rem);

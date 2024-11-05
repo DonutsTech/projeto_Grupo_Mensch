@@ -22,11 +22,11 @@
       margin: 0 auto;
       height: auto;
       font-family: $font-titulo;
-      font-size: clamp(1.5rem, 1.1538rem + 1.5385vw, 3rem);
-      line-height: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem);
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
+      font-weight: $font-weight-titulo-2;
       color: $cor-black;
       text-align: center;
-      font-weight: 800;
       cursor: default;
 
       span { 
@@ -46,8 +46,8 @@
       min-width: 260px;
       margin: 0 auto;
       height: auto;
-      font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
-      line-height: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
       color: $cor-black;
 
       @media (max-width: 840px) {
@@ -88,9 +88,9 @@
           width: 100%;
           height: auto;
           font-family: $font-titulo;
-          font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
-          line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
-          font-weight: 800;
+          font-size: $font-size-titulo-2;
+          line-height: $font-height-titulo-2;
+          font-weight: $font-weight-titulo-2;
           text-align: center;
           color: $cor-black;
 
@@ -103,8 +103,8 @@
           width: 100%;
           height: auto;
           text-align: center;
-          font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
-          line-height: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+          font-size: $font-size-texto-3;
+          line-height: $font-height-texto-3;
           color: $cor-black;
         }
       }
@@ -132,9 +132,9 @@
         width: 100%;
         height: auto;
         font-family: $font-titulo;
-        font-size: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
-        line-height: clamp(2rem, 1.7692rem + 1.0256vw, 3rem);
-        font-weight: 800;
+        font-size: $font-size-titulo-2;
+        line-height: $font-height-titulo-2;
+        font-weight: $font-weight-titulo-2; 
         text-align: center;
         color: $cor-black;
         margin-bottom: 32px;
@@ -173,9 +173,10 @@
           gap: 8px;
           margin-bottom: 16px;
           color: $cor-black;
-          font-size: 24px;
+          font-size: $font-size-titulo-1;
+          line-height: $font-height-titulo-1;
+          font-weight: $font-weight-titulo-1;
           font-family: $font-titulo;
-          font-weight: 700;
 
           img {
             width: 24px;
@@ -186,8 +187,8 @@
         &__dd { 
           width: 280px;
           height: auto;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: $font-size-texto-3;
+          line-height: $font-height-texto-3;
           font-family: $font-texto;
         }
 

@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   min-height: 50vh;
-  padding: 48px 0;
+  padding: 56px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,9 +26,9 @@
       min-width: 280px;
       margin: 0 auto;
       height: auto;
-      font-size: clamp(1.5rem, 1.1538rem + 1.5385vw, 3rem);
-      line-height: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem);
-      font-weight: 800;
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
+      font-weight: $font-weight-titulo-2;
 
       span {
         color: $cor-mae-principal;
@@ -40,8 +40,8 @@
       min-width: 280px;
       margin: 0 auto;
       height: auto;
-      font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
-      line-height: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
       color: $cor-black;
     }
 
