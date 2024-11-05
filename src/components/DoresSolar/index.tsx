@@ -23,10 +23,10 @@ const DoresSolar = () => {
           Imagine se você pudesse direcionar esse dinheiro para:
         </p>
         <ul className={Style.detalhe__textos__lista}>
-          <li> ♦ Educação dos filhos</li>
-          <li> ♦ Expansão do seu negócio</li>
-          <li> ♦ Melhorias na fazenda</li>
-          <li> ♦ Momentos de lazer em família</li>
+          <li> ◆ Educação dos filhos</li>
+          <li> ◆ Expansão do seu negócio</li>
+          <li> ◆ Melhorias na fazenda</li>
+          <li> ◆ Momentos de lazer em família</li>
         </ul>
         <p className={classNames({
           [Style.detalhe__textos__paragrafo]: true,
