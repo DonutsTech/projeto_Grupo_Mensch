@@ -8,7 +8,7 @@ import classNames from 'classnames';
 const DoresSolar = () => {
 
   return (
-    <div className={Style.detalhe}>
+    <section className={Style.detalhe} aria-label='Por que você ainda usa energia convencional ?'>
       <h2 className={Style.detalhe__titulo}>Até quando você vai ficar pagando essa <br /><span>taxa</span> de <span>energia</span>? </h2>
       <div className={Style.detalhe__textos}>
         <p className={classNames({
@@ -36,7 +36,7 @@ const DoresSolar = () => {
         </p>
       </div>
       <Image src={bg} alt='doresSolar' className={Style.detalhe__bg} />
-    </div>
+    </section>
   )
 };
 
