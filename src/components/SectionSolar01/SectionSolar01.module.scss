@@ -1,0 +1,17 @@
+@use 'variaveis'as *;
+
+.section { 
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  background-color: $cor-energia-principal;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
+  margin: 0;
+  padding-bottom: 120px;
+}

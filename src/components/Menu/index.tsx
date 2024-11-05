@@ -82,7 +82,7 @@ const Menu = ({ page }: IProps) => {
               })}>
                 <ul className={Style.menuDesk__nav__list__item__dropdown__list}>
                   <li>
-                    <Link href={"/"} title='Conheça a Mensch Energia Solar'>
+                    <Link href={"/energiasolar"} target='_top' title='Conheça a Mensch Energia Solar'>
                       <Image src={solar} alt="Solar Logo" />
                     </Link>
                   </li>
@@ -214,7 +214,7 @@ const Menu = ({ page }: IProps) => {
         [Style.menuMobile__container__marcas__open]: modal && marcas && (windowWidth < 840),
       })}>
         <div className={Style.menuMobile__container__marcas__logoBox}>
-          <Link href={"/"} title='Conheça a Mensch Energia Solar'>
+          <Link href={"/energiasolar"} target='_top' title='Conheça a Mensch Energia Solar'>
             <Image src={solar} alt="Mesnch Solar Logo" />
           </Link>
           <Link href={"/"} title='Conheça a Mensch Health'>

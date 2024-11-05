@@ -57,7 +57,9 @@ const Slider = () => {
 
             <div className={Style.slider__submarca__btn}>
 
-              <button className={classNames({
+              <button 
+                onClick={() => window.open('/energiasolar', '_top')}
+              className={classNames({
                 [Style.slider__submarca__btn__btn]: true,
                 [Style.slider__submarca__btn__btn_solar]: true,
               })}
