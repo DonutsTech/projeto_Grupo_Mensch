@@ -1,7 +1,10 @@
 
-// import SectionSolar01 from '../SectionSolar01';
 
 import DoresSolar from '../DoresSolar';
+import EnergiaSolar from '../EnergiaSolar';
+import ServicosEnergia from '../ServicosEnergia';
+
+
 import Style from './MainEnergiaSolar.module.scss';
 
 
@@ -12,7 +15,8 @@ const MainEnergiaSolar = () => {
   return (
     <main className={Style.main}>
       <DoresSolar />
-      {/* <SectionSolar01 /> */}
+      <EnergiaSolar />
+      <ServicosEnergia />
     </main>
   )
 };

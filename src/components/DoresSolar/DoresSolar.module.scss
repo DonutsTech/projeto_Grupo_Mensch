@@ -1,93 +1,110 @@
   @use 'variaveis'as *;
 
-  .detalhe { 
+  .section { 
     width: 100%;
     height: auto;
-    // min-height: 100vh;
-    padding: 180px 0 136px 0;
-    clip-path: polygon(100% 0, 100% 90%, 0% 100%, 0 10%);
+    min-height: 100vh;
+    padding: 48px 0;
     background-color: $cor-energia-principal;
     background: $cor-energia-2;
     background: linear-gradient(to left, $cor-energia-2 0%, $cor-energia-principal 100%);
     position: relative;
     top: 0;
     left: 0;
-    margin-top: -120px;
     z-index: 1;
+    clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
+    margin: 0;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
-    @media (max-width: 840px) { 
-      padding: 240px 0 ;
-    }
+    // @media (max-width: 840px) { 
+    //   padding: 240px 0 ;
+    // }
 
-    &__titulo { 
-      width: 70%;
-      min-width: 300px;
-      text-align: center;
-      font-family: $font-titulo;
-      font-size: $font-size-titulo-1;
-      line-height: $font-height-titulo-1;
-      font-weight: $font-weight-titulo-1;
-      color: $cor-white;
-      font-weight: 800;
-      margin-bottom: 32px;
-
-      span { 
-        animation: blimp 1s alternate infinite;
-      }
-    }
-
-    &__textos {
-      width: 60%;
-      min-width: 260px;
+    &__content { 
+      width: 100%;
       height: auto;
-      align-self: self-end;
-      // padding: 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
+      justify-content: flex-start;
       gap: 24px;
-
-      @media (max-width: 840px) { 
-        align-self: center;
-        align-items: flex-start;
+    
+      @media (max-width: 840px) {
+        padding: 120px 0;
       }
-
-      &__paragrafo { 
-        width: 90%;
-        min-width: 280px;
-        margin: 0 auto;
-        height: auto;
-        font-size: $font-size-texto-2;
-        line-height: $font-height-texto-2;
+    
+    
+      &__titulo { 
+        width: 70%;
+        min-width: 300px;
+        text-align: center;
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-1;
+        line-height: $font-height-titulo-1;
+        font-weight: $font-weight-titulo-1;
         color: $cor-white;
-        font-weight: 500;
+        font-weight: 800;
+        margin-bottom: 32px;
+  
+        span { 
+          animation: blimp 1s alternate infinite;
+        }
       }
-
-      &__lista {
-        width: 90%;
-        min-width: 280px;
+  
+      &__textos {
+        width: 60%;
+        min-width: 260px;
         height: auto;
-        font-size: $font-size-texto-2;
-        line-height: $font-height-texto-2;
-        color: $cor-white;
-        font-weight: 500;
-        gap: 8px;
-
-        @media (max-width: 840px) {
+        align-self: self-end;
+        // padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        gap: 24px;
+  
+        @media (max-width: 840px) { 
           align-self: center;
-          align-items: center;
+          align-items: flex-start;
+        }
+  
+        &__paragrafo { 
+          width: 90%;
+          min-width: 280px;
+          margin: 0 auto;
+          height: auto;
+          font-size: $font-size-texto-2;
+          line-height: $font-height-texto-2;
+          color: $cor-white;
+          font-weight: 500;
+        }
+  
+        &__lista {
+          width: 90%;
+          min-width: 280px;
+          height: auto;
+          font-size: $font-size-texto-2;
+          line-height: $font-height-texto-2;
+          color: $cor-white;
+          font-weight: 500;
+          gap: 8px;
+  
+          @media (max-width: 840px) {
+            align-self: center;
+            align-items: center;
+          }
         }
       }
     }
 
+
     &__bg {
-      width: 30%;
+      width: 40%;
       min-width: 300px;
       height: auto;
       bottom: 0;
