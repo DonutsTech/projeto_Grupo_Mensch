@@ -37,7 +37,7 @@ const ServicosEnergia = () => {
       </div>
       <div className={Style.servicos__cta}>
         <p className={Style.servicos__cta__texto}>
-          Faça sua simulação e veja como podemos ajudar a reduzir seus gastos!
+          Faça sua simulação e veja como podemos reduzir os seus gastos!
         </p>
         <Link className={Style.servicos__cta__btn} href={'/energiasolar'}>
           Simule Agora
