@@ -91,11 +91,6 @@
     margin-top: 32px;
     gap: 24px;
 
-    @media (max-width: 840px) {
-      flex-direction: column;
-      align-items: center;
-    }
-
     // margin-top: 24px;
     &__textos {
       width: 40%;
@@ -126,6 +121,23 @@
       min-width: 300px;
       margin: 0 auto;
       height: auto;
+    }
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      align-items: center;
+
+      &__textos { 
+        width: 90%;
+        min-width: 300px;
+      }
+
+      &__galeria { 
+        width: 90%;
+        min-width: 300px;
+        margin: 0 auto;
+        height: auto;
+      }
     }
   }
   &__cta { 
