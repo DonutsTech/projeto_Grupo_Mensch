@@ -40,7 +40,7 @@ const EnergiaSolar = () => {
         <FAQEnergia />
         <div className={Style.section__argumento__chamada}>
           <p className={Style.section__argumento__chamada__texto}>
-            Tem mais perguntas? Não hesite em entrar em contato! Nossa equipe está pronta para ajudar e fornecer soluções personalizadas
+            Tem mais perguntas? <br /> Nossa equipe está pronta para ajudar e fornecer soluções personalizadas.
           </p>
           <Link className={Style.section__argumento__chamada__btn} href={'/energiasolar'}>
             Falar conosco
