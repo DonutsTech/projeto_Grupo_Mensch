@@ -1,4 +1,4 @@
-
+"use client";
 
 import DoresSolar from '../DoresSolar';
 import EnergiaSolar from '../EnergiaSolar';
