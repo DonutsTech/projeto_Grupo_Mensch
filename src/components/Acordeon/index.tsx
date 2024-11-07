@@ -18,7 +18,7 @@ const Acordeon = ({ pergunta, resposta, aberto, onTogle }: IProps) => {
 
   useEffect(() => {
     if (aberto && respostaRef.current !== null) { 
-      const alturaResposta = respostaRef.current.scrollHeight + 240;
+      const alturaResposta = respostaRef.current.scrollHeight + 300;
       setAltura(alturaResposta);
     }
   }, [aberto])

@@ -43,7 +43,7 @@ const EnergiaSolar = () => {
             Tem mais perguntas? <br /> Nossa equipe está pronta para ajudar e fornecer soluções personalizadas.
           </p>
           <Link className={Style.section__argumento__chamada__btn} href={'/energiasolar'}>
-            Falar conosco
+            Fale conosco
           </Link>
         </div>
       </div>
