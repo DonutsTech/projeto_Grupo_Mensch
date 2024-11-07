@@ -1,0 +1,108 @@
+@use 'variaveis' as *;
+
+.galeria { 
+  width: 90%;
+  min-width: 280px;
+  margin: 0 auto;
+  height: auto;
+
+  &__content { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    animation: fadeIn 300ms alternate ease-in-out;
+
+    &__selo { 
+      width: clamp(3rem, 1.9615rem + 4.6154vw, 7.5rem);
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      z-index: 1;
+    }
+
+    &__img { 
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
+    }
+
+    &__ficha { 
+      width: 90%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 16px;
+
+      &__titulo { 
+        width: 100%;
+        height: auto;
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-1;
+        line-height: $font-height-titulo-1;
+        font-weight: $font-weight-titulo-1;
+        color: $cor-white;
+        cursor: default;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto { 
+        width: 100%;
+        height: auto;
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
+        color: $cor-white;
+        cursor: default;
+        margin-top: 8px;
+      }
+      
+      &__lista { 
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+
+        &__item { 
+          width: 100%;
+          height: auto;
+          font-size: $font-size-texto-1;
+          line-height: $font-height-texto-1;
+          color: $cor-white;
+          cursor: default;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+    }
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
