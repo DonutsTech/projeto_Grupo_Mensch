@@ -9,7 +9,7 @@ import Link from 'next/link';
 const ServicosEnergia = () => {
 
   return (
-    <section className={Style.servicos}>
+    <section className={Style.servicos} aria-label='Como é que funciona os serviços da Mensh Energia Solar' id='servicos_solar'>
       <div className={Style.servicos__head}>
         <h2 className={Style.servicos__head__titulo}>
           Uma Jornada <br />de <span>Servir</span> e <br /><span>Transformar</span>.
