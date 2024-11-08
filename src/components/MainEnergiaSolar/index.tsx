@@ -2,6 +2,7 @@
 
 import DoresSolar from '../DoresSolar';
 import EnergiaSolar from '../EnergiaSolar';
+import ProvaSolar from '../ProvaSolar';
 import ServicosEnergia from '../ServicosEnergia';
 
 
@@ -17,6 +18,7 @@ const MainEnergiaSolar = () => {
       <DoresSolar />
       <EnergiaSolar />
       <ServicosEnergia />
+      <ProvaSolar />
     </main>
   )
 };
