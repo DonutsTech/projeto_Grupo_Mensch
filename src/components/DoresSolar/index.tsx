@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Style from './DoresSolar.module.scss';
 
-import bg from './assets/doresSolar.png';
+import bg from './assets/doresSolar2.png';
 import classNames from 'classnames';
 
 const DoresSolar = () => {

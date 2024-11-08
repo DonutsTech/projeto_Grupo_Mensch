@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 import Style from './AboutEnergia.module.scss';
 
+import mensch from './assets/mensch.jpg';
 import suporte from './assets/suporte.jpg';
 import tecnicos from './assets/tecnicos.jpg';
-import atendimento from "./assets/atendimento.jpg";
 
 import Image from 'next/image';
 
@@ -33,13 +33,13 @@ const AboutEnergia = () => {
     <div className={Style.about}>
       {equipe === 1 && (
         <div className={Style.about__content}>
-          <Image src={suporte} alt="Suporte" className={Style.about__content__img} />
+          <Image src={mensch} alt="Suporte" className={Style.about__content__img} />
           <div className={Style.about__content__textos}>
             <h4 className={Style.about__content__textos__titulo}>
-              <span>Suporte Técnico</span> e <span>Pós Vendas</span>
+              <span>Grupo Mensch</span>
             </h4>
             <p className={Style.about__content__textos__paragrafo}>
-              Nossa equipe de suporte e pós-vendas é oferece atendimento excepcional e resolve qualquer dúvida ou problema. Com especialistas em energia solar, técnicos certificados e profissionais de atendimento treinados, estamos disponíveis para resolver problemas técnicos, realizar manutenção, oferecer treinamento e garantir eficiência máxima. Conte conosco para resposta rápida, suporte técnico especializado e confiança total em sua     escolha.
+              Especialistas em energia solar fotovoltaica, com equipe de engenharia própria e foco em qualidade e excelência. Movidos pela paixão em promover sustentabilidade e economia, oferecemos soluções personalizadas para uma energia mais limpa e eficiente. Seu parceiro confiável.
             </p>
           </div>
         </div>
@@ -52,20 +52,20 @@ const AboutEnergia = () => {
               <span>Técnicos Certificados</span>
             </h4>
             <p className={Style.about__content__textos__paragrafo}>
-              Nossa equipe de técnicos é altamente qualificada e treinada, com anos de experiência em instalação e manutenção de sistemas de energia solar. Eles seguem rigorosos padrões de segurança e qualidade.
+              Contamos com uma equipe de técnicos especializados, com ampla experiência em instalação e manutenção de sistemas de energia solar. Treinados para atuar com eficiência, eles seguem normas rígidas de segurança e qualidade, assegurando soluções confiáveis e de alto padrão para suas necessidades energéticas.
             </p>
           </div>
         </div>
       )}
       {equipe === 3 && (
         <div className={Style.about__content}>
-          <Image src={atendimento} alt="atendimento" className={Style.about__content__img} />
+          <Image src={suporte} alt="Suporte" className={Style.about__content__img} />
           <div className={Style.about__content__textos}>
             <h4 className={Style.about__content__textos__titulo}>
-              <span>Atendimento</span>
+              <span>Suporte Técnico</span>
             </h4>
             <p className={Style.about__content__textos__paragrafo}>
-              Estamos aqui para você! Nossa equipe de atendimento está disponível para resolver suas dúvidas e oferecer soluções personalizadas. Entre em contato conosco e descubra como podemos ajudá-lo a encontrar a melhor solução para suas necessidades.
+            Nossa equipe de suporte e pós-vendas oferece atendimento excepcional para solucionar qualquer dúvida ou necessidade. Com especialistas em energia solar, técnicos certificados e profissionais treinados, garantimos assistência técnica, manutenção, treinamento e máxima eficiência. Conte com resposta rápida, suporte especializado e total confiança na sua escolha.
             </p>
           </div>
         </div>
