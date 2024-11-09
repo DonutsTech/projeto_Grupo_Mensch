@@ -52,7 +52,7 @@ const ServicosEnergia = () => {
             Somos Mensch <span>Energia Solar</span>
           </h2>
           <h3 className={Style.servicos__about__box1__subtitulo}>
-            Transformando a energia, transformando vidas
+          Uma equipe profissional, comprometida e que respeita a sua família e seu dinheiro!
           </h3>
           <AboutEnergia />
           <SelosSolar />

@@ -1,0 +1,292 @@
+@use 'variaveis'as *;
+
+.cta {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: $cor-white;
+  padding: 144px 0;
+  clip-path: polygon(0 120px, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  top: -120px;
+  overflow: hidden;
+  z-index: 1;
+
+  &__titulo {
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto;
+    font-family: $font-titulo;
+    font-size: $font-size-titulo-3;
+    line-height: $font-height-titulo-3;
+    font-weight: $font-weight-titulo-3;
+    color: $cor-black;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 32px;
+
+    span {
+      color: $cor-energia-principal;
+    }
+
+    @media (max-width: 710px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__texto {
+    width: 60%;
+    min-width: 280px;
+    margin: 0 auto;
+    font-size: $font-size-texto-3;
+    line-height: $font-height-texto-3;
+    color: $cor-black;
+    text-align: center;
+  }
+
+  &__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 64px;
+
+    &__img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+      clip-path: polygon(100% 0, 0 10%, 0% 100%, 100% 90%);
+    }
+
+    &__box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 24px;
+
+      &__textos {
+        width: 40%;
+        min-width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+
+        &__titulo {
+          width: 100%;
+          height: auto;
+          font-family: $font-titulo;
+          font-size: $font-size-titulo-2;
+          line-height: $font-height-titulo-2;
+          font-weight: $font-weight-titulo-2;
+          color: $cor-black;
+          text-align: right;
+          cursor: default;
+
+          span {
+            color: $cor-energia-principal;
+          }
+        }
+
+        &__lista {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 16px;
+
+          &__item {
+            width: 100%;
+            height: auto;
+            font-size: $font-size-texto-1;
+            line-height: $font-height-texto-1;
+            color: $cor-black;
+            text-align: right;
+            cursor: default;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            gap: 8px;
+
+            span {
+              color: $cor-energia-principal;
+            }
+          }
+        }
+      }
+
+      &__2 {
+        width: 40%;
+        min-width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+
+        &__video {
+          width: 100%;
+          position: relative;
+          min-width: 300px;
+          height: auto;
+          border-radius: 16px;
+          border: 5px solid $cor-energia-principal;
+          z-index: 3;
+        }
+
+        &__btn {
+          width: 220px;
+          height: 48px;
+          font-size: 16px;
+          text-decoration: none;
+          color: $cor-white;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $cor-energia-principal;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+
+          &:hover {
+            scale: 0.9;
+            background-color: $cor-black;
+            color: $cor-energia-principal;
+            box-shadow: none;
+            transition: all 200ms ease-in-out alternate;
+
+          }
+        }
+
+      }
+
+
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+
+        &__textos {
+
+          &__titulo {
+            text-align: center;
+
+            br {
+              display: none;
+            }
+          }
+
+          &__lista {
+            align-items: center;
+
+            &__item {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__financiamento {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 72px;
+
+    &__titulo {
+      width: 80%;
+      min-width: 300px;
+      margin: 0 auto;
+      font-family: $font-titulo;
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
+      font-weight: $font-weight-titulo-2;
+      color: $cor-black;
+      text-align: center;
+      cursor: default;
+
+      span {
+        color: $cor-energia-principal;
+      }
+    }
+
+    &__bancos {
+      width: 100%;
+      height: 128px;
+      background-color: $cor-energia-principal;
+      clip-path: polygon(100% 0, 0 10%, 0% 100%, 100% 90%);
+    }
+
+    &__paragrafo {
+      width: 80%;
+      min-width: 280px;
+      margin: 0 auto;
+      font-family: $font-texto;
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
+      color: $cor-black;
+      text-align: flex-start;
+    }
+
+    &__subtitulo {
+      width: 80%;
+      min-width: 300px;
+      margin: 0 auto;
+      font-family: $font-titulo;
+      font-size: $font-size-titulo-1;
+      line-height: $font-height-titulo-1;
+      font-weight: $font-weight-titulo-1;
+      color: $cor-black;
+      text-align: center;
+    }
+
+
+      &__logos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 24px;
+        margin-top: 32px;        
+
+        &__img {
+          width: auto;
+          height: clamp(2.5rem, 1.2308rem + 5.641vw, 8rem);
+          object-fit: cover;
+          object-position: center;
+          cursor: pointer;
+
+          &:hover { 
+            scale: 0.9;
+            transition: all 200ms ease-in-out alternate;
+          }
+        }
+      
+    }
+
+  }
+
+}

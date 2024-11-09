@@ -60,8 +60,7 @@ const ProvaSolar = () => {
     <section className={Style.prova} aria-label="Provas Sociais">
       <h2 className={Style.prova__titulo}>Nosso Sucesso!</h2>
       <h3 className={Style.prova__subtitulo}>
-        Veja o que nossos <span>Clientes</span> têm a dizer sobre nossa{" "}
-        <span>Jornada</span>.
+        Nossos clientes comprovam nosso compromisso com você.
       </h3>
       <div className={Style.prova__content}>
         <Swiper
@@ -74,7 +73,7 @@ const ProvaSolar = () => {
           className={Style.swiper}
         >
           {coments.map((coment) => (
-            <SwiperSlide key={coment.id} style={{width: '290px', height: '550px', display: "flex", alignItems: 'center'}}>
+            <SwiperSlide key={coment.id} style={{ width: '290px', height: '550px', display: "flex", alignItems: 'center' }}>
               <div className={Style.prova__content__card}>
                 <div className={Style.prova__content__card__foto}>
                   <Image
@@ -110,6 +109,14 @@ const ProvaSolar = () => {
           ))}
 
         </Swiper>
+      </div>
+      <div className={Style.prova__textos}>
+        <p className={Style.prova__textos__paragrafo}>
+        ◆ Empresa mais bem avaliada no Google da nossa região.
+        </p>
+        <p className={Style.prova__textos__paragrafo}>
+        ◆ 100% dos clientes da Mensch Energia Solar estão economizando muito dinheiro!
+        </p>
       </div>
       <Image src={bg} alt="Placa Solar" className={Style.prova__bg} />
     </section>

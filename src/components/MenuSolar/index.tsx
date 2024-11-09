@@ -87,7 +87,11 @@ const MenuSolar = () => {
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"/energiasolar"}
+              <Link href={"#cta_solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Simule</p>
               </Link>
@@ -125,11 +129,12 @@ const MenuSolar = () => {
         })}
         >
           <div className={Style.menuMobile__container__logoBox}>
-            <Link href={"/energiasolar"}>
+            <Link href={" "}>
               <Image src={solar}
                 alt='Logo Grupo Mensch'
                 className={Style.menuMobile__container__logoBox__logo}
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                   setModal(!modal);
                 }}
@@ -154,17 +159,22 @@ const MenuSolar = () => {
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
                 <Link href={"#servicos_solar"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
-                }} >
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                  }} >
                   <p>Serviços</p>
                 </Link>
               </li>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"/energiasolar"}>
+                <Link href={"#cta_solar"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                  }}
+                >
                   <p>Simule</p>
                 </Link>
               </li>
