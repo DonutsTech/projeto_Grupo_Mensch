@@ -229,6 +229,13 @@
       span {
         color: $cor-energia-principal;
       }
+
+      @media (max-width: 840px) {
+        br {
+          display: none;
+        }
+        
+      }
     }
 
     &__bancos {
