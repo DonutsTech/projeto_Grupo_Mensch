@@ -1,6 +1,8 @@
 
 import Image from 'next/image';
 import Style from './ServicosEnergia.module.scss';
+import Scroll from 'react-scroll';
+
 
 import logo from './assets/mensch_solar.svg';
 import GaleriaEnergia from '../GaleriaEnergia';
@@ -42,7 +44,14 @@ const ServicosEnergia = () => {
         <p className={Style.servicos__cta__texto}>
           Faça sua simulação e veja como podemos reduzir os seus gastos!
         </p>
-        <Link className={Style.servicos__cta__btn} href={'/energiasolar'}>
+        <Link className={Style.servicos__cta__btn}
+          href={"#cta_solar"}
+          onClick={(e) => {
+            e.preventDefault();
+            Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+          }}
+
+        >
           Simule Agora
         </Link>
       </div>
@@ -52,7 +61,7 @@ const ServicosEnergia = () => {
             Somos Mensch <span>Energia Solar</span>
           </h2>
           <h3 className={Style.servicos__about__box1__subtitulo}>
-          Uma equipe profissional, comprometida e que respeita a sua família e seu dinheiro!
+            Uma equipe profissional, comprometida e que respeita a sua família e seu dinheiro!
           </h3>
           <AboutEnergia />
           <SelosSolar />

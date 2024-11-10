@@ -1,5 +1,6 @@
 "use client";
 
+import ContatosSolar from '../ContatosSolar';
 import CTASolar from '../CTASolar';
 import DoresSolar from '../DoresSolar';
 import EnergiaSolar from '../EnergiaSolar';
@@ -21,6 +22,7 @@ const MainEnergiaSolar = () => {
       <ServicosEnergia />
       <ProvaSolar />
       <CTASolar />
+      <ContatosSolar />
     </main>
   )
 };

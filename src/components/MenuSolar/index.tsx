@@ -99,7 +99,11 @@ const MenuSolar = () => {
             <li
               className={Style.menuDesk__nav__list__item} >
               <Link
-                href={"/energiasolar"}
+                href={"/#contatos__solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Fale conosco</p>
               </Link>
@@ -179,7 +183,13 @@ const MenuSolar = () => {
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
-                <Link href={'/energiasolar'}>
+                <Link 
+                href={"/#contatos__solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                }}
+                >
                   <p>Fale conosco</p>
                 </Link>
               </li>

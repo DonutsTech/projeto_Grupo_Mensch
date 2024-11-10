@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Style from './EnergiaSolar.module.scss';
+import Scroll from 'react-scroll';
 
 import img1 from './assets/casa.png';
 import FAQEnergia from '../FAQEnergia';
@@ -42,7 +43,15 @@ const EnergiaSolar = () => {
           <p className={Style.section__argumento__chamada__texto}>
             Tem mais perguntas? <br /> Nossa equipe está pronta para ajudar e fornecer soluções personalizadas.
           </p>
-          <Link className={Style.section__argumento__chamada__btn} href={'/energiasolar'}>
+          <Link 
+            className={Style.section__argumento__chamada__btn} 
+            href={'#contatos__solar'}
+            onClick={(e) => {
+              e.preventDefault();
+              Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+            }}
+            
+            >
             Fale conosco
           </Link>
         </div>
