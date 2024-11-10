@@ -8,7 +8,7 @@ const MainSocial = () => {
 
   return (
     <main className={Style.main}>
-      <div className={Style.main__detalhe} />
+      {/* <div className={Style.main__detalhe} /> */}
       <Acao />
       <ChamadaSocial />
     </main>
