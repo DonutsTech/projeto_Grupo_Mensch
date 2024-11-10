@@ -14,8 +14,58 @@ import linkedin from './assets/linkedin_icon.svg';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { FormEvent, useCallback, useEffect, useState } from 'react';
+import { FormContatoMascher } from '@/types';
+import { phone } from '@/util/mask';
+import { validation } from '@/util/validation';
 
 const Contatos = () => {
+  const [form, setForm] = useState({} as FormContatoMascher)
+  const [mensagem, setMensagem] = useState<string>('')
+
+  const handleFormChange = useCallback(
+    (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      if (e.currentTarget.name === 'telefone') {
+        e = phone(e)
+      }
+      setForm({
+        ...form,
+        [e.currentTarget.name]: e.currentTarget.value,
+      });
+    },
+    [form],
+  );
+
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const FormData: FormContatoMascher = {
+      nome: (e.currentTarget.elements.namedItem('nome') as HTMLInputElement).value,
+      email:  (e.currentTarget.elements.namedItem('email') as HTMLInputElement).value,
+      telefone:  (e.currentTarget.elements.namedItem('telefone') as HTMLInputElement).value,
+      mensagem:  (e.currentTarget.elements.namedItem('mensagem') as HTMLInputElement).value,
+    }
+
+    const mensagem = validation(FormData)
+
+    if (!(mensagem === '')) {
+      setMensagem(mensagem)
+    } else {
+      setForm({} as FormContatoMascher)
+      setMensagem('Mensagem Enviada!')
+    }
+
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (mensagem) {
+        setMensagem('')
+      }
+    }, 10000);
+  }, [mensagem]);
+
+  console.log(form)
 
   return (
     <section className={Style.contatos} id='contatos__mensch' aria-label='Contatos do Grupo Mensch'>
@@ -25,7 +75,7 @@ const Contatos = () => {
 
       <div className={Style.contatos__content}>
 
-        <form className={Style.contatos__content__form} >
+        <form className={Style.contatos__content__form} onSubmit={onSubmit}>
           <label htmlFor='nome' aria-label='Digite o seu nome' />
           <input
             type='text'
@@ -34,7 +84,10 @@ const Contatos = () => {
               [Style.contatos__content__form__input__nome]: true,
             })}
             id='nome'
-            placeholder='Nome'
+            name='nome'
+            placeholder='Nome *'
+            onChange={handleFormChange}
+            value={form.nome === undefined ? '' : form.nome}
           />
           <label htmlFor='email' aria-label='Digite o seu email' />
           <input
@@ -44,7 +97,10 @@ const Contatos = () => {
               [Style.contatos__content__form__input__email]: true,
             })}
             id='email'
+            name='email'
             placeholder='Digite o seu melhor e-mail'
+            onChange={handleFormChange}
+            value={form.email === undefined ? '' : form.email}
           />
           <label htmlFor='telefone' aria-label='Digite o seu telefone' />
           <input
@@ -54,7 +110,11 @@ const Contatos = () => {
               [Style.contatos__content__form__input__telefone]: true,
             })}
             id='telefone'
-            placeholder='Telefone'
+            name='telefone'
+            placeholder='Telefone *'
+            onChange={handleFormChange}
+            minLength={13}
+            value={form.telefone === undefined ? '' : form.telefone}
           />
           <label htmlFor='mensagem' aria-label='Digite sua mensagem' />
           <textarea
@@ -63,9 +123,20 @@ const Contatos = () => {
               [Style.contatos__content__form__input__mensagem]: true,
             })}
             id='mensagem'
+            name='mensagem'
             placeholder='Digite sua mensagem'
+            onChange={handleFormChange}
+            value={form.mensagem === undefined ? '' : form.mensagem}
           />
+          {
+            !(mensagem === '') && (
+              <p>{mensagem}</p>
+            )
+          }
+
           <button className={Style.contatos__content__form__btn} type='submit'>Enviar</button>
+          <span>* campo obrigatório</span>
+
         </form>
 
         <div className={Style.contatos__content__redes}>
