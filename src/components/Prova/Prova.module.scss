@@ -1,13 +1,13 @@
 @use 'variaveis'as *;
 
 .prova {
-  clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
+  clip-path: polygon(0 120px, 0% 100%, 100% calc(100% - 120px), 100% 0%);
   width: 100%;
   height: auto;
   min-height: 100vh;
   background-color: $cor-mae-principal;
   // margin-top: clamp(-5.5rem, -4.8077rem + -3.0769vw, -8.5rem);
-  margin-top: -110px;
+  margin-top: -122px;
   // overflow: auto;
   position: relative;
   z-index: 2;

@@ -1,0 +1,115 @@
+@use 'variaveis'as *;
+
+.acordeon {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__btn {
+    width: 60%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 16px;
+    border: 3px solid $cor-energia-principal;
+    background-color: $cor-energia-claro;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__aberto {
+      background-color: $cor-white;
+    }
+
+    &__box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // padding: 16px;
+      gap: 16px;
+
+      &__pergunta {
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
+        font-weight: 600;
+        color: $cor-black;
+
+        &__aberto {
+          color: $cor-energia-2;
+        }
+      }
+
+      &__icon {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        font-weight: 600;
+        color: $cor-energia-2;
+      }
+
+    }
+
+    &__resposta {
+      width: 90%;
+      min-width: 260px;
+      margin: 0 auto;
+      // height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      overflow: hidden;
+
+      &__aberto {
+        animation: fadeIn 500ms alternate ease-in-out;
+        // padding: 16px;
+        // opacity: 1;
+        height: auto;
+        // max-height: auto;
+      }
+
+      &__texto {
+        width: 90%;
+        min-width: 260px;
+        height: auto;
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
+        color: $cor-black;
+        cursor: default;
+        padding: 16px;
+        border-radius: 8px;
+
+        @media (max-width: 840px) {
+          text-align: center;
+        }
+      }
+    }
+
+
+
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: auto;
+    min-height: 300px;
+  }
+}
+

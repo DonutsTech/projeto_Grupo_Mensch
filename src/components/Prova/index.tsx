@@ -12,11 +12,13 @@ import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 
+import thales from './assets/thales_alves.png';
+
 const Prova = () => {
   const coments = [
     {
       id: 1,
-      nome: "Thalizim Batata",
+      nome: "jonh Doo",
       foto: perfil,
       texto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
@@ -24,11 +26,11 @@ const Prova = () => {
     },
     {
       id: 2,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Thales Alves",
+      foto: thales,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou grato por fazer parte de uma jornada que valoriza o servir e transformar. Aqui, a troca de experiências e o cuidado com as pessoas fazem da nossa marca um verdadeiro exemplo de humanidade e propósito.",
+      link: "https://www.instagram.com/thalesago/",
     },
     {
       id: 3,
@@ -59,8 +61,8 @@ const Prova = () => {
   return (
     <section className={Style.prova} aria-label="Provas Sociais">
       <h2 className={Style.prova__titulo}>
-        Veja o que nossos <span>parceiros</span> têm a dizer sobre nossa{" "}
-        <span>jornada</span>.
+        Veja o que nossos <span>Parceiros</span> têm a dizer sobre nossa{" "}
+        <span>Jornada</span>.
       </h2>
       <div className={Style.prova__content}>
         <Swiper

@@ -1,18 +1,193 @@
 @use 'variaveis'as *;
 
 .section { 
-  position: relative;
+  // position: relative;
   top: -20px;
   width: 100%;
   height: auto;
   min-height: 80vh;
-  // background-color: $cor-energia-principal;
-  padding: 48px 0;
+  background-color: $cor-white;
+  padding: 64px 0 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
+  // clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
   margin: 0;
   padding-bottom: 120px;
-  z-index: 2;
+  // z-index: 2;
+
+  &__argumento { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    &__box1 { 
+      width: 90%;
+      min-width: 320px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 24px;
+
+      @media (max-width: 840px) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      &__textos { 
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        &__titulo { 
+          font-size: $font-size-titulo-2;
+          font-weight: $font-weight-titulo-2;
+          line-height: $font-height-titulo-2;
+          color: $cor-black;
+          cursor: default;
+
+          span {
+
+            &:hover { 
+              color: $cor-energia-principal;
+            }
+
+            @media (max-width: 840px) {
+              color: $cor-energia-principal;
+            }
+          }
+        }
+
+        &__subtitulo { 
+          font-size: $font-size-titulo-1;
+          font-weight: $font-weight-titulo-1;
+          line-height: $font-height-titulo-1;
+          color: $cor-energia-principal;
+          cursor: default;
+        }
+
+        &__texto { 
+          font-size: $font-size-texto-2;
+          line-height: $font-height-texto-2;
+          color: $cor-black;
+          cursor: default;
+        }
+      }
+      
+
+      &__img { 
+        width: 60%;
+        min-width: 300px;
+        height: auto;
+        object-fit: cover;
+        margin-top: -88px;
+      }
+    }
+
+    &__box2 { 
+      width: 90%;
+      min-width: 320px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin: 32px 0;
+
+      &__textos { 
+        width: 90%;
+        min-width: 320px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        &__titulo { 
+          width: 90%;
+          min-width: 300px;
+          margin: 0 auto;
+          font-size: $font-size-titulo-2;
+          font-weight: $font-weight-titulo-2;
+          line-height: $font-height-titulo-2;
+          color: $cor-black;
+          cursor: default;
+          text-align: center;
+          gap: 24px;
+          cursor: default;
+        }
+
+        &__texto {
+          width: 60%;
+          min-width: 280px;
+          margin: 0 auto;
+          font-size: $font-size-texto-2;
+          line-height: $font-height-texto-2;
+          color: $cor-black;
+          cursor: default;
+          text-align: center;
+        }
+      }
+
+    }
+    &__chamada { 
+      width: 90%;
+      min-width: 320px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin-top: 32px;
+
+      &__texto { 
+        width: 60%;
+        min-width: 280px;
+        margin: 0 auto;
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
+        color: $cor-black;
+        cursor: default;
+        text-align: center;
+      }
+
+      &__btn { 
+        text-decoration: none;
+        width: 156px;
+        height: 48px;
+        background-color: $cor-energia-principal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        color: $cor-white;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          scale: 0.9;
+          background-color: $cor-black;
+          color: $cor-energia-principal;
+          box-shadow: none;
+          transition: all 200ms ease-in-out;
+
+        }
+
+      }
+    }
+  }
 }

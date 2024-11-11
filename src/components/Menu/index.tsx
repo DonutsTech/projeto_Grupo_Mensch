@@ -87,7 +87,7 @@ const Menu = ({ page }: IProps) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/"} title='Conheça a Mensch Health'>
+                    <Link href={"/health"} target='_top' title='Conheça a Mensch Health'>
                       <Image src={health} alt="Health Logo" />
                     </Link>
                   </li>
@@ -217,7 +217,7 @@ const Menu = ({ page }: IProps) => {
           <Link href={"/energiasolar"} target='_top' title='Conheça a Mensch Energia Solar'>
             <Image src={solar} alt="Mesnch Solar Logo" />
           </Link>
-          <Link href={"/"} title='Conheça a Mensch Health'>
+          <Link href={"/health"} target='_top' title='Conheça a Mensch Health'>
             <Image src={health} alt='Mensch Health Logo' />
           </Link>
           {/* <Link href={"/"} title='Conheça a Mensch Instalar'>  */}

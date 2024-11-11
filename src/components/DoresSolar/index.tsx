@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Style from './DoresSolar.module.scss';
 
-import bg from './assets/doresSolar.png';
+import bg from './assets/doresSolar2.png';
 import classNames from 'classnames';
 
 const DoresSolar = () => {
@@ -15,7 +15,7 @@ const DoresSolar = () => {
           <p className={classNames({
             [Style.section__content__textos__paragrafo]: true,
             [Style.section__content__textos__paragrafo__1]: true,
-          })}> Você está cansado de ver sua conta de energia elétrica sugar seu orçamento? Cada mês, mais dinheiro vai para pagar a conta, em vez de investir em coisas que realmente importam para sua família, negócio ou fazenda.
+          })}> Você está cansado de ver sua conta de energia elétrica sugar seu orçamento? Cada mês, mais dinheiro vai para pagar a conta, em vez de investir em coisas que realmente importam para sua família, negócio ou fazenda?
           </p>
           <p className={classNames({
             [Style.section__content__textos__paragrafo]: true,

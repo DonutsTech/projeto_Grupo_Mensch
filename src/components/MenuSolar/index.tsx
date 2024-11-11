@@ -1,5 +1,6 @@
 'use client';
 
+import Scroll from 'react-scroll';
 import Image from 'next/image';
 import Style from './MenuSolar.module.scss';
 
@@ -62,7 +63,11 @@ const MenuSolar = () => {
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"/energiasolar"} 
+              <Link href={"#energia_solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('energia_solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Energia Solar</p>
               </Link>
@@ -70,7 +75,11 @@ const MenuSolar = () => {
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"/energiasolar"} 
+              <Link href={"#servicos_solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Serviços</p>
               </Link>
@@ -78,7 +87,11 @@ const MenuSolar = () => {
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"/energiasolar"} 
+              <Link href={"#cta_solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Simule</p>
               </Link>
@@ -86,7 +99,11 @@ const MenuSolar = () => {
             <li
               className={Style.menuDesk__nav__list__item} >
               <Link
-                href={"/energiasolar"}
+                href={"/#contatos__solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                }}
               >
                 <p>Fale conosco</p>
               </Link>
@@ -116,11 +133,12 @@ const MenuSolar = () => {
         })}
         >
           <div className={Style.menuMobile__container__logoBox}>
-            <Link href={"/energiasolar"}>
+            <Link href={" "}>
               <Image src={solar}
                 alt='Logo Grupo Mensch'
                 className={Style.menuMobile__container__logoBox__logo}
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                   setModal(!modal);
                 }}
@@ -132,26 +150,46 @@ const MenuSolar = () => {
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"/energiasolar"}>
+                <Link href={"#energia_solar"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Scroll.scroller.scrollTo('energia_solar', { duration: 500, delay: 0, smooth: true });
+                  }}
+                >
                   <p>Energia Solar</p>
                 </Link>
               </li>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"/energiasolar"}>
+                <Link href={"#servicos_solar"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                  }} >
                   <p>Serviços</p>
                 </Link>
               </li>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"/energiasolar"}>
+                <Link href={"#cta_solar"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                  }}
+                >
                   <p>Simule</p>
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
-                <Link href={'/energiasolar'}>
+                <Link 
+                href={"/#contatos__solar"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                }}
+                >
                   <p>Fale conosco</p>
                 </Link>
               </li>

@@ -227,7 +227,7 @@ const Contatos = () => {
               <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>@grupo.mensch</p>
+              <p>Grupo Mensch</p>
             </div>
 
           </div>
@@ -296,7 +296,7 @@ const Contatos = () => {
               <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer'>
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>@grupo.mensch</p>
+              <p>Grupo Mensch</p>
             </div>
 
       </div>
