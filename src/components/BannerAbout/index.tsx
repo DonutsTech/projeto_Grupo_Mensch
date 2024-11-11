@@ -12,7 +12,7 @@ const BannerAbout = () => {
     <div className={Style.banner}>
     <div className={Style.banner__overlay} />
     <div className={Style.banner__content}>
-      <Image src={logo} alt="Grupo Mensch" className={Style.banner__content__logo} />
+      <Image src={logo} alt="Grupo Mensch" className={Style.banner__content__logo} draggable={false} />
     <h1 className={Style.banner__content__title}>
       Nós somos <span>Mensch</span>.
     </h1>

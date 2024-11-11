@@ -5,7 +5,9 @@
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background-color: $cor-energia-principal;
+  // background-color: $cor-energia-principal;
+  background-color: $cor-energia-2;
+  // background: linear-gradient(to left, $cor-energia-2 0%, $cor-energia-principal 100%);
   margin-top: -128px;
   position: relative;
   z-index: 2;

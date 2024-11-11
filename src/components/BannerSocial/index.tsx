@@ -14,7 +14,12 @@ const BannerSocial = () => {
     <div className={Style.banner__overlay} />
     <div className={Style.banner__content}>
       <div className={Style.banner__content__blobs} >
-        <Image src={carimbo} alt="Grupo Mensh" className={Style.banner__content__blobs__carimbo} />
+        <Image 
+          src={carimbo} 
+          alt="Grupo Mensh" 
+          className={Style.banner__content__blobs__carimbo} 
+          draggable={false}
+        />
         <Blobs />
       </div>
     <h1 className={Style.banner__content__title}>

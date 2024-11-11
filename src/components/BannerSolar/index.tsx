@@ -13,7 +13,7 @@ const BannerSolar = () => {
     <div className={Style.banner}>
       <div className={Style.banner__overlay} />
       <div className={Style.banner__content}>
-        <Image src={logo} alt="Mensh Energia Solar" className={Style.banner__content__logo} />
+        <Image src={logo} alt="Mensh Energia Solar" className={Style.banner__content__logo} draggable={false} />
         <h1 className={Style.banner__content__title}>
         Transforme despesas em <span>economia </span>e <span>conforto</span>.
         </h1>
