@@ -11,7 +11,7 @@ export const validatePhone = (phone: string) => {
 };
 
 export function validation(value: FormContatoMascher) {
-  if (value.nome === '' || value.telefone === '' || value.nome === undefined || value.telefone === undefined ) {
+  if (value.nome.trim() === '' || value.telefone.trim() === '' || value.nome === undefined || value.telefone === undefined ) {
     return 'O nome e o telefone são obrigatórios'
   }
 
