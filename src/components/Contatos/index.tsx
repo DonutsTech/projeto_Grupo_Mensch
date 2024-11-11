@@ -1,23 +1,19 @@
 'use client';
-
 import classNames from 'classnames';
 import Style from './Contatos.module.scss';
-
 import local from './assets/local_icon.svg';
 import email from './assets/email_icon.svg';
 import wpp from './assets/wpp_icon.svg';
 import insta from './assets/insta_icon.svg';
 import face from './assets/face_icon.svg';
 import linkedin from './assets/linkedin_icon.svg';
-
-
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
 import { FormContatoMascher } from '@/types';
 import { phone } from '@/util/mask';
 import { validation } from '@/util/validation';
+import { mensagemGrupoMensch } from '@/util/mensagem';
 
 const Contatos = () => {
   const [form, setForm] = useState({} as FormContatoMascher)
@@ -36,6 +32,37 @@ const Contatos = () => {
     [form],
   );
 
+  const enviarDados = async (formDados: FormContatoMascher) => {
+    try {
+      const response = await fetch('/api/formulario', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'contato@grupomensch.com.br',
+          subject: ' Mensagem Recebida pelo site - Contato do Grupo Mansch',
+          text: mensagemGrupoMensch(formDados)
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.') {
+        throw new Error('Mensagem não enviada. Contate-nos por telefone.')
+      }
+
+      if (!(data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.')) {
+        setForm({} as FormContatoMascher)
+        setMensagem(data.mensagem)
+      }
+
+    } catch (error) {
+      console.error(error)
+      setMensagem('Mensagem não enviada. Contate-nos por telefone.')
+    }
+  }
+
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -51,8 +78,7 @@ const Contatos = () => {
     if (!(mensagem === '')) {
       setMensagem(mensagem)
     } else {
-      setForm({} as FormContatoMascher)
-      setMensagem('Mensagem Enviada!')
+      enviarDados(FormData)
     }
 
   }
@@ -64,8 +90,6 @@ const Contatos = () => {
       }
     }, 10000);
   }, [mensagem]);
-
-  console.log(form)
 
   return (
     <section className={Style.contatos} id='contatos__mensch' aria-label='Contatos do Grupo Mensch'>
