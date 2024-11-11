@@ -12,7 +12,7 @@ const SectionAbout01 = () => {
       <div className={Style.section__content}>
         <div className={Style.section__content__left}>
           <h2 className={Style.section__content__left__titulo}>
-            O Que significa <br /><span>Ser Mensh</span>?
+            O Que significa <br /><span>Ser Mensch</span>?
           </h2>
           <Image src={foto} alt='Foto de Mensh' className={Style.section__content__left__foto} />
         </div>
