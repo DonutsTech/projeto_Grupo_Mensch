@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/react-scroll": "^1.8.10",
     "@types/swiper": "^5.4.3",
+    "axios": "^1.7.7",
     "classnames": "^2.5.1",
     "html-react-parser": "^5.1.18",
     "next": "15.0.1",
@@ -20,6 +21,7 @@
     "projeto_grupo_mensch": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-modal": "^3.16.1",
     "react-scroll": "^1.9.0",
     "sass": "^1.80.4",
     "swiper": "^11.1.14"
@@ -29,6 +31,7 @@
     "@types/nodemailer": "^6.4.16",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-modal": "^3.16.3",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
     "typescript": "^5"
