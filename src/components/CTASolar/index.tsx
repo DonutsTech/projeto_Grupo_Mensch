@@ -6,21 +6,19 @@ import mensch from './assets/grupo_mensch.png';
 import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
-import { useState } from 'react';
-//import { FormEvent, useCallback, useState } from 'react';
-//import { FormSimulacaoSolar } from '@/types';
-//import { cep, currency, phone } from '@/util/mask';
+import { FormEvent, useCallback, useState } from 'react';
+import { FormSimulacaoSolar } from '@/types';
+import { cep, currency, phone } from '@/util/mask';
 import SwiperBancos from '../SwiperBancos';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
-  //const [form, setForm] = useState({} as FormSimulacaoSolar)
+  const [form, setForm] = useState({} as FormSimulacaoSolar)
 
   const toggleModal = () => {
     setOpenImage(!openImage);
   };
 
-  /*
   const handleFormChange = useCallback(
     (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       if (e.currentTarget.name === 'telefone') {
@@ -42,7 +40,7 @@ const CTASolar = () => {
     },
     [form],
   );
-*/
+
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
       <h2 className={Style.cta__titulo}>
@@ -131,9 +129,10 @@ const CTASolar = () => {
         style={{
           overlay: {
             backgroundColor: 'rgba(26, 34, 40, 0.8)',
-            zIndex: '3',
+            zIndex: '30',
           },
         }}
+
       >
         <button type='button' onClick={toggleModal}>x</button>
         <label htmlFor='nome' aria-label='Digite o seu nome' />
@@ -143,7 +142,8 @@ const CTASolar = () => {
             name='nome'
             placeholder='Nome'
             required
-
+            onChange={handleFormChange}
+            value={form.nome === undefined ? '' : form.nome}
           />
         <label htmlFor='telefone' aria-label='Digite o seu telefone' />
           <input
@@ -153,6 +153,8 @@ const CTASolar = () => {
             placeholder='Telefone'
             required
             minLength={13}
+            onChange={handleFormChange}
+            value={form.telefone === undefined ? '' : form.telefone}
           />
         <label htmlFor='CEP' aria-label='Digite o seu CEP' />
           <input
@@ -161,6 +163,9 @@ const CTASolar = () => {
             name='cep'
             placeholder='CEP'
             required
+            minLength={9}
+            onChange={handleFormChange}
+            value={form.cep === undefined ? '' : form.cep}
           />
         <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
           <input
@@ -169,6 +174,8 @@ const CTASolar = () => {
             name='valor'
             placeholder='Valor da Conta De Energia'
             required
+            onChange={handleFormChange}
+            value={form.valor === undefined || form.valor === '0,00' ? '' : form.valor}
           />
       </Modal>
     </section>
