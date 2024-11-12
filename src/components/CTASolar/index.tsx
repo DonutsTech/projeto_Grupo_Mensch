@@ -105,10 +105,10 @@ const CTASolar = () => {
         </h3>
         <div className={Style.cta__financiamento__logos}>
           <Link href={"/"}
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             <Image src={solar} alt="Mensh Energia Solar" className={Style.cta__financiamento__logos__img} />
           </Link>
@@ -117,13 +117,14 @@ const CTASolar = () => {
             rel='noopener noreferrer'
             title='Grupo Mensh'
           >
-          <Image src={mensch} alt="Mensh Energia Solar" className={Style.cta__financiamento__logos__img} />
+            <Image src={mensch} alt="Mensh Energia Solar" className={Style.cta__financiamento__logos__img} />
           </Link>
         </div>
       </div>
       <Modal
         contentLabel='ModalImage'
         isOpen={openImage}
+        ariaHideApp={false}
         onRequestClose={toggleModal}
         className={Style.modal}
         style={{
@@ -141,42 +142,58 @@ const CTASolar = () => {
             id='nome'
             name='nome'
             placeholder='Nome'
+            className={Style.modal__form__input}
             required
             onChange={handleFormChange}
             value={form.nome === undefined ? '' : form.nome}
           />
-        <label htmlFor='telefone' aria-label='Digite o seu telefone' />
+          <label htmlFor='telefone' aria-label='Digite o seu telefone' />
           <input
             type='text'
             id='telefone'
             name='telefone'
             placeholder='Telefone'
+            className={Style.modal__form__input}
             required
             minLength={13}
             onChange={handleFormChange}
             value={form.telefone === undefined ? '' : form.telefone}
           />
-        <label htmlFor='CEP' aria-label='Digite o seu CEP' />
+          <label htmlFor='CEP' aria-label='Digite o seu CEP' />
           <input
             type='text'
             id='CEP'
             name='cep'
             placeholder='CEP'
+            className={Style.modal__form__input}
             required
             minLength={9}
             onChange={handleFormChange}
             value={form.cep === undefined ? '' : form.cep}
           />
-        <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
+          <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
           <input
             type='text'
             id='valor'
             name='valor'
             placeholder='Valor da Conta De Energia'
+            className={Style.modal__form__input}
             required
-            onChange={handleFormChange}
-            value={form.valor === undefined || form.valor === '0,00' ? '' : form.valor}
           />
+          <div className={Style.modal__form__btnBox}>
+            <button
+              className={Style.modal__form__btnBox__btn}
+              type='submit'
+              >
+                Confirmar
+              </button>
+              <p className={Style.modal__form__btnBox__texto}>
+              *Confirmo que, ao realizar a simulação, autorizo o contato da equipe comercial da Mensch Energia Solar por ligação telefônica ou mensagem via WhatsApp.
+              </p>
+          </div>
+        </form>
+
+
       </Modal>
     </section>
   )
