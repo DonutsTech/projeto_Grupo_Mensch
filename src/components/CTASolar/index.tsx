@@ -1,14 +1,47 @@
 "use client";
 import Style from './CTASolar.module.scss';
-
 import Image from 'next/image';
 import bg from './assets/familia2.jpg';
-
 import mensch from './assets/grupo_mensch.png';
 import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
+import Modal from 'react-modal';
+import { useState } from 'react';
+//import { FormEvent, useCallback, useState } from 'react';
+//import { FormSimulacaoSolar } from '@/types';
+//import { cep, currency, phone } from '@/util/mask';
 
 const CTASolar = () => {
+  const [openImage, setOpenImage] = useState<boolean>(false);
+  //const [form, setForm] = useState({} as FormSimulacaoSolar)
+
+  const toggleModal = () => {
+    setOpenImage(!openImage);
+  };
+
+  /*
+  const handleFormChange = useCallback(
+    (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      if (e.currentTarget.name === 'telefone') {
+        e = phone(e)
+      }
+
+      if (e.currentTarget.name === 'valor') {
+        e = currency(e)
+      }
+
+      if (e.currentTarget.name === 'cep') {
+        e = cep(e)
+      }
+
+      setForm({
+        ...form,
+        [e.currentTarget.name]: e.currentTarget.value,
+      });
+    },
+    [form],
+  );
+*/
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
       <h2 className={Style.cta__titulo}>
@@ -49,7 +82,7 @@ const CTASolar = () => {
             <video autoPlay muted loop className={Style.cta__container__box__2__video}>
               <source src="/assets/videos/video_simule.mp4" type="video/mp4" />
             </video>
-            <button className={Style.cta__container__box__2__btn}>
+            <button className={Style.cta__container__box__2__btn} onClick={toggleModal}>
               Simular os custos
             </button>
           </div>
@@ -89,7 +122,54 @@ const CTASolar = () => {
           </Link>
         </div>
       </div>
+      <Modal
+        contentLabel='ModalImage'
+        isOpen={openImage}
+        onRequestClose={toggleModal}
+        className={Style.modal}
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(26, 34, 40, 0.8)',
+            zIndex: '3',
+          },
+        }}
+      >
+        <button type='button' onClick={toggleModal}>x</button>
+        <label htmlFor='nome' aria-label='Digite o seu nome' />
+          <input
+            type='text'
+            id='nome'
+            name='nome'
+            placeholder='Nome'
+            required
 
+          />
+        <label htmlFor='telefone' aria-label='Digite o seu telefone' />
+          <input
+            type='text'
+            id='telefone'
+            name='telefone'
+            placeholder='Telefone'
+            required
+            minLength={13}
+          />
+        <label htmlFor='CEP' aria-label='Digite o seu CEP' />
+          <input
+            type='text'
+            id='CEP'
+            name='cep'
+            placeholder='CEP'
+            required
+          />
+        <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
+          <input
+            type='text'
+            id='valor'
+            name='valor'
+            placeholder='Valor da Conta De Energia'
+            required
+          />
+      </Modal>
     </section>
   )
 };
