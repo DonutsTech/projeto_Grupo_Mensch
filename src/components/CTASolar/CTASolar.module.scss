@@ -235,7 +235,7 @@
         br {
           display: none;
         }
-        
+
       }
     }
 
@@ -278,7 +278,7 @@
         align-items: center;
         justify-content: space-around;
         gap: 24px;
-        margin-top: 32px;        
+        margin-top: 32px;
 
         &__img {
           width: auto;
@@ -287,14 +287,26 @@
           object-position: center;
           cursor: pointer;
 
-          &:hover { 
+          &:hover {
             scale: 0.9;
             transition: all 200ms ease-in-out alternate;
           }
         }
-      
+
     }
 
   }
 
+}
+
+.modal {
+  position: absolute;
+  inset: 40px;
+  border: 1px solid #555;
+  overflow: auto;
+  border-radius: 16px;
+  border: solid 6px $cor-energia-principal;
+  outline: none;
+  padding: 20px;
+  background-color: $cor-white;
 }
