@@ -7,6 +7,7 @@ import bg from './assets/familia2.jpg';
 import mensch from './assets/grupo_mensch.png';
 import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
+import SwiperBancos from '../SwiperBancos';
 
 const CTASolar = () => {
   return (
@@ -61,7 +62,7 @@ const CTASolar = () => {
           Você pode <span>financiar</span> até <span>100%</span> do seu sistema de <br /><span>Energia Solar</span>.
         </h2>
         <div className={Style.cta__financiamento__bancos}>
-
+          <SwiperBancos />
         </div>
 
         <p className={Style.cta__financiamento__paragrafo}>
