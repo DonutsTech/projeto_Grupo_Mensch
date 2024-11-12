@@ -154,6 +154,7 @@ const MenuSolar = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     Scroll.scroller.scrollTo('energia_solar', { duration: 500, delay: 0, smooth: true });
+                    setModal(!modal);
                   }}
                 >
                   <p>Energia Solar</p>
@@ -166,6 +167,7 @@ const MenuSolar = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                    setModal(!modal);
                   }} >
                   <p>Serviços</p>
                 </Link>
@@ -177,6 +179,7 @@ const MenuSolar = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                    setModal(!modal);
                   }}
                 >
                   <p>Simule</p>
@@ -188,6 +191,7 @@ const MenuSolar = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                  setModal(!modal);
                 }}
                 >
                   <p>Fale conosco</p>
