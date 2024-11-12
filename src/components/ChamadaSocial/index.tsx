@@ -1,8 +1,8 @@
 
 import Link from 'next/link';
 import Style from './ChamadaSocial.module.scss';
-import Image from 'next/image';
-import email from './assets/email_iconSocial.svg';
+// import Image from 'next/image';
+// import email from './assets/email_iconSocial.svg';
 
 const ChamadaSocial = () => { 
 
@@ -17,8 +17,7 @@ const ChamadaSocial = () => {
         </p>
 
 
-        <Link href={'mailto:contato@grupomensch.com.br'} target='_blank' rel='noopener noreferrer' className={Style.chamadaSocial__content__btn} title='Enviar email para contato@grupomensh.com'>
-          <Image src={email} alt='Enviar email' className={Style.chamadaSocial__content__btn__icon} />
+        <Link href={"/#contatos__mensch"} className={Style.chamadaSocial__content__btn} title='Enviar email para contato@grupomensh.com'>
           Entre em contato
         </Link>
       </div>

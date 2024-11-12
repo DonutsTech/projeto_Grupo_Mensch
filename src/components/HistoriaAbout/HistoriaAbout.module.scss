@@ -67,6 +67,7 @@
           border-radius: 8px;
           transition: all 200ms ease-in-out;
           animation: blimp 200ms ease-in-out alternate;
+          pointer-events: none;
         }
       }
       &__texto { 

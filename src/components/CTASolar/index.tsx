@@ -10,6 +10,7 @@ import { useState } from 'react';
 //import { FormEvent, useCallback, useState } from 'react';
 //import { FormSimulacaoSolar } from '@/types';
 //import { cep, currency, phone } from '@/util/mask';
+import SwiperBancos from '../SwiperBancos';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
@@ -94,7 +95,7 @@ const CTASolar = () => {
           Você pode <span>financiar</span> até <span>100%</span> do seu sistema de <br /><span>Energia Solar</span>.
         </h2>
         <div className={Style.cta__financiamento__bancos}>
-
+          <SwiperBancos />
         </div>
 
         <p className={Style.cta__financiamento__paragrafo}>

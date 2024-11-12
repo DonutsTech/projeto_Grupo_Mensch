@@ -96,6 +96,12 @@
           transition: all 200ms ease-in-out;
         }
       }
+
+      &__info { 
+        color: $cor-mae-principal;
+        font-size: 14px;
+
+      }
     }
 
     @media (max-width: 840px) {
