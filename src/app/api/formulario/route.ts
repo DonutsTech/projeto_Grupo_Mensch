@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from 'nodemailer';
+import sendWhatsapp from "../sendWhatsapp/route";
 
 const transporter = nodemailer.createTransport({
   host: process.env.HOST,
@@ -24,7 +25,8 @@ export async function POST(
       subject: data.subject,
       text: data.text
     })
-    console.log(data);
+
+    await sendWhatsapp(data)
 
     return NextResponse.json({ mensagem: 'Mensagem Recebida Com Sucesso!' });
   } catch (error) {
