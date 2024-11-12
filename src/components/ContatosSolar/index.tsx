@@ -9,13 +9,89 @@ import wpp from './assets/wpp_icon.svg';
 import insta from './assets/insta_icon.svg';
 import face from './assets/face_icon.svg';
 import linkedin from './assets/linkedin_icon.svg';
-
-
-
 import Image from 'next/image';
 import Link from 'next/link';
+import { FormContatoMascher } from '@/types';
+import { FormEvent, useCallback, useEffect, useState } from 'react';
+import { phone } from '@/util/mask';
+import { validation } from '@/util/validation';
+import { mensagemMenschSolar } from '@/util/mensagem';
 
 const ContatosSolar = () => {
+  const [form, setForm] = useState({} as FormContatoMascher)
+  const [mensagem, setMensagem] = useState<string>('')
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (mensagem) {
+        setMensagem('')
+      }
+    }, 10000);
+  }, [mensagem]);
+
+  const handleFormChange = useCallback(
+    (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      if (e.currentTarget.name === 'telefone') {
+        e = phone(e)
+      }
+      setForm({
+        ...form,
+        [e.currentTarget.name]: e.currentTarget.value,
+      });
+    },
+    [form],
+  );
+
+  const enviarDados = async (formDados: FormContatoMascher) => {
+    try {
+      const response = await fetch('/api/formulario', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'energiasolar@grupomensch.com.br',
+          subject: ' Mensagem Recebida pelo site - Contato do Mansch Solar',
+          text: mensagemMenschSolar(formDados)
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.') {
+        throw new Error('Mensagem não enviada. Contate-nos por telefone.')
+      }
+
+      if (!(data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.')) {
+        setForm({} as FormContatoMascher)
+        setMensagem(data.mensagem)
+      }
+
+    } catch (error) {
+      console.error(error)
+      setMensagem('Mensagem não enviada. Contate-nos por telefone.')
+    }
+  }
+
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const FormData: FormContatoMascher = {
+      nome: (e.currentTarget.elements.namedItem('nome') as HTMLInputElement).value,
+      email:  (e.currentTarget.elements.namedItem('email') as HTMLInputElement).value,
+      telefone:  (e.currentTarget.elements.namedItem('telefone') as HTMLInputElement).value,
+      mensagem:  (e.currentTarget.elements.namedItem('mensagem') as HTMLInputElement).value,
+    }
+
+    const mensagem = validation(FormData)
+
+    if (!(mensagem === '')) {
+      setMensagem(mensagem)
+    } else {
+      enviarDados(FormData)
+    }
+
+  }
 
   return (
     <section className={Style.contatos} id='contatos__solar' aria-label='Contatos do Grupo Mensch'>
@@ -25,7 +101,7 @@ const ContatosSolar = () => {
 
       <div className={Style.contatos__content}>
 
-        <form className={Style.contatos__content__form} >
+        <form className={Style.contatos__content__form} onSubmit={onSubmit}>
           <label htmlFor='nome' aria-label='Digite o seu nome' />
           <input
             type='text'
@@ -35,6 +111,8 @@ const ContatosSolar = () => {
             })}
             id='nome'
             placeholder='Nome'
+            onChange={handleFormChange}
+            value={form.nome === undefined ? '' : form.nome}
           />
           <label htmlFor='email' aria-label='Digite o seu email' />
           <input
@@ -45,6 +123,8 @@ const ContatosSolar = () => {
             })}
             id='email'
             placeholder='Digite o seu melhor e-mail'
+            onChange={handleFormChange}
+            value={form.email === undefined ? '' : form.email}
           />
           <label htmlFor='telefone' aria-label='Digite o seu telefone' />
           <input
@@ -55,6 +135,9 @@ const ContatosSolar = () => {
             })}
             id='telefone'
             placeholder='Telefone'
+            onChange={handleFormChange}
+            minLength={13}
+            value={form.telefone === undefined ? '' : form.telefone}
           />
           <label htmlFor='mensagem' aria-label='Digite sua mensagem' />
           <textarea
@@ -64,6 +147,8 @@ const ContatosSolar = () => {
             })}
             id='mensagem'
             placeholder='Digite sua mensagem'
+            onChange={handleFormChange}
+            value={form.mensagem === undefined ? '' : form.mensagem}
           />
           <button className={Style.contatos__content__form__btn} type='submit'>Enviar</button>
         </form>
