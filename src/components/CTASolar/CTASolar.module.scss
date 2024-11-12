@@ -270,28 +270,28 @@
     }
 
 
-      &__logos {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        gap: 24px;
-        margin-top: 32px;
+    &__logos {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      gap: 24px;
+      margin-top: 32px;
 
-        &__img {
-          width: auto;
-          height: clamp(2.5rem, 1.2308rem + 5.641vw, 8rem);
-          object-fit: cover;
-          object-position: center;
-          cursor: pointer;
+      &__img {
+        width: auto;
+        height: clamp(2.5rem, 1.2308rem + 5.641vw, 8rem);
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
 
-          &:hover {
-            scale: 0.9;
-            transition: all 200ms ease-in-out alternate;
-          }
+        &:hover {
+          scale: 0.9;
+          transition: all 200ms ease-in-out alternate;
         }
+      }
 
     }
 
@@ -300,13 +300,162 @@
 }
 
 .modal {
-  position: absolute;
-  inset: 40px;
-  border: 1px solid #555;
+  position: relative;
+  width: 80%;
+  min-width: 300px;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: auto;
   border-radius: 16px;
   border: solid 6px $cor-energia-principal;
   outline: none;
   padding: 20px;
   background-color: $cor-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  gap: 24px;
+
+  &__btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: $cor-white;
+    outline: none;
+    border: 3px solid $cor-mae-principal;
+    border-radius: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $cor-mae-principal;
+    font-weight: 600;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      scale: 0.9;
+      box-shadow: none;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  &__titulo { 
+    width: 80%;
+    min-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-titulo;
+    font-size: $font-size-titulo-2;
+    line-height: $font-height-titulo-2;
+    font-weight: $font-weight-titulo-2;
+    color: $cor-black;
+    cursor: default;
+
+    span {
+      
+      &:hover { 
+        color: $cor-energia-principal;
+        transition: all 200ms ease-in-out;
+      
+      }
+    }
+  }
+
+  &__subtitulo { 
+    width: 80%;
+    min-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-titulo;
+    font-size: $font-size-texto-1;
+    line-height: $font-height-texto-1;
+    font-weight: 500;
+    color: $cor-black;
+
+    span {
+      color: $cor-energia-principal;
+    }
+
+  }
+
+  &__form {
+    width: clamp(15rem, 12.375rem + 13.125vw, 28.125rem);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    &__input {
+      width: clamp(15rem, 12.375rem + 13.125vw, 28.125rem);
+      height: 32px;
+      border-radius: 8px;
+      outline: none;
+      border: 5px solid $cor-energia-principal;
+      box-shadow: -5px 5px $cor-energia-principal;
+      padding: 8px 16px;
+      font-family: $font-texto;
+      font-size: 16px;
+      font-weight: 500;
+      color: $cor-black;
+
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: $cor-black;
+      }
+
+      &:focus {
+        border: 3px solid $cor-energia-2;
+        box-shadow: -3px 3px $cor-energia-2;
+      }
+    }
+
+    &__btnBox {
+      width: clamp(15rem, 12.375rem + 13.125vw, 28.125rem);
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+
+      &__btn { 
+        width: 110px;
+        height: 32px;
+        outline: none;
+        border: none;
+        background-color: $cor-energia-principal;
+        color: $cor-white;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          scale: 0.9;
+          background-color: $cor-black;
+          color: $cor-energia-principal;
+          box-shadow: none;
+          transition: all 200ms ease-in-out;
+        }
+      }
+
+      &__texto { 
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        color: $cor-black;
+      }
+    }
+  }
 }
