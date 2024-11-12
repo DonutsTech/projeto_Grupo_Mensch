@@ -5,3 +5,9 @@ export interface FormContatoMascher {
   mensagem: string;
 }
 
+export interface FormSimulacaoSolar {
+  nome: string;
+  telefone: string;
+  cep: string;
+  valor: number;
+}
