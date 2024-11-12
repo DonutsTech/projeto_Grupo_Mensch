@@ -346,7 +346,7 @@
     }
   }
 
-  &__titulo { 
+  &__titulo {
     width: 80%;
     min-width: 280px;
     margin: 0 auto;
@@ -359,16 +359,16 @@
     cursor: default;
 
     span {
-      
-      &:hover { 
+
+      &:hover {
         color: $cor-energia-principal;
         transition: all 200ms ease-in-out;
-      
+
       }
     }
   }
 
-  &__subtitulo { 
+  &__subtitulo {
     width: 80%;
     min-width: 260px;
     margin: 0 auto;
@@ -427,7 +427,7 @@
       justify-content: space-between;
       gap: 16px;
 
-      &__btn { 
+      &__btn {
         width: 110px;
         height: 32px;
         outline: none;
@@ -448,7 +448,7 @@
         }
       }
 
-      &__texto { 
+      &__texto {
         width: 100%;
         height: auto;
         font-size: 10px;

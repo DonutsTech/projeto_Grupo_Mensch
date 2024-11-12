@@ -6,22 +6,19 @@ import mensch from './assets/grupo_mensch.png';
 import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
-import { useState } from 'react';
-//import { FormEvent, useCallback, useState } from 'react';
-//import { FormSimulacaoSolar } from '@/types';
-//import { cep, currency, phone } from '@/util/mask';
+import { FormEvent, useCallback, useState } from 'react';
+import { FormSimulacaoSolar } from '@/types';
+import { cep, currency, phone } from '@/util/mask';
 import SwiperBancos from '../SwiperBancos';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
-  //const [form, setForm] = useState({} as FormSimulacaoSolar)
+  const [form, setForm] = useState({} as FormSimulacaoSolar)
 
   const toggleModal = () => {
     setOpenImage(!openImage);
   };
 
-
-  /*
   const handleFormChange = useCallback(
     (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       if (e.currentTarget.name === 'telefone') {
@@ -43,7 +40,7 @@ const CTASolar = () => {
     },
     [form],
   );
-*/
+
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
       <h2 className={Style.cta__titulo}>
@@ -136,6 +133,7 @@ const CTASolar = () => {
             zIndex: '30',
           },
         }}
+
       >
         <button type='button'
           onClick={toggleModal}
@@ -144,12 +142,12 @@ const CTASolar = () => {
           x
         </button>
 
-        <h3 className={Style.modal__titulo}>
+        <h3 className={Style.modal__titulo}> 
         Descubra quanto você irá economizar com <span>Energia Solar</span>:
         </h3>
 
         <h4 className={Style.modal__subtitulo}>
-        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>!
+        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
         </h4>
 
         <form className={Style.modal__form}>
@@ -161,7 +159,8 @@ const CTASolar = () => {
             placeholder='Nome'
             className={Style.modal__form__input}
             required
-
+            onChange={handleFormChange}
+            value={form.nome === undefined ? '' : form.nome}
           />
           <label htmlFor='telefone' aria-label='Digite o seu telefone' />
           <input
@@ -172,6 +171,8 @@ const CTASolar = () => {
             className={Style.modal__form__input}
             required
             minLength={13}
+            onChange={handleFormChange}
+            value={form.telefone === undefined ? '' : form.telefone}
           />
           <label htmlFor='CEP' aria-label='Digite o seu CEP' />
           <input
@@ -181,6 +182,9 @@ const CTASolar = () => {
             placeholder='CEP'
             className={Style.modal__form__input}
             required
+            minLength={9}
+            onChange={handleFormChange}
+            value={form.cep === undefined ? '' : form.cep}
           />
           <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
           <input
@@ -192,13 +196,13 @@ const CTASolar = () => {
             required
           />
           <div className={Style.modal__form__btnBox}>
-            <button 
+            <button
               className={Style.modal__form__btnBox__btn}
               type='submit'
               >
                 Confirmar
               </button>
-              <p className={Style.modal__form__btnBox__texto}> 
+              <p className={Style.modal__form__btnBox__texto}>
               *Confirmo que, ao realizar a simulação, autorizo o contato da equipe comercial da Mensch Energia Solar por ligação telefônica ou mensagem via WhatsApp.
               </p>
           </div>

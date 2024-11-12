@@ -98,7 +98,7 @@ const SwiperBancos = () => {
         className={Style.esteira__swiper}
       >
         {bancos.map( banco => {
-          return ( 
+          return (
             <SwiperSlide key={banco.id} className={Style.esteira__swiper__item} >
               <Image src={banco.img} alt='Icon de Banco' className={Style.esteira__swiper__item__img} />
             </SwiperSlide>
