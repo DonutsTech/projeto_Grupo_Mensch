@@ -154,7 +154,7 @@ const Contatos = () => {
           />
           {
             !(mensagem === '') && (
-              <p>{mensagem}</p>
+              <p className={Style.contatos__content__form__info}>{mensagem}</p>
             )
           }
 

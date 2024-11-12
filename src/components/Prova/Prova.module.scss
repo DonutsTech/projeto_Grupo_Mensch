@@ -174,8 +174,6 @@
       }
 
 
-
-
   }
 
 
@@ -190,9 +188,10 @@
     clip-path: polygon(0 10%, 0% 100%, 100% 90%, 100% 0%);
     object-fit: cover;
     object-position: center;
-    mix-blend-mode: darken;
-    opacity: 0.5;
-    filter: blur(10px);
+    mix-blend-mode: color-burn;
+    opacity: 0.3;
+    filter: blur(5px);
+    pointer-events: none;
   }
 }
 

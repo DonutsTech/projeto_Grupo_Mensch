@@ -10,7 +10,6 @@ const MainAbout = () => {
 
   return (
     <main className={Style.main}>
-      {/* <div className={Style.main__detalhe} /> */}
       <SectionAbout01 />
       <HistoriaAbout />
       <MVV />
