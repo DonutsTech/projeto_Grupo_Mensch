@@ -9,5 +9,5 @@ export interface FormSimulacaoSolar {
   nome: string;
   telefone: string;
   cep: string;
-  valor: number;
+  valor: string;
 }
