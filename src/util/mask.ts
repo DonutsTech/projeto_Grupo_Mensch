@@ -11,9 +11,11 @@ export function phone(e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
 export function currency(e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>) {
   let value = e.currentTarget.value;
   value = value.replace(/\D/g, '');
-  value = value.replace(/(\d)(\d{2})$/, '$1,$2');
-  value = value.replace(/(?=(\d{3})+(\D))\B/g, '.');
-  e.currentTarget.value = value;
+  value = value.trim() === '' ? '0,00' : value
+  value = (parseFloat(value) / 100).toFixed(2)
+  value = value.replace('.', ',');
+  value = value.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  e.currentTarget.value = `R$ ${value}`;
   return e;
 }
 
