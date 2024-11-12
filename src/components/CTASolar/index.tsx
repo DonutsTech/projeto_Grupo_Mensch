@@ -144,12 +144,12 @@ const CTASolar = () => {
           x
         </button>
 
-        <h3 className={Style.modal__titulo}> 
+        <h3 className={Style.modal__titulo}>
         Descubra quanto você irá economizar com <span>Energia Solar</span>:
         </h3>
 
         <h4 className={Style.modal__subtitulo}>
-        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
+        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>!
         </h4>
 
         <form className={Style.modal__form}>
