@@ -300,8 +300,7 @@
 }
 
 .modal {
-  position: absolute;
-  inset: 40px;
+  position: relative;
   border: 1px solid #555;
   overflow: auto;
   border-radius: 16px;
@@ -309,4 +308,6 @@
   outline: none;
   padding: 20px;
   background-color: $cor-white;
+  display: flex;
+  flex-direction: column;
 }
