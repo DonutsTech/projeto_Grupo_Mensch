@@ -14,9 +14,11 @@ import SwiperBancos from '../SwiperBancos';
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
   const [form, setForm] = useState({} as FormSimulacaoSolar)
+  //const [mensagem, setMensagem] = useState<string>('')
 
   const toggleModal = () => {
     setOpenImage(!openImage);
+    setForm({} as FormSimulacaoSolar)
   };
 
   const handleFormChange = useCallback(
@@ -40,6 +42,21 @@ const CTASolar = () => {
     },
     [form],
   );
+
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const formData: FormSimulacaoSolar = {
+      nome: (e.currentTarget.elements.namedItem('nome') as HTMLInputElement).value,
+      telefone: (e.currentTarget.elements.namedItem('telefone') as HTMLInputElement).value,
+      cep: (e.currentTarget.elements.namedItem('cep') as HTMLInputElement).value,
+      valor: (e.currentTarget.elements.namedItem('valor') as HTMLInputElement).value,
+    }
+
+    console.log(formData)
+  }
+
+
 
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
@@ -135,7 +152,22 @@ const CTASolar = () => {
         }}
 
       >
-        <button type='button' onClick={toggleModal}>x</button>
+         <button type='button'
+          onClick={toggleModal}
+          className={Style.modal__btn}
+        >
+          x
+        </button>
+
+        <h3 className={Style.modal__titulo}>
+        Descubra quanto você irá economizar com <span>Energia Solar</span>:
+        </h3>
+
+        <h4 className={Style.modal__subtitulo}>
+        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
+        </h4>
+
+        <form className={Style.modal__form} onSubmit={onSubmit}>
         <label htmlFor='nome' aria-label='Digite o seu nome' />
           <input
             type='text'
@@ -179,6 +211,8 @@ const CTASolar = () => {
             placeholder='Valor da Conta De Energia'
             className={Style.modal__form__input}
             required
+            onChange={handleFormChange}
+            value={form.valor === undefined || form.valor === 'R$ 0,00' ? '' : form.valor}
           />
           <div className={Style.modal__form__btnBox}>
             <button
