@@ -1,12 +1,12 @@
 
-import DorHealth from '../DorHealth';
+import Camila from '../Camila';
 import Style from './MainHealth.module.scss';
 
 const MainHealth = () => { 
 
   return (
     <main className={Style.main}>
-      <DorHealth />
+      <Camila />
     </main>
   )
 };

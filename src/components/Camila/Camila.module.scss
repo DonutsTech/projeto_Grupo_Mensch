@@ -1,0 +1,125 @@
+@use 'variaveis'as *;
+
+
+.consultora {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 48px 0;
+  background-color: $cor-health-principal;
+  position: relative;
+  // background: $cor-energia-2;
+  // background: linear-gradient(to left, $cor-energia-2 0%, $cor-energia-principal 100%);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  clip-path: polygon(0 112px, 0% 100%, 100% calc(100% - 120px), 100% 0%);
+  margin: 0;
+  padding-bottom: 120px;
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+    }
+
+    &__box {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 24px;
+      padding: 120px 64px 0 0;
+
+      @media (max-width: 840px) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 0 220px 0;
+      }
+
+
+      &__titulo {
+        width: 100%;
+        height: auto;
+        font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-style: normal;
+        color: $cor-white;
+        text-align: end;
+
+        @media (max-width: 840px) {
+          text-align: center;
+        }
+      }
+
+      &__paragrafo {
+        width: 80%;
+        height: auto;
+        font-size: $font-size-texto-2;
+        line-height: $font-height-texto-2;
+        color: $cor-white;
+        text-align: end;
+        // margin-top: 16px;
+        // margin-bottom: 16px;
+      }
+
+      &__btns {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        &__btn {
+          width: 180px;
+          height: 48px;
+          background-color: $cor-white;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $cor-health-principal;
+          border: none;
+          offset: none;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+
+          &:hover {
+            scale: 0.9;
+            background-color: $cor-black;
+            box-shadow: none;
+            transition: all 200ms ease-in-out;
+          }
+
+        }
+      }
+    }
+
+    &__foto {
+      width: 40%;
+      min-width: 300px;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+    }
+  }
+}

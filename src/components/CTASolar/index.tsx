@@ -147,7 +147,7 @@ const CTASolar = () => {
         </h3>
 
         <h4 className={Style.modal__subtitulo}>
-        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
+        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>!
         </h4>
 
         <form className={Style.modal__form}>

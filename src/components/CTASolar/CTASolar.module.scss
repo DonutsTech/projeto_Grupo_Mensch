@@ -365,6 +365,10 @@
         transition: all 200ms ease-in-out;
 
       }
+
+      @media (max-width: 840px) {
+        color: $cor-energia-principal;
+      }
     }
   }
 
