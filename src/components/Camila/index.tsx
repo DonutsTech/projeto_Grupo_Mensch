@@ -1,9 +1,11 @@
-
+'use client';
 import Image from 'next/image';
 import Style from './Camila.module.scss';
 import foto from './assets/Camila.png';
 import instagram from './assets/insta_icon.svg';
 import Link from 'next/link';
+import Animation from './Animation';
+
 
 const Camila = () => { 
 
@@ -36,6 +38,7 @@ const Camila = () => {
         </div>
         <Image src={foto} alt='Camila' className={Style.consultora__content__foto} />
       </div>
+      <Animation />
     </section>
   )
 };

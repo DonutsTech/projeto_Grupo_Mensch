@@ -1,0 +1,67 @@
+@use 'variaveis'as *;
+
+.animation { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  &__folha1 { 
+    width: 128px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    z-index: 0;
+    filter: blur(1px);
+    transform: rotate(75deg);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  &__anis1 { 
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    z-index: 0;
+    transform: rotate(-15deg);
+    filter: blur(1px);
+  }
+
+  &__tomate { 
+    width: 64px;
+    height: auto;
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+    transform: translateX(50%)  rotate(15deg);
+    z-index: 0;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    opacity: 0.8;
+  }
+
+  &__tomate2 { 
+    width: 64px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 75%;
+    transform: translateX(-50%)  rotate(15deg);
+    z-index: 0;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  &__alecrim { 
+    width: 72px;
+    height: auto;
+    position: absolute;
+    bottom: 60%;
+    right: 5%;
+    transform: rotate(15deg);
+    z-index: 0;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  }
+}
