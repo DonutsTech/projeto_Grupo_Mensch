@@ -1,4 +1,5 @@
-//import axios from 'axios';
+/*
+import axios from 'axios';
 import { NextResponse } from "next/server";
 
 interface Body  {
@@ -10,7 +11,7 @@ interface Body  {
 export default async function sendWhatsapp(dados: Body) {
   try {
     console.log(dados)
-    /*
+
     await axios('https://graph.facebook.com/v21.0/442465622289459/messages', {
       method: 'post',
       headers: {
@@ -37,7 +38,7 @@ export default async function sendWhatsapp(dados: Body) {
         },
       },
     })
-      */
+
 
     return NextResponse.json({ message: 'Erro ao enviar o email.' }, { status: 200 });
   } catch (error) {
@@ -46,7 +47,7 @@ export default async function sendWhatsapp(dados: Body) {
   }
 }
 
-/*
+
 ---- Templete informacao ----
   to: {{to}},
   subject: {{subject}},
