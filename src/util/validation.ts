@@ -37,7 +37,5 @@ export function validationModal(value: FormSimulacaoSolar) {
     return 'Telefone inválido, digite novamente.'
   }
 
-
-
   return ''
 }
