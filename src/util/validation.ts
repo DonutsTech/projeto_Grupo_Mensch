@@ -1,4 +1,4 @@
-import { FormContatoMascher } from "@/types";
+import { FormContatoMascher, FormSimulacaoSolar } from "@/types";
 
 export const validateEmail = (email: string) => {
   const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -22,6 +22,22 @@ export function validation(value: FormContatoMascher) {
   if (!(validatePhone(value.telefone))) {
     return 'Telefone inválido, digite novamente.'
   }
+
+  return ''
+}
+
+export function validationModal(value: FormSimulacaoSolar) {
+  if (value.nome.trim() === '' || value.cep.trim() === '' || value.telefone.trim() === '' ||
+    value.valor.trim() === '' || value.nome === undefined || value.telefone === undefined ||
+    value.cep === undefined || value.valor === undefined) {
+    return 'Todos os campos são obrigatórios.'
+  }
+
+  if (!(validatePhone(value.telefone))) {
+    return 'Telefone inválido, digite novamente.'
+  }
+
+
 
   return ''
 }
