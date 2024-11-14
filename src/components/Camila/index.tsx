@@ -14,7 +14,7 @@ const Camila = () => {
       <div className={Style.consultora__content}> 
         <div className={Style.consultora__content__box} >
           <h2 className={Style.consultora__content__box__titulo}>
-            Camila Vieira
+            Camilla Vieira
           </h2>
 
           <p className={Style.consultora__content__box__paragrafo}> 

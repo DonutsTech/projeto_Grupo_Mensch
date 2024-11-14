@@ -1,0 +1,44 @@
+@use 'variaveis'as *;
+
+.slide { 
+  width: 100%;
+  height: auto;
+  // background-color: $cor-health-principal;
+
+  &__box { 
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+
+    &__titulo { 
+      width: 100%;
+      height: auto;
+      font-family: $font-titulo;
+      font-size: $font-size-titulo-3;
+      font-weight: $font-weight-titulo-3;
+      line-height: $font-height-titulo-3;
+      text-align: center;
+      color: $cor-health-principal;
+      position: absolute;
+      top: -7.5%;
+      left: 0;
+      z-index: 1;
+
+      filter: drop-shadow(0px -3px $cor-white);
+    }
+
+    &__img { 
+      width: 75%;
+      min-width: 280px;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 16px;
+    }
+  }
+}

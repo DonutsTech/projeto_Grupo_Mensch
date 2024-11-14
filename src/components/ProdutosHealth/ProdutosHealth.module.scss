@@ -1,0 +1,44 @@
+@use 'variaveis'as *;
+
+.produtos { 
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  clip-path: polygon(100% calc(100% - 120px), 100% 0%, 0 120px, 0% 100%);
+  background-color: $cor-black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 72px;
+
+  @media (max-width: 840px) { 
+    align-self: start;
+    justify-content: center;
+  }
+
+  &__selo { 
+    width: 48px;
+    height: auto;
+    position: absolute;
+    top: 180px;
+    right: 48px;
+    z-index: 1;
+  }
+
+  &__slide { 
+    width: 60%;
+    min-width: 300px;
+    height: auto;
+    justify-self: flex-start;
+  }
+
+  &__bg { 
+    width: 45%;
+    min-width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
