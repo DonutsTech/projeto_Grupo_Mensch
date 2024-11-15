@@ -90,13 +90,13 @@ const Campanhas = () => {
       titulo: 'Kilo por',
       span: ' Kilo',
       periodo: "Mensalmente",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "Na campanha da Mensch Energia Solar, a cada kilowatt vendido, doamos um kilo de alimento para os que mais necessitam. Essa ação reflete nosso compromisso de Impactar Vidas, unindo compromisso social e solidariedade para um futuro melhor e mais humano.",
       fotos: [
         teste01,
         teste02,
         teste03
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/p/DBZ3qUjRtOt/'
     },
     {
       id: 2,

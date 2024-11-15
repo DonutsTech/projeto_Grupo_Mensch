@@ -27,7 +27,7 @@ const BannerSocial = () => {
     </h1>
     </div>
     <video  autoPlay loop muted className={Style.banner__video} >
-      <source src="/assets/videos/video_social4.mp4" type="video/mp4" />
+      <source src="/assets/videos/social_maior.mp4" type="video/mp4" />
     </video>
     
     </div>
