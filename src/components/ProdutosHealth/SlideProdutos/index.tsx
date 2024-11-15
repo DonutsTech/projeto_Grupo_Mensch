@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Style from './SlideProdutos.module.scss';
+
 import panelas from './assets/panelas.png';
 
 const SlideProdutos = () => { 
@@ -13,6 +14,7 @@ const SlideProdutos = () => {
           Panelas
         </h3>
         <Image src={panelas} alt='Panelas' className={Style.slide__box__img} />
+        <Image src={panelas} alt='Panelas' className={Style.slide__box__bg} />
       </div>
     </div>
   )

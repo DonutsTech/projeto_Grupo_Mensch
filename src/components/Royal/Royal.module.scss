@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: flex-start;
   gap: 32px;
+  
+
+  @media (max-width: 840px) { 
+    gap: 24px;
+  }
 
   &__titulo { 
     width: 100%;
@@ -91,4 +96,46 @@
       cursor: default;
     }
   }
+
+  &__produtos { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    margin-top: 36px;
+
+    &__item { 
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__img { 
+        width: 280px;
+        margin: 0 auto;
+        height: 158px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 16px;
+      }
+
+      &__titulo { 
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        color: $cor-health-principal;
+        cursor: default;
+        margin-top: 24px;
+      }
+    }
+  }
+
 }

@@ -40,5 +40,20 @@
       object-position: center;
       border-radius: 16px;
     }
+
+    &__bg { 
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0.5;
+      mix-blend-mode: overlay;
+    }
   }
 }
