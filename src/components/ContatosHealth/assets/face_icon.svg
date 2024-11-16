@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e4ba0;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #3764b9;
+      }
+
+      .cls-4 {
+        fill: #507dd2;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-5" width="64" height="64"/>
+    </clipPath>
+
+    <style>
+
+      #face { 
+        animation: bounce 500ms infinite ease-in-out alternate;
+      }
+
+      #face > #simbolo { 
+        animation: bounce 750ms infinite ease-in-out alternate;
+      }
+      
+      @keyframes bounce { 
+        0% { 
+          transform: rotate(2deg);
+        }
+        50% { 
+          transform: rotate(-2deg);
+        }
+        100% { 
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </defs>
+  <g class="cls-6">
+    <g id="face">
+      <g>
+        <path class="cls-3" d="M32,56h-12c-6.63,0-12-5.37-12-12v-24c0-6.63,5.37-12,12-12h24c6.63,0,12,5.37,12,12v24c0,6.63-5.37,12-12,12h-4.5c0-2.07-1.68-3.75-3.75-3.75s-3.75,1.68-3.75,3.75Z"/>
+        <path class="cls-4" d="M30.5,21.5h13.5c3.73,0,6.75-3.02,6.75-6.75,0-3.46-2.62-6.36-6.06-6.71-.23-.01-.46-.03-.69-.03h-24c-6.63,0-12,5.37-12,12v24c0-12.43,10.07-22.5,22.5-22.5"/>
+        <path class="cls-1" d="M44,32c-6.63,0-12,5.37-12,12s5.37,12,12,12,12-5.37,12-12v-24c0,6.63-5.37,12-12,12"/>
+      </g>
+      <path id="simbolo" class="cls-2" d="M47,21.5c0,.83-.67,1.5-1.5,1.5h-4.5c-.83,0-1.5.67-1.5,1.5v6h5.67c.83,0,1.5.67,1.5,1.5,0,.1,0,.2-.03.29-.28,1.39-.66,3.28-.9,4.5-.14.7-.76,1.21-1.47,1.21h-4.77v18h-7.5v-18h-4.5c-.83,0-1.5-.67-1.5-1.5v-4.5c0-.83.67-1.5,1.5-1.5h4.5v-6c0-4.97,4.03-9,9-9h4.5c.83,0,1.5.67,1.5,1.5v4.5Z"/>
+    </g>
+  </g>
+</svg>

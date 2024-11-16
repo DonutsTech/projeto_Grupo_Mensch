@@ -3,17 +3,28 @@ import Image from 'next/image';
 import Style from './ProdutosHealth.module.scss';
 
 import bg from './assets/camilla2.png';
-// import SlideProdutos from './SlideProdutos';
-// import selo from './assets/garantia.svg';
+
 
 const ProdutosHealth = () => { 
 
   return (
     <section className={Style.produtos}> 
-    {/* <Image src={selo} alt='Selo' className={Style.produtos__selo} /> */}
-    <div className={Style.produtos__slide}>
-      {/* <SlideProdutos /> */}
-    </div>
+
+      <div className={Style.produtos__container}>
+        <h2 className={Style.produtos__container__titulo}>
+          Lorem ipsum dolor.
+        </h2>
+        <p className={Style.produtos__container__paragrafo}> 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repellat, architecto rem consequuntur dignissimos deserunt corporis id ab, iste aut alias officia accusamus harum voluptates. Porro voluptatibus adipisci officiis!
+        </p>
+        <p className={Style.produtos__container__paragrafo}> 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repellat, architecto rem consequuntur dignissimos deserunt corporis id ab, iste aut alias officia accusamus harum voluptates. Porro voluptatibus adipisci officiis!
+        </p>
+        <p className={Style.produtos__container__paragrafo}> 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repellat, architecto rem consequuntur dignissimos deserunt corporis id ab, iste aut alias officia accusamus harum voluptates. Porro voluptatibus adipisci officiis!
+        </p>
+      </div>
+
       <Image src={bg} alt='Camila' className={Style.produtos__bg} />
     </section>
   )

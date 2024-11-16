@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <style>
+
+      #envio { 
+        transform: rotate(-1deg); 
+      }
+
+      #envio > #e1, #e2, #e3 {
+        fill: #F76861;
+        animation: envio 1s infinite ease-in-out alternate;
+      }
+
+      #carta { 
+        animation: blimp 2s infinite ease-in-out alternate, envio 1s infinite ease-in-out alternate;
+      }
+
+      @keyframes envio { 
+        to { 
+          transform: translateX(-20%); 
+        }
+      }
+
+      @keyframes blimp { 
+        to { 
+          fill: #F76861;
+        }
+      }
+
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <path id="carta" d="M31.02,32l-11-11.04v22.08l11-11.04ZM56.68,44.78l-10.94-10.98-3.66,3.67c-1.5,1.5-4.1,1.5-5.6,0l-3.66-3.67-10.94,10.98h34.79ZM40.28,35.67c.6-.6,15.17-15.21,16.4-16.46H21.89l16.4,16.46c.5.5,1.48.5,1.98,0ZM58.56,43.04v-22.08l-11,11.04,11,11.04ZM61.11,20.49v23.02c0,2.12-1.73,3.84-3.84,3.84H21.3c-2.11,0-3.84-1.72-3.84-3.84v-23.02c0-2.12,1.73-3.84,3.84-3.84h35.97c2.11,0,3.84,1.72,3.84,3.84Z"/>
+    <g id="envio">
+      <path id="e3" d="M11.8,23.48H2.09c-.44,0-.8-.45-.8-1s.36-1,.8-1h9.71c.44,0,.8.45.8,1s-.36,1-.8,1Z"/>
+      <path id="e2" d="M11.8,41.6H2.09c-.44,0-.8-.45-.8-1s.36-1,.8-1h9.71c.44,0,.8.45.8,1s-.36,1-.8,1Z"/>
+      <path id="e1" d="M15.85,32.54H6.13c-.44,0-.8-.45-.8-1s.36-1,.8-1h9.71c.44,0,.8.45.8,1s-.36,1-.8,1Z"/>
+    </g>
+  </g>
+</svg>

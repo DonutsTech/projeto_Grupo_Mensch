@@ -122,12 +122,12 @@ const Campanhas = () => {
         ckto2,
         ckto3,
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/ctkovoleitijucano/'
     },
     {
       id: 3,
       titulo: 'Apoio a ',
-      span: 'Escolinha',
+      span: 'Escolinha Gol para vida',
       periodo: "Contínuo",
       descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
       fotos: [
@@ -135,7 +135,7 @@ const Campanhas = () => {
         escolinha2,
         escolinha3
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/escolinhagolparavida/'
     },
     {
       id: 4,

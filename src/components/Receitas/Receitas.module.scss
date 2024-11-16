@@ -1,0 +1,9 @@
+@use 'variaveis' as *;
+
+.receitas { 
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: $cor-health-principal;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 120px);
+}
