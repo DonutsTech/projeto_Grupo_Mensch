@@ -11,6 +11,19 @@ import teste02 from './assets/teste02.png';
 import teste03 from './assets/teste03.png';
 
 
+import ckto1 from './assets/CKTO1.png';
+import ckto2 from './assets/CKTO2.png';
+import ckto3 from './assets/CKTO3.png';
+
+
+import escolinha1 from './assets/escolinha1.png';
+import escolinha2 from './assets/escolinha2.png';
+import escolinha3 from './assets/escolinha3.png';
+
+
+
+
+
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -103,11 +116,11 @@ const Campanhas = () => {
       titulo: 'Apoio ao ',
       span: ' CTKO',
       periodo: "Contínuo",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "A parceria entre o Grupo Mensch e o time de vôlei é transformadora. Com essa conexão humana, impactamos vidas dentro e fora das quadras, promovendo crescimento e transformação para todos.",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        ckto1,
+        ckto2,
+        ckto3,
       ],
       link: 'https://www.instagram.com/grupo.mensch/'
     },
@@ -118,9 +131,9 @@ const Campanhas = () => {
       periodo: "Contínuo",
       descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        escolinha1,
+        escolinha2,
+        escolinha3
       ],
       link: 'https://www.instagram.com/grupo.mensch/'
     },

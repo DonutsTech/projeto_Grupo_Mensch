@@ -13,16 +13,19 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 
 import thales from './assets/thales_alves.png';
+import raul from './assets/raul_paranaiba.png';
+
+import bia from './assets/ana_beatriz.png';
 
 const Prova = () => {
   const coments = [
     {
       id: 1,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Raul Paranaíba",
+      foto: raul,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Ser parceiro da Mensch é como ter um amigo que se importa de verdade. É estar junto de uma marca que transforma com carinho, serve as pessoas e faz diferença na sociedade!",
+      link: "https://www.instagram.com/raulparanaiba/",
     },
     {
       id: 2,
@@ -42,11 +45,11 @@ const Prova = () => {
     },
     {
       id: 4,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Ana Beatriz",
+      foto: bia,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Trabalhar na Mensch é viver a transformação todos os dias. Uma marca que valoriza pessoas, com integridade e honra, guiando nossa jornada de servir e impactar positivamente a vida de todos.",
+      link: "https://www.instagram.com/biaa.oliiveiraa/",
     },
     {
       id: 5,
