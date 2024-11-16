@@ -129,7 +129,7 @@ const Campanhas = () => {
       titulo: 'Apoio a ',
       span: 'Escolinha Gol para vida',
       periodo: "Contínuo",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "O apoio do Grupo Mensch ao Gol pra Vida, é uma parceria que transforma, promovendo valores, oportunidades e impacto positivo para crianças dentro e fora dos campos.",
       fotos: [
         escolinha1,
         escolinha2,
