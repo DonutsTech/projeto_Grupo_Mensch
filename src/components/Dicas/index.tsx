@@ -18,6 +18,7 @@ import img4 from './assets/img4.jpg';
 import img5 from './assets/img5.jpg';
 
 import classNames from 'classnames';
+import { Autoplay } from 'swiper/modules';
 
 const Dicas = () => {
 
@@ -25,22 +26,21 @@ const Dicas = () => {
 
   useEffect(() => { 
 
-    const swiperElement = document.getElementById('swiper') as HTMLElement 
-    & { swiper: SwiperClass };
+    const swiperElement = document.getElementById('swiper') as HTMLElement & { swiper: SwiperClass };
 
     if (swiperElement) {
       const swiper = swiperElement.swiper;
+
+      // swiper.params.autoplay = {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // };
+      // swiper.init();  
 
       swiper.on('slideChange', () => {
         const activeSlide = swiper.slides[swiper.activeIndex];
         const textos = activeSlide.querySelector('.textos') as HTMLElement;
         const img = activeSlide.querySelector('.img') as HTMLElement;
-
-        // gsap.fromTo(
-        //   activeSlide,
-        //   { opacity: 0, y: 50 }, 
-        //   { opacity: 1, y: 0, duration: 1 }
-        // );
 
         gsap.fromTo(
           img,
@@ -100,6 +100,12 @@ const Dicas = () => {
         slidesPerView={1}
         grabCursor={true}
         loop={true}
+        speed={1000}
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 15000,
+          disableOnInteraction: false,
+        }}
         touchStartPreventDefault={false}
         className={classNames({
           [Style.dicas__swiper]:true,

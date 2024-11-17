@@ -15,6 +15,7 @@
   align-items: flex-start;
   gap: 64px;
   padding: 48px 0 72px 0;
+  overflow-y: hidden;
 
   &__titulo { 
     width: 100%;
@@ -228,4 +229,5 @@
 
 .swiper {
   &::-webkit-scrollbar {      display: none;    };
+  overflow-y: hidden;
 }

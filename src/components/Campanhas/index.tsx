@@ -146,7 +146,7 @@ const Campanhas = () => {
       titulo: 'Diversas contribuiçoes ',
       span: ' individuais',
       periodo: "Pontuais",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "Honramos o compromisso de impactar positivamente a vida das pessoas por meio de iniciativas concretas que realmente fazem a diferença. Uma marca feita por pessoas, para pessoas, com o propósito de construir uma sociedade mais unida e humana.",
       fotos: [
         diversas1,
         diversas2,
