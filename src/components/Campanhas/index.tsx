@@ -10,6 +10,10 @@ import teste01 from './assets/teste01.png';
 import teste02 from './assets/teste02.png';
 import teste03 from './assets/teste03.png';
 
+import kilo1 from './assets/kilo1.png';
+import kilo2 from './assets/kilo2.png';
+import kilo3 from './assets/kilo3.png';
+
 
 import ckto1 from './assets/CKTO1.png';
 import ckto2 from './assets/CKTO2.png';
@@ -19,6 +23,10 @@ import ckto3 from './assets/CKTO3.png';
 import escolinha1 from './assets/escolinha1.png';
 import escolinha2 from './assets/escolinha2.png';
 import escolinha3 from './assets/escolinha3.png';
+
+import diversas1 from './assets/diversas1.png';
+import diversas2 from './assets/diversas2.png';
+import diversas3 from './assets/diversas3.png';
 
 
 
@@ -105,9 +113,9 @@ const Campanhas = () => {
       periodo: "Mensalmente",
       descricao: "Na campanha da Mensch Energia Solar, a cada kilowatt vendido, doamos um kilo de alimento para os que mais necessitam. Essa ação reflete nosso compromisso de Impactar Vidas, unindo compromisso social e solidariedade para um futuro melhor e mais humano.",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        kilo1,
+        kilo2,
+        kilo3
       ],
       link: 'https://www.instagram.com/p/DBZ3qUjRtOt/'
     },
@@ -144,9 +152,9 @@ const Campanhas = () => {
       periodo: "Pontuais",
       descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        diversas1,
+        diversas2,
+        diversas3
       ],
       link: 'https://www.instagram.com/grupo.mensch/'
     },
