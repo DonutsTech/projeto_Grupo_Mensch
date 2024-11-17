@@ -6,10 +6,6 @@ import simbolo from './assets/simbolo_base.svg';
 import instagram from './assets/instagram.svg';
 import arrow from './assets/simbolo_front.svg';
 
-import teste01 from './assets/teste01.png';
-import teste02 from './assets/teste02.png';
-import teste03 from './assets/teste03.png';
-
 import kilo1 from './assets/kilo1.png';
 import kilo2 from './assets/kilo2.png';
 import kilo3 from './assets/kilo3.png';

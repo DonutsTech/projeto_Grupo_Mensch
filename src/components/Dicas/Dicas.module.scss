@@ -43,6 +43,7 @@
         z-index: 2;
         box-shadow: -16px 16px 0 0 $cor-health-principal;
         transition: transform 500ms ease-in-out;
+        // left: -100%;
 
         &:hover {
           transform: translateX(-16px);
