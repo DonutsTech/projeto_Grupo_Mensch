@@ -40,7 +40,7 @@ const Contatos = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'contato@grupomensch.com.br',
+          to: 'milenaleme4@hotmail.com',
           subject: ' Mensagem Recebida pelo site - Contato do Grupo Mansch',
           text: mensagemGrupoMensch(formDados)
         }),
@@ -74,6 +74,8 @@ const Contatos = () => {
     }
 
     const mensagem = validation(FormData)
+
+    console.log(mensagem)
 
     if (!(mensagem === '')) {
       setMensagem(mensagem)

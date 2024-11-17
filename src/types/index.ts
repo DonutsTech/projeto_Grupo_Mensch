@@ -11,3 +11,17 @@ export interface FormSimulacaoSolar {
   cep: string;
   valor: string;
 }
+
+export interface Endereco {
+  bairro: string;
+  cep: string;
+  estado: string;
+  rua: string;
+  uf: string;
+}
+
+export interface Mensagem {
+  to: string;
+  subject: string;
+  text: string;
+}

@@ -8,7 +8,7 @@ import Royal from '../Royal';
 import Saudavel from '../Saudavel';
 import Style from './MainHealth.module.scss';
 
-const MainHealth = () => { 
+const MainHealth = () => {
 
   return (
     <main className={Style.main}>

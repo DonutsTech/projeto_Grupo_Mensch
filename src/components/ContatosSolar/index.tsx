@@ -50,13 +50,15 @@ const ContatosSolar = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'energiasolar@grupomensch.com.br',
+          to: 'milenaleme4@hotmail.com',
           subject: ' Mensagem Recebida pelo site - Contato do Mansch Solar',
           text: mensagemMenschSolar(formDados)
         }),
       });
 
       const data = await response.json();
+
+      console.log(data)
 
       if (data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.') {
         throw new Error('Mensagem não enviada. Contate-nos por telefone.')
@@ -110,6 +112,7 @@ const ContatosSolar = () => {
               [Style.contatos__content__form__input__nome]: true,
             })}
             id='nome'
+            name='nome'
             placeholder='Nome'
             onChange={handleFormChange}
             value={form.nome === undefined ? '' : form.nome}
@@ -122,6 +125,7 @@ const ContatosSolar = () => {
               [Style.contatos__content__form__input__email]: true,
             })}
             id='email'
+            name='email'
             placeholder='Digite o seu melhor e-mail'
             onChange={handleFormChange}
             value={form.email === undefined ? '' : form.email}
@@ -135,6 +139,7 @@ const ContatosSolar = () => {
             })}
             id='telefone'
             placeholder='Telefone'
+            name='telefone'
             onChange={handleFormChange}
             minLength={13}
             value={form.telefone === undefined ? '' : form.telefone}
@@ -146,10 +151,16 @@ const ContatosSolar = () => {
               [Style.contatos__content__form__input__mensagem]: true,
             })}
             id='mensagem'
+            name='mensagem'
             placeholder='Digite sua mensagem'
             onChange={handleFormChange}
             value={form.mensagem === undefined ? '' : form.mensagem}
           />
+          {
+            !(mensagem === '') && (
+              <p className={Style.contatos__content__form__info}>{mensagem}</p>
+            )
+          }
           <button className={Style.contatos__content__form__btn} type='submit'>Enviar</button>
         </form>
 
