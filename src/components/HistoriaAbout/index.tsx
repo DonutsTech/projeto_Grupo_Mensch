@@ -2,7 +2,7 @@
 import classNames from 'classnames';
 import Style from './HistoriaAbout.module.scss';
 
-import img1 from './assets/teste01.png';
+import img1 from './assets/comeco.png';
 import img2 from './assets/consolidacao.jpg';
 import img3 from './assets/futuro.jpg';
 
@@ -28,7 +28,11 @@ const HistoriaAbout = () => {
           <div className={Style.historia__content__box__texto}>
             <h3 className={Style.historia__content__box__texto__fase} ><Image src={pin} alt='pin' /> O Começo</h3>
             <p className={Style.historia__content__box__texto__paragrafo} >
-              A Mensch nasceu de um sonho de Alex, Jéssica e Otavio: valorizar as pessoas. Desde 2017, superou desafios, mantendo firme seu propósito. É uma empresa de nomes, não de números, onde cada colaborador é único.
+              <span>A Mensch nasceu</span> em 2017 do ardente desejo de Alex,
+              Jéssica e Otavio de criar uma empresa que priorizasse
+              a felicidade dos colaboradores, provando ser possível
+              prosperar com integridade e cuidado mútuo,
+              impactando muitas vidas.
             </p>
           </div>
         </div>
@@ -42,7 +46,12 @@ const HistoriaAbout = () => {
           </div>
           <div className={Style.historia__content__box__texto}>
             <h3 className={Style.historia__content__box__texto__fase} >Consolidação <Image src={pin} alt='pin' /></h3>
-            <p className={Style.historia__content__box__texto__paragrafo} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?</p>
+            <p className={Style.historia__content__box__texto__paragrafo} >
+              <span>A Mensch é </span>mais que uma empresa; é uma filosofia de
+              vida criada para fazer a diferença. Tornou-se solo
+              fértil para sonhos, unindo pessoas em apoio mútuo
+              e transformação. Nosso propósito é claro: honrar a
+              Deus através do trabalho.</p>
           </div>
         </div>
 
@@ -55,7 +64,12 @@ const HistoriaAbout = () => {
           </div>
           <div className={Style.historia__content__box__texto}>
             <h3 className={Style.historia__content__box__texto__fase} ><Image src={pin} alt='pin' /> Futuro</h3>
-            <p className={Style.historia__content__box__texto__paragrafo} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?</p>
+            <p className={Style.historia__content__box__texto__paragrafo} >
+              <span>A Mensch será</span> reconhecida pelo significado que carrega,
+              inspirando pessoas a servir, trazer sorrisos, aliviar
+              dores e espalhar felicidade. Nossa m issão é de todos
+              que enxergam a vida com o um presente e honram
+              Aquele que a deu com Am or</p>
           </div>
         </div>
 

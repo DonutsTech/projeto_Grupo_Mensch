@@ -38,8 +38,7 @@ const SectionAbout01 = () => {
             [Style.section__content__texto__paragrafo_3]: true,
           })}>
               Construindo um legado de impacto positivo. É uma jornada de transformação
-            que reflete o amor ao próximo e o desejo de deixar um mundo melhor,
-            fazendo com que cada ação seja uma forma de honrar a Deus e contribuir para o bem coletivo.
+            que reflete o amor ao próximo e o desejo de deixar um mundo melhor.
           </p>
         </div>
 
