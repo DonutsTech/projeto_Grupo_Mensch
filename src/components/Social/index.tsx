@@ -14,7 +14,7 @@ const Social = () => {
       <Image src={selo} alt='Grupo Mensh' className={Style.social__logo} />
 
       <video autoPlay loop muted className={Style.social__video} >
-        <source src="/assets/videos/video_social4.mp4" type="video/mp4" />
+        <source src="/assets/videos/social_menor.mp4" type="video/mp4" />
       </video>
 
       <div className={Style.social__content}>

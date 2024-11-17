@@ -1,3 +1,4 @@
+import Style from './Receitas.module.scss';
 import tipos from '@/util/tipos.json';
 import Image from 'next/image';
 
@@ -9,7 +10,7 @@ interface Tipo {
 
 const Receitas = () => {
   return (
-    <div>
+    <section className={Style.receitas}>
       {
         tipos.map(({id, imagem, nome}: Tipo) => (
           <button type='button' key={id}>
@@ -18,7 +19,7 @@ const Receitas = () => {
           </button>
         ))
       }
-    </div>
+    </section>
   )
 }
 

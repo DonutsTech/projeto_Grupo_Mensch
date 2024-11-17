@@ -1,0 +1,92 @@
+@use 'variaveis' as *;
+
+.instalar {
+  height: 100vh;
+  max-height: 89.1vh;
+  overflow: hidden;
+}
+
+.main { 
+  width: 100%;
+  height: 90%;
+  background-color: $cor-white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &__titulo { 
+    font-family: $font-titulo;
+    font-size: $font-size-titulo-3;
+    font-weight: $font-weight-titulo-3;
+    line-height: $font-height-titulo-3;
+    text-align: center;
+    color: $cor-black;
+  }
+
+  &__logo {
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+  }
+
+  &__texto {
+    width: 60%;
+    min-width: 280px;
+    font-size: $font-size-texto-3;
+    line-height: $font-height-texto-3;
+    text-align: center;
+  }
+
+  &__box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  
+
+    &__botao { 
+      width: 160px;
+      height: 48px;
+      text-decoration: none;
+      color: $cor-white;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $cor-mae-principal;
+      border-radius: 8px;
+      box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+
+      &:hover { 
+        scale: 0.9;
+        background-color: $cor-black;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+  }
+
+  &__insta {
+    width: 48px;
+    height: 48px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      scale: 0.9;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  }
+
+}

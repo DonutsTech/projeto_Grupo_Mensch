@@ -11,6 +11,19 @@ import teste02 from './assets/teste02.png';
 import teste03 from './assets/teste03.png';
 
 
+import ckto1 from './assets/CKTO1.png';
+import ckto2 from './assets/CKTO2.png';
+import ckto3 from './assets/CKTO3.png';
+
+
+import escolinha1 from './assets/escolinha1.png';
+import escolinha2 from './assets/escolinha2.png';
+import escolinha3 from './assets/escolinha3.png';
+
+
+
+
+
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -90,39 +103,39 @@ const Campanhas = () => {
       titulo: 'Kilo por',
       span: ' Kilo',
       periodo: "Mensalmente",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "Na campanha da Mensch Energia Solar, a cada kilowatt vendido, doamos um kilo de alimento para os que mais necessitam. Essa ação reflete nosso compromisso de Impactar Vidas, unindo compromisso social e solidariedade para um futuro melhor e mais humano.",
       fotos: [
         teste01,
         teste02,
         teste03
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/p/DBZ3qUjRtOt/'
     },
     {
       id: 2,
       titulo: 'Apoio ao ',
       span: ' CTKO',
       periodo: "Contínuo",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "A parceria entre o Grupo Mensch e o time de vôlei é transformadora. Com essa conexão humana, impactamos vidas dentro e fora das quadras, promovendo crescimento e transformação para todos.",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        ckto1,
+        ckto2,
+        ckto3,
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/ctkovoleitijucano/'
     },
     {
       id: 3,
       titulo: 'Apoio a ',
-      span: 'Escolinha',
+      span: 'Escolinha Gol para vida',
       periodo: "Contínuo",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laboriosam! Distinctio mollitia voluptate iure temporibus, ullam exercitationem voluptatem, amet quasi repellat, esse obcaecati libero ratione aliquid? Placeat dolores numquam corporis?",
+      descricao: "O apoio do Grupo Mensch ao Gol pra Vida, é uma parceria que transforma, promovendo valores, oportunidades e impacto positivo para crianças dentro e fora dos campos.",
       fotos: [
-        teste01,
-        teste02,
-        teste03
+        escolinha1,
+        escolinha2,
+        escolinha3
       ],
-      link: 'https://www.instagram.com/grupo.mensch/'
+      link: 'https://www.instagram.com/escolinhagolparavida/'
     },
     {
       id: 4,
