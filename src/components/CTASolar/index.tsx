@@ -6,15 +6,17 @@ import mensch from './assets/grupo_mensch.png';
 import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
-import { FormEvent, useCallback, useState } from 'react';
-import { FormSimulacaoSolar } from '@/types';
+import { FormEvent, useCallback, useEffect, useState } from 'react';
+import { Endereco, FormSimulacaoSolar } from '@/types';
 import { cep, currency, phone } from '@/util/mask';
 import SwiperBancos from '../SwiperBancos';
+import { validationModal } from '@/util/validation';
+import { mensagemMenschSolarCalcular } from '@/util/mensagem';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
   const [form, setForm] = useState({} as FormSimulacaoSolar)
-  //const [mensagem, setMensagem] = useState<string>('')
+  const [mensagem, setMensagem] = useState<string>('')
 
   const toggleModal = () => {
     setOpenImage(!openImage);
@@ -43,7 +45,56 @@ const CTASolar = () => {
     [form],
   );
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const endereco = async (cep: string) => {
+    const response = await fetch('/api/endereco', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        cep
+      }),
+    });
+
+    const data = await response.json()
+
+    return data;
+  }
+
+  const enviarDados = async (dadosCep: Endereco, dadosForm: FormSimulacaoSolar) => {
+    try {
+      const response = await fetch('/api/formulario', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'milenaleme4@hotmail.com',
+          subject: ' Mensagem Recebida pelo site - Contato do Grupo Mansch',
+          text: `${mensagemMenschSolarCalcular(dadosCep, dadosForm)}`
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.') {
+        throw new Error('Mensagem não enviada. Contate-nos por telefone.')
+      }
+
+      if (!(data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.')) {
+        setMensagem(data.mensagem)
+        setForm({} as FormSimulacaoSolar)
+      }
+
+    } catch (error) {
+      console.error(error)
+      setMensagem('Mensagem não enviada. Contate-nos por telefone.')
+    }
+  }
+
+
+
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     const formData: FormSimulacaoSolar = {
@@ -53,10 +104,29 @@ const CTASolar = () => {
       valor: (e.currentTarget.elements.namedItem('valor') as HTMLInputElement).value,
     }
 
-    console.log(formData)
+    const cep = await endereco(formData.cep)
+
+    if (cep && 'mensagem' in cep && cep.mensagem === 'cep inválido') {
+      setMensagem(cep.mensagem)
+    } else {
+      const mensagem = validationModal(formData)
+
+      if (!(mensagem === '')) {
+        setMensagem(mensagem)
+      } else {
+        enviarDados(cep, formData)
+      }
+
+    }
   }
 
-
+  useEffect(() => {
+    setTimeout(() => {
+      if (mensagem) {
+        setMensagem('')
+      }
+    }, 10000);
+  }, [mensagem]);
 
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
@@ -214,6 +284,11 @@ const CTASolar = () => {
             onChange={handleFormChange}
             value={form.valor === undefined || form.valor === 'R$ 0,00' ? '' : form.valor}
           />
+          {
+            !(mensagem === '') && (
+              <p className={Style.contatos__content__form__info}>{mensagem}</p>
+            )
+          }
           <div className={Style.modal__form__btnBox}>
             <button
               className={Style.modal__form__btnBox__btn}
