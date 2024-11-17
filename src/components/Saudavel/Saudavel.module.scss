@@ -5,6 +5,53 @@
   height: auto;
   min-height: 100vh;
   background-color: $cor-white;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding: 64px 0;
+
+  &__titulo { 
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    height: auto;
+    font-family: $font-titulo;
+    font-size: $font-size-titulo-2;
+    line-height: $font-height-titulo-2;
+    font-weight: $font-weight-titulo-2;
+    color: $cor-black;
+    text-align: center;
+    cursor: default;
+
+    span { 
+
+      &:hover {
+        color: $cor-health-principal;
+      }
+    }
+
+  }
+
+  &__texto { 
+    width: 60%;
+    min-width: 280px;
+    margin: 0 auto;
+    height: auto;
+    font-size: $font-size-texto-3;
+    line-height: $font-height-texto-3;
+
+    @media (max-width: 840px) {
+      text-align: center;
+    }
+    
+  }
+
+  &__slider { 
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+  }  
 
 }
