@@ -41,11 +41,28 @@ const Receitas = () => {
   return (
     <>
       <section className={Style.receitas}>
+        <h2 className={Style.receitas__titulo}>Receitas</h2>
+
         <div className={Style.receitas__tipos}>
           {tipos.map(({ id, imagem, nome }: Tipo) => (
-            <div key={id} onClick={() => { setIdTipo(id); toggleModal(); }}>
-              <Image src={imagem} alt={nome} width={80} height={80} />
-              <h3>{nome}</h3>
+            <div 
+              key={id} 
+              onClick={() => { setIdTipo(id); toggleModal(); }}
+              className={Style.receitas__tipos__item}
+            >
+              <div className={Style.receitas__tipos__item__overlay}/>
+              <Image 
+                src={imagem} 
+                alt={nome} 
+                width={80} 
+                height={80} 
+                className={Style.receitas__tipos__item__img}
+              />
+              <h3
+                className={Style.receitas__tipos__item__nome}
+              >
+                {nome}
+              </h3>
             </div>
           ))}
         </div>
@@ -111,17 +128,3 @@ const Receitas = () => {
 };
 
 export default Receitas;
-
-/*
- {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  }
-
-*/

@@ -6,9 +6,96 @@
   min-height: 100vh;
   background-color: $cor-health-principal;
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 120px);
+  padding: 148px 0 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+
 
   &__tipos {
-    padding-top: 132px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 690px) {
+      grid-template-columns: 1fr;
+    }
+    
+    &__item { 
+      width: 280px;
+      height: 280px;
+      position: relative;
+      cursor: pointer;
+      border: 8px solid $cor-white;
+      border-top-right-radius: 24px;
+      border-bottom-left-radius: 24px;
+
+      &__overlay { 
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        background-color: $cor-black;
+        opacity: 0.8;
+        z-index: 2;
+      }
+
+      &__img { 
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+
+      }
+
+      &__nome { 
+        width: 90%;
+        text-align: center;
+        font-family: $font-titulo;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 800;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $cor-white;
+        z-index: 3;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        border-radius: 16px;
+        box-shadow: 0 0 8px $cor-mae-principal;
+        border: none;
+
+        .receitas__tipos__item__overlay {
+          display: none;
+        }
+
+        .receitas__tipos__item__nome {
+          display: none;
+        }
+      }
+    }
   }
 }
 
