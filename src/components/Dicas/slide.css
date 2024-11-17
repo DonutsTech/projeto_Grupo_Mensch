@@ -1,0 +1,26 @@
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+  position: relative;
+  cursor: grab;
+  padding: 24px 0;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.02);
+  transition: transform 200ms ease-in-out;
+}
+
+@media (max-width: 840px) {
+  .swiper-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
