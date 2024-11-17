@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "titulo": "Cenouras glaceadas com pistache e sementes de gergelim",
     "subtitulo": "Temos certeza de que sua família vai adorar esse saboroso acompanhamento de cenoura!",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/default-source/recipes/pistachio-carrots-wide.jpg?sfvrsn=b2271fd2_3",
@@ -32,6 +33,7 @@
     "tipo": 6
   },
   {
+    "id": 2,
     "titulo": "Panquecas de aveia e espinafre",
     "subtitulo": "Surpreenda a todos com estas deliciosas panquecas saudáveis de espinafre e aveia no café da manhã.",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/default-source/recipes/greenpancake_1920x580.jpg?sfvrsn=2f9f391b_5",
@@ -65,6 +67,7 @@
     "tipo": 1
   },
   {
+    "id": 3,
     "titulo": "Chupe de Camarões",
     "subtitulo": "Experimente esta receita requentada típica do Peru.",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/default-source/recipes/chupe-de-camarones.jpg?sfvrsn=9245f011_4",
@@ -104,6 +107,7 @@
     "tipo": 3
   },
   {
+    "id": 4,
     "titulo": "PIPOCA TRUFADA",
     "subtitulo": "Esta receita saborosa é aquela que sua família vai pedir de novo e de novo.",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/truffle-popcorn-rp-wide.jpg?sfvrsn=a35008c5_1",
@@ -126,6 +130,7 @@
     "tipo": 2
   },
   {
+    "id": 5,
     "titulo": "PIPOCA DE PIMENTA, LIMÃO E MARACUJÁ",
     "subtitulo": "Picante, salgada e doce, esta pipoca tem de tudo!",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/chili-lime-popcorn-rp-wide.jpg?sfvrsn=62358881_1",
@@ -149,6 +154,7 @@
     "tipo": 2
   },
   {
+    "id": 6,
     "titulo": "PIPOCA DE BRIGADEIRO",
     "subtitulo": "Pipoca + Brigadeiros = Paraíso na terra!",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/brigadeiro-popcorn-rp-wide.jpg?sfvrsn=f516eb9e_1",
@@ -174,6 +180,7 @@
     "tipo": 4
   },
   {
+    "id": 7,
     "titulo": "PIZZA MISTA",
     "subtitulo": "Se delicie com essa receita de Pizza que não precisa de forno",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/benefits/pizza_gaa1794c6-86a2-4257-9fb4-78ce58c9f5aa.jpg?sfvrsn=2894e22e_1",
@@ -206,6 +213,7 @@
     "tipo": 3
   },
   {
+    "id": 8,
     "titulo": "FEIJÃO TROPEIRO",
     "subtitulo": "Surprenda com essa receita brasileira e deliciosa",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/benefits/feij%C3%A3o-tropeiro.jpg?sfvrsn=7d326e36_1",
@@ -242,6 +250,7 @@
     "tipo": 3
   },
   {
+    "id": 9,
     "titulo": "ROBALO DO CHEF COM PESTO DE PISTACHE",
     "subtitulo": "Uma receita de peixe simplesmente sensacional criada pelos nossos chefs",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/r%C3%B3balo-del-chef-con-pesto-de-pistacho.jpg?sfvrsn=aa06ab43_1",
@@ -273,6 +282,7 @@
     "tipo": 3
   },
   {
+    "id": 10,
     "titulo": "SALMÃO ESTILO ASIÁTICO COM MEL E LIMÃO",
     "subtitulo": "Receita incrível e rápida de salmão com um delicioso toque asiático",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/salmo-n-oriental-al-limo-n-y-miel.jpg?sfvrsn=34633170_1",
@@ -302,6 +312,7 @@
     "tipo": 3
   },
   {
+    "id": 11,
     "titulo": "Ovos mexidos",
     "subtitulo": "cozinhar ovos para desfrutar resultados perfeitos",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/huevos.jpg?sfvrsn=8d41f7d7_1",
@@ -319,6 +330,7 @@
     "tipo": 1
   },
   {
+    "id": 12,
     "titulo": "Ovos cozidos",
     "subtitulo": "cozinhar ovos para desfrutar resultados perfeitos",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/huevos.jpg?sfvrsn=8d41f7d7_1",
@@ -336,6 +348,7 @@
     "tipo": 1
   },
   {
+    "id": 13,
     "titulo": "TORTA DE CAFÉ",
     "subtitulo": "Feita para os amantes tanto de doce, quanto de café",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/pastel-de-cafe-.jpg?sfvrsn=16531713_1",
@@ -366,6 +379,7 @@
     "tipo": 4
   },
   {
+    "id": 14,
     "titulo": "TORRADAS FRANCESAS COM AVEIA",
     "subtitulo": "Desfrute de um café da manhã único com essa receita de torradas francesas cobertas com aveia e acompanhada de frutas",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/tostadas-francesas-cubiertas-de-avena.jpg?sfvrsn=1c6ffdf9_1",
@@ -391,6 +405,7 @@
     "tipo": 1
   },
   {
+    "id": 15,
     "titulo": "BRUSCHETTA COM PESTO DE PISTACHE E BURRATA",
     "subtitulo": "Você vai desejar esses aperitivos de pesto, tomate e burrata toda hora",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/pesto2_1920x580.jpg?sfvrsn=264fc4f2_1",
@@ -425,6 +440,7 @@
     "tipo": 2
   },
   {
+    "id": 16,
     "titulo": "TILÁPIA AO MOLHO DE MANGA",
     "subtitulo": "Desfrute o sabor agridoce da manga neste prato",
     "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/tilapia-con-salsa-de-mango.jpg?sfvrsn=747aaf7d_1",
@@ -456,125 +472,5 @@
       "Cubra a tilápia com o molho de manga. Sirva com as ervilhas refogadas e seu arroz de preferência"
     ],
     "tipo": 3
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
-  },
-  {
-    "titulo": "",
-    "subtitulo": "",
-    "image": "",
-    "tempo_de_preparo": 0,
-    "dificuldade": 0,
-    "porcoes": 0,
-    "Ingredientes": [],
-    "preparacao": []
   }
 ]
