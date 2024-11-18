@@ -1,4 +1,4 @@
-@use 'variaveis' as *;
+@use 'variaveis'as *;
 
 .receitas {
   width: 100%;
@@ -13,6 +13,30 @@
   justify-content: center;
   gap: 24px;
 
+  &__titulo {
+    width: 90%;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    font-family: $font-titulo;
+    font-size: $font-size-titulo-3;
+    line-height: $font-height-titulo-3;
+    font-weight: $font-weight-titulo-3;
+    color: $cor-white;
+    text-align: center;
+  }
+
+  &__texto {
+    width: 80%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    font-size: $font-size-texto-3;
+    line-height: $font-height-texto-3;
+    color: $cor-white;
+    text-align: center;
+  }
+
 
 
   &__tipos {
@@ -23,6 +47,7 @@
     justify-content: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 24px;
     gap: 32px;
 
     @media (max-width: 1000px) {
@@ -32,8 +57,8 @@
     @media (max-width: 690px) {
       grid-template-columns: 1fr;
     }
-    
-    &__item { 
+
+    &__item {
       width: 280px;
       height: 280px;
       position: relative;
@@ -42,7 +67,7 @@
       border-top-right-radius: 24px;
       border-bottom-left-radius: 24px;
 
-      &__overlay { 
+      &__overlay {
         position: absolute;
         display: block;
         top: 0;
@@ -56,16 +81,17 @@
         z-index: 2;
       }
 
-      &__img { 
+      &__img {
         width: 280px;
         height: 280px;
         object-fit: cover;
         border-top-right-radius: 16px;
         border-bottom-left-radius: 16px;
+        filter: blur(2px);
 
       }
 
-      &__nome { 
+      &__nome {
         width: 90%;
         text-align: center;
         font-family: $font-titulo;
@@ -78,6 +104,7 @@
         transform: translate(-50%, -50%);
         color: $cor-white;
         z-index: 3;
+        text-transform: capitalize;
       }
 
       &:hover {
@@ -90,6 +117,11 @@
         .receitas__tipos__item__overlay {
           display: none;
         }
+
+        .receitas__tipos__item__img {
+          filter: none;
+        }
+
 
         .receitas__tipos__item__nome {
           display: none;
@@ -109,14 +141,254 @@
   transform: translate(-50%, -50%);
   overflow: auto;
   border-radius: 16px;
-  border: solid 6px $cor-energia-principal;
+  border: solid 6px $cor-health-principal;
   outline: none;
-  padding: 20px;
   background-color: $cor-white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 24px;
+  padding: 128px 20px 0px 20px;
   gap: 24px;
+
+
+  &__cabecalho {
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    top: -10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    &__overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $cor-black;
+      opacity: 0.6;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      top: 0;
+      z-index: 1;
+    }
+
+    &__img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      object-position: center;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    &__close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50px;
+      background-color: $cor-white;
+      border: solid 3px $cor-health-principal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      cursor: pointer;
+      font-weight: 800;
+      color: $cor-health-principal;
+
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-health-principal;
+        color: $cor-white;
+        border: none;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &__titulo {
+      width: 90%;
+      height: auto;
+      font-family: $font-titulo;
+      font-size: $font-size-titulo-2;
+      line-height: $font-height-titulo-2;
+      font-weight: $font-weight-titulo-2;
+      color: $cor-white;
+      text-align: center;
+      z-index: 2;
+      text-transform: capitalize;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    overflow-y: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 24px;
+
+    @media (max-width: 1119px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 730px) {
+      grid-template-columns: 1fr;
+    }
+
+
+    &__item {
+      width: 280px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      cursor: pointer;
+
+      &__img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        box-shadow: none;
+      }
+
+      &__titulo {
+        width: 200px;
+        height: auto;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+
+        .modal__container__item__img {
+          box-shadow: 0 0 16px $cor-mae-principal;
+        }
+
+        .modal__container__item__titulo {
+          color: $cor-health-principal;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  &__receita {
+
+    &__cabecalho {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      &__overlay { 
+        width: 100%;
+        height: 180px;
+        background-color: $cor-black;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      &__img { 
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+
+      &__close { 
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-color: $cor-white;
+        border: solid 3px $cor-health-principal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        cursor: pointer;
+        font-weight: 800;
+        color: $cor-health-principal;
+
+        &:hover { 
+          scale: 0.9;
+          background-color: $cor-health-principal;
+          color: $cor-white;
+          border: none;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+
+      &__titulo { 
+        width: 90%;
+        min-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        line-height: $font-height-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        color: $cor-white;
+        text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 3;
+      }
+
+      &__subtitulo { 
+        width: 90%;
+        margin: 0 auto;
+        min-width: 280px;
+        height: auto;
+        font-size: $font-size-texto-1;
+        line-height: $font-height-texto-1;
+        // font-weight: $font-weight-texto-1;
+        color: $cor-white;
+        text-align: center;
+        position: relative;
+        text-transform: capitalize;
+        z-index: 2;
+
+      }
+    }
+
+  }
 }

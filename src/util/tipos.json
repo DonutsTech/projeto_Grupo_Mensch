@@ -7,26 +7,26 @@
   {
     "id": 2,
     "nome": "Entradas",
-    "imagem": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/entradas.tmb-medium.jpg?sfvrsn=2a94cde7_2"
+    "imagem": "/assets/receitas/tipo/entradas.jpg"
   },
   {
     "id": 3,
     "nome": "Pratos Principais",
-    "imagem": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/home_cat_principales.tmb-medium.jpg?sfvrsn=f32fb204_2"
+    "imagem": "/assets/receitas/tipo/pratoPrincipal.jpg"
   },
   {
     "id": 4,
     "nome": "Sobremesas",
-    "imagem": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/home_cat_postres.tmb-medium.jpg?sfvrsn=2cfc3818_2"
+    "imagem": "/assets/receitas/tipo/sobremesa.jpg"
   },
   {
     "id": 5,
     "nome": "Bebidas",
-    "imagem": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/home_cat_bebidas.tmb-medium.jpg?sfvrsn=cc5f0ac9_2"
+    "imagem": "/assets/receitas/tipo/bebida.jpg"
   },
   {
     "id": 6,
     "nome": "Acompanhamentos",
-    "imagem": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/acompanhamentos.tmb-medium.jpg?sfvrsn=9ecc4bd9_2"
+    "imagem": "/assets/receitas/tipo/acompanhamento.jpg"
   }
 ]
