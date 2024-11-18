@@ -10,6 +10,10 @@ export const validatePhone = (phone: string) => {
   return regex.test(phone);
 };
 
+export const isUpperCase = (str: string) => {
+  return str === str.toUpperCase();
+}
+
 export function validation(value: FormContatoMascher) {
   if (value.nome.trim() === '' || value.telefone.trim() === '' || value.nome === undefined || value.telefone === undefined ) {
     return 'O nome e o telefone são obrigatórios'

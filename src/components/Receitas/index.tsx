@@ -4,6 +4,7 @@ import receitas from '@/util/receitas.json';
 import Image from "next/image";
 import { useState } from "react";
 import Modal from "react-modal";
+import { isUpperCase } from "@/util/validation";
 
 interface Tipo {
   id: number;
@@ -151,7 +152,9 @@ const Receitas = () => {
                   id,
                   tempo_de_preparo,
                   dificuldade,
-                  porcoes
+                  porcoes,
+                  Ingredientes,
+                  preparacao
                 }) => (
                   <div key={id} className={Style.modal__receita}>
                     <div className={Style.modal__receita__cabecalho}>
@@ -180,7 +183,32 @@ const Receitas = () => {
                         </p>
                       </div>
                     </div>
-                    <div></div>
+                    <div>
+                      <h3>Ingredientes</h3>
+                      <ol>
+                      {
+                        Ingredientes.map((str: string) => (
+                         <>
+                            {
+                              isUpperCase(str) ? (
+                                <h4>{str}</h4>
+                              ) : (
+                                <li>{str}</li>
+                              )
+                            }
+                         </>
+                        ))
+                      }
+                      </ol>
+                      <h3>Preparação</h3>
+                      <ul>
+                        {
+                          preparacao.map((str: string, index) => (
+                            <li key={index}>{str}</li>
+                          ))
+                        }
+                      </ul>
+                    </div>
                   </div>
                 ))
               }
