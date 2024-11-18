@@ -163,10 +163,22 @@ const Receitas = () => {
                         X
                       </button>
                     </div>
-                    <div className={Style.modal__receita__conteudo}>
-                      <p>{tempo_de_preparo}</p>
-                      <p>{dificuldade}</p>
-                      <p>{porcoes}</p>
+                    <div className={Style.modal__receita__indice}>
+                      <div className={Style.modal__receita__indice__item}>
+                        <p className={Style.modal__receita__indice__item__texto} >
+                          {tempo_de_preparo} min
+                        </p>
+                      </div>
+                      <div className={Style.modal__receita__indice__item}>
+                        <p className={Style.modal__receita__indice__item__texto}>
+                          Nível: {dificuldade}
+                        </p>
+                      </div>
+                      <div className={Style.modal__receita__indice__item}>
+                        <p className={Style.modal__receita__indice__item__texto}>
+                          Poções: {porcoes}
+                        </p>
+                      </div>
                     </div>
                     <div></div>
                   </div>
