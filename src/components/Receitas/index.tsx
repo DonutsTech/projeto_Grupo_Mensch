@@ -148,7 +148,10 @@ const Receitas = () => {
                   titulo,
                   subtitulo,
                   image,
-                  id
+                  id,
+                  tempo_de_preparo,
+                  dificuldade,
+                  porcoes
                 }) => (
                   <div key={id} className={Style.modal__receita}>
                     <div className={Style.modal__receita__cabecalho}>
@@ -160,10 +163,12 @@ const Receitas = () => {
                         X
                       </button>
                     </div>
-                    <div className={Style.modal__receita__conteudo}> 
-                    
-
+                    <div className={Style.modal__receita__conteudo}>
+                      <p>{tempo_de_preparo}</p>
+                      <p>{dificuldade}</p>
+                      <p>{porcoes}</p>
                     </div>
+                    <div></div>
                   </div>
                 ))
               }
