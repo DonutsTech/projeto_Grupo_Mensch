@@ -268,16 +268,13 @@ const Receitas = () => {
                                 Quem ama compartilha!
                               </p>
                               <Link 
-                                href={`https://wa.me/?text=
-                                    Olá, gostaria de compartilhar com você essa deliciosa receita de ${titulo.toLowerCase()} que eu encontrei no site Mensch Health. \n\n
-                                    **Tempo de preparo: ${tempo_de_preparo} min** \n
-                                    **Dificuldade: ${dificuldade}** \n
-                                   **Porcoes: ${porcoes}**\n
-                                    Ingredientes: ${Ingredientes.join(', \n ')}
-                                    Preparação: ${preparacao.join(', \n ')}
-                                    #MenshHealth
-                                    Veja essa receita e outras delicias em https://www.grupomensch.com.br/health
-                                    E quando fizer a receita me chame😋
+                                href={`https://wa.me/?text=Olá, gostaria de compartilhar com você essa deliciosa receita de ${titulo.toLowerCase()} que eu encontrei no site Mensch Health. \n\n
+                                    *Tempo de preparo*: ${tempo_de_preparo} min || *Dificuldade*: ${dificuldade} || *Porcoes*: ${porcoes} \n
+                                    *Ingredientes*: ${Ingredientes.join(', ')}\n
+                                    *Preparação*: ${preparacao.join(', ')}\n
+
+                                    Veja essa receita e outras delicias em\n https://projeto-grupo-mensch.vercel.app/health \n
+                                    E quando fizer a receita me chame
                                   `} 
                                 target="_blank" 
                                 rel="noreferrer" 
