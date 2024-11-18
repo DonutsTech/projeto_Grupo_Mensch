@@ -6,6 +6,14 @@ import { useState } from "react";
 import Modal from "react-modal";
 import { isUpperCase } from "@/util/validation";
 
+import share from './assets/share.svg';
+
+import timer from './assets/timer.svg';
+import nivel from './assets/nivel.svg';
+import serve from './assets/serve.svg';
+import classNames from "classnames";
+import Link from "next/link";
+
 interface Tipo {
   id: number;
   nome: string;
@@ -53,7 +61,7 @@ const Receitas = () => {
           {tipos.map(({ id, imagem, nome }: Tipo) => (
             <div
               key={id}
-              onClick={() => { setIdTipo(id); toggleModal(); console.log(tipos[id].imagem) }}
+              onClick={() => { setIdTipo(id); toggleModal();}}
               className={Style.receitas__tipos__item}
             >
               <div className={Style.receitas__tipos__item__overlay} />
@@ -89,41 +97,47 @@ const Receitas = () => {
         {
           !(idTipo === 0) && (
             <>
-              {
-                tipos.filter((dado): dado is Tipo => dado.id !== undefined && dado.id === idTipo).map(({ imagem, nome, id }) => (
-                  <div className={Style.modal__cabecalho} key={id}>
-                    <div className={Style.modal__cabecalho__overlay} />
-                    <Image src={imagem} alt={nome} className={Style.modal__cabecalho__img} width={1080} height={1080} />
-                    <button className={Style.modal__cabecalho__close} onClick={() => { setIdTipo(0); toggleModal(); }}>
-                      X
-                    </button>
-                    <h2 className={Style.modal__cabecalho__titulo}>
-                      {nome}
-                    </h2>
-                  </div>
-                ))
-              }
-              <div className={Style.modal__container}>
+              <div className={Style.modal__menu}>
                 {
-                  receitas.filter((dado): dado is Receita => dado.tipo !== undefined && dado.tipo === idTipo).map(({ image, titulo, id }, index) => (
-                    <div
-                      key={index}
-                      onClick={() => { toggleModalReceita(); setIdReceita(id); }}
-                      className={Style.modal__container__item}
-                    >
-                      <Image
-                        src={image}
-                        alt={titulo}
-                        width={500}
-                        height={500}
-                        className={Style.modal__container__item__img}
-                      />
-                      <h3
-                        className={Style.modal__container__item__titulo}
-                      >{titulo.toLowerCase()}</h3>
+                  tipos.filter((dado): dado is Tipo => dado.id !== undefined && dado.id === idTipo).map(({ imagem, nome, id }) => (
+                    <div className={Style.modal__menu__cabecalho} key={id}>
+                      <div className={Style.modal__menu__cabecalho__overlay} />
+                      <Image src={imagem} alt={nome} className={Style.modal__menu__cabecalho__img} width={1080} height={1080} />
+                      <div className={Style.modal__menu__cabecalho__box}>
+                        <button className={Style.modal__menu__cabecalho__box__close} onClick={() => { setIdTipo(0); toggleModal(); }}>
+                          X
+                        </button>
+                        <h2 className={Style.modal__menu__cabecalho__box__titulo}>
+                          {nome}
+                        </h2>
+                      </div>
                     </div>
                   ))
                 }
+                <div className={Style.modal__menu__container}>
+                  <div className={Style.modal__menu__container__box}>
+                    {
+                      receitas.filter((dado): dado is Receita => dado.tipo !== undefined && dado.tipo === idTipo).map(({ image, titulo, id }, index) => (
+                        <div
+                          key={index}
+                          onClick={() => { toggleModalReceita(); setIdReceita(id); }}
+                          className={Style.modal__menu__container__box__item}
+                        >
+                          <Image
+                            src={image}
+                            alt={titulo}
+                            width={500}
+                            height={500}
+                            className={Style.modal__menu__container__box__item__img}
+                          />
+                          <h3
+                            className={Style.modal__menu__container__box__item__titulo}
+                          >{titulo.toLowerCase()}</h3>
+                        </div>
+                      ))
+                    }
+                  </div>
+                </div>
               </div>
             </>
           )
@@ -158,62 +172,130 @@ const Receitas = () => {
                 }) => (
                   <div key={id} className={Style.modal__receita}>
                     <div className={Style.modal__receita__cabecalho}>
-                      <div className={Style.modal__receita__cabecalho__overlay} />
+                      <div className={Style.modal__receita__cabecalho__overlay} ></div>
                       <Image src={image} alt={titulo} className={Style.modal__receita__cabecalho__img} width={1920} height={1080} />
-                      <h2 className={Style.modal__receita__cabecalho__titulo}>{titulo.toLowerCase()}</h2>
-                      <h3 className={Style.modal__receita__cabecalho__subtitulo}>{subtitulo.toLowerCase()}</h3>
-                      <button className={Style.modal__receita__cabecalho__close} onClick={() => { toggleModalReceita(); setIdReceita(0); }}>
-                        X
-                      </button>
+                      <div className={Style.modal__receita__cabecalho__box}>
+                        <h2 className={Style.modal__receita__cabecalho__box__titulo}>{titulo.toLowerCase()}</h2>
+                        <h3 className={Style.modal__receita__cabecalho__box__subtitulo}>{subtitulo.toLowerCase()}</h3>
+                        <button className={Style.modal__receita__cabecalho__box__close} onClick={() => { toggleModalReceita(); setIdReceita(0); }}>
+                          X
+                        </button>
+                      </div>
                     </div>
+
                     <div className={Style.modal__receita__indice}>
-                      <div className={Style.modal__receita__indice__item}>
+                      <div className={classNames({
+                        [Style.modal__receita__indice__item]: true,
+                        [Style.modal__receita__indice__item__tempo]: true
+                      })}>
+                        <Image src={timer} alt="icone de tempo" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto} >
                           {tempo_de_preparo} min
                         </p>
                       </div>
-                      <div className={Style.modal__receita__indice__item}>
+                      <div className={classNames({
+                        [Style.modal__receita__indice__item]: true,
+                        [Style.modal__receita__indice__item__nivel]: true
+                      })}>
+                        <Image src={nivel} alt="icone de nível" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto}>
                           Nível: {dificuldade}
                         </p>
                       </div>
-                      <div className={Style.modal__receita__indice__item}>
+                      <div className={classNames({
+                        [Style.modal__receita__indice__item]: true,
+                        [Style.modal__receita__indice__item__porcoes]: true
+                      })}>
+                        <Image src={serve} alt="icone de porções" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto}>
-                          Poções: {porcoes}
+                          Porções: {porcoes}
                         </p>
                       </div>
                     </div>
-                    <div>
-                      <h3>Ingredientes</h3>
-                      <ol>
-                      {
-                        Ingredientes.map((str: string) => (
-                         <>
-                            {
-                              isUpperCase(str) ? (
-                                <h4>{str}</h4>
-                              ) : (
-                                <li>{str}</li>
-                              )
-                            }
-                         </>
-                        ))
-                      }
-                      </ol>
-                      <h3>Preparação</h3>
-                      <ul>
-                        {
-                          preparacao.map((str: string, index) => (
-                            <li key={index}>{str}</li>
-                          ))
-                        }
-                      </ul>
+
+                    <div className={Style.modal__receita__conteudo}>
+                      <div className={Style.modal__receita__conteudo__box}>
+                        <h3
+                          className={Style.modal__receita__conteudo__box__titulo}>
+                          Ingredientes
+                        </h3>
+                        <ol
+                          key={id}
+                          className={Style.modal__receita__conteudo__box__ingredientes}>
+                          {
+                            Ingredientes.map((str: string) => (
+                              <>
+                                {
+                                  isUpperCase(str) ? (
+                                    <h4
+                                      className={Style.modal__receita__conteudo__box__ingredientes__item__cat}> {str}</h4>
+                                  ) : (
+                                    <li
+                                      className={Style.modal__receita__conteudo__box__ingredientes__item}>
+                                      <span>◆</span> {str}</li>
+                                  )
+                                }
+                              </>
+                            ))
+                          }
+                        </ol>
+                        <h3
+                          className={Style.modal__receita__conteudo__box__titulo}>
+                          Preparação
+                        </h3>
+                        <ul
+                          className={Style.modal__receita__conteudo__box__preparo}>
+                          {
+                            preparacao.map((str: string, index) => (
+                              <li
+                                key={index}
+                                className={Style.modal__receita__conteudo__box__preparo__item}
+                              >{str}</li>
+                            ))
+                          }
+                        </ul>
+                      </div>
+                          <div className={Style.modal__receita__conteudo__share}>
+                            <p className={Style.modal__receita__conteudo__share__chamada}>
+                              Eai como ficou a sua receita? Que tal postar no Instagram e marcar a gente? <Link href={'https://www.instagram.com/mensch.health/'}
+                                target="_blank"
+                                rel="noreferrer"
+                                title="Compartilhe no Instagram"
+                              >@mensch.health</Link>
+                            </p>
+                            <div className={Style.modal__receita__conteudo__share__botao}> 
+                              <p className={Style.modal__receita__conteudo__share__botao__texto}> 
+                                Quem ama compartilha!
+                              </p>
+                              <Link 
+                                href={`https://wa.me/?text=
+                                    Olá, gostaria de compartilhar com você essa deliciosa receita de ${titulo.toLowerCase()} que eu encontrei no site Mensch Health. \n\n
+                                    **Tempo de preparo: ${tempo_de_preparo} min** \n
+                                    **Dificuldade: ${dificuldade}** \n
+                                   **Porcoes: ${porcoes}**\n
+                                    Ingredientes: ${Ingredientes.join(', \n ')}
+                                    Preparação: ${preparacao.join(', \n ')}
+                                    #MenshHealth
+                                    Veja essa receita e outras delicias em https://www.grupomensch.com.br/health
+                                    E quando fizer a receita me chame😋
+                                  `} 
+                                target="_blank" 
+                                rel="noreferrer" 
+                                title="Compartilhe no Whatsapp"
+                                className={Style.modal__receita__conteudo__share__botao__link}
+                              >
+                                <Image src={share} alt="share" width={24} className={Style.modal__receita__conteudo__share__botao__link__img}/> 
+                              </Link>
+                            </div>
+                          </div>
                     </div>
                   </div>
                 ))
               }
+
             </>
           )
+
         }
 
       </Modal>
