@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 import Style from './SocialSolar.module.scss';
 
-import img from './assets/teste01.png';
+import img from './assets/kiloporkilo.png';
 import Link from 'next/link';
 
-const SocialSolar = () => { 
+const SocialSolar = () => {
 
   return (
     <div className={Style.social}>
@@ -15,10 +15,10 @@ const SocialSolar = () => {
           Kilo por <span>Kilo</span>
         </h3>
         <p className={Style.social__textos__paragrafo}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed ullam eos quidem ipsum voluptates beatae, optio nisi necessitatibus, eligendi sunt debitis. Laboriosam quis et veritatis nam nulla quidem aliquam!
+          Na campanha da Mensch Energia Solar, a cada kilowatt vendido, doamos um kilo de alimento para os que mais necessitam. Essa ação reflete nosso compromisso de Impactar Vidas, unindo compromisso social e solidariedade para um futuro melhor e mais humano.
         </p>
-        <Link 
-          className={Style.social__textos__btn} 
+        <Link
+          className={Style.social__textos__btn}
           href={'/social'}
           target='_blank'
           rel='noopener noreferrer'
