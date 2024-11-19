@@ -25,3 +25,11 @@ export interface Mensagem {
   subject: string;
   text: string;
 }
+
+export interface Tabela {
+  kwh: number;
+  qtd: number;
+  preco: number;
+  min: number;
+  max: number;
+}

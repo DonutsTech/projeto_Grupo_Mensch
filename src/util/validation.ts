@@ -1,4 +1,4 @@
-import { FormContatoMascher, FormSimulacaoSolar } from "@/types";
+import { FormContatoMascher, FormSimulacaoSolar, Tabela } from "@/types";
 
 export const validateEmail = (email: string) => {
   const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -42,4 +42,8 @@ export function validationModal(value: FormSimulacaoSolar) {
   }
 
   return ''
+}
+
+export function chamarNumero(lista: Tabela[], solicitado: number) : Tabela | null {
+  return lista.find(numero => numero.kwh >= solicitado) || null;
 }

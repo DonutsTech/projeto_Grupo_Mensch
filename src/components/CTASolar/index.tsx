@@ -7,11 +7,12 @@ import solar from './assets/mesch_solar.png';
 import Link from 'next/link';
 import Modal from 'react-modal';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
-import { Endereco, FormSimulacaoSolar } from '@/types';
+import { Endereco, FormSimulacaoSolar, Tabela } from '@/types';
 import { cep, currency, phone } from '@/util/mask';
 import SwiperBancos from '../SwiperBancos';
-import { validationModal } from '@/util/validation';
+import { chamarNumero, validationModal } from '@/util/validation';
 import { mensagemMenschSolarCalcular } from '@/util/mensagem';
+import tabela from '@/util/tabelaSolar.json';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
@@ -19,6 +20,7 @@ const CTASolar = () => {
   const [mensagem, setMensagem] = useState<string>('')
   const [cliente, setCliente] = useState<string>("");
   const [conta, setConta] = useState<number>(0);
+  const [informacao, setInformacao] = useState<Tabela | null>(null)
 
   const toggleModal = () => {
     setOpenImage(!openImage);
@@ -109,6 +111,7 @@ const CTASolar = () => {
     const valorLimpo = formData.valor.replace(/[^0-9,.-]/g, '');
     setConta(parseFloat(valorLimpo.replace(/,/g, '.')));
     setCliente(formData.nome.split(' ')[0]);
+    setInformacao(chamarNumero(tabela, parseFloat(valorLimpo.replace(/,/g, '.'))))
 
     const cep = await endereco(formData.cep)
 
@@ -133,6 +136,8 @@ const CTASolar = () => {
       }
     }, 10000);
   }, [mensagem]);
+
+  console.log(informacao)
 
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">
