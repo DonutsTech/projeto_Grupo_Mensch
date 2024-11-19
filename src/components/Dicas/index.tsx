@@ -31,12 +31,6 @@ const Dicas = () => {
     if (swiperElement) {
       const swiper = swiperElement.swiper;
 
-      // swiper.params.autoplay = {
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      // };
-      // swiper.init();  
-
       swiper.on('slideChange', () => {
         const activeSlide = swiper.slides[swiper.activeIndex];
         const textos = activeSlide.querySelector('.textos') as HTMLElement;

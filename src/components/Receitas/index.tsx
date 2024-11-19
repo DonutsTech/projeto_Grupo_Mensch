@@ -49,7 +49,7 @@ const Receitas = () => {
 
   return (
     <>
-      <section className={Style.receitas}>
+      <section className={Style.receitas} id="receitas" aria-label="Receitas para uma Alimentação Equilibrada">
         <h2 className={Style.receitas__titulo}>
           Receitas para uma Alimentação Equilibrada
         </h2>

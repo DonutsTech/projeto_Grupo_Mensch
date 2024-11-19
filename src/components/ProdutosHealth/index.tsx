@@ -8,7 +8,7 @@ import bg from './assets/camilla2.png';
 const ProdutosHealth = () => { 
 
   return (
-    <section className={Style.produtos}> 
+    <section className={Style.produtos} id='camilla' aria-label='Saiba Mais sobre a Camilla Vieira'> 
 
       <div className={Style.produtos__container}>
         <h2 className={Style.produtos__container__titulo}>

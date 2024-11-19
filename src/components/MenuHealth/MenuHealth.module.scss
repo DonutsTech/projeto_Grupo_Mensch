@@ -51,7 +51,7 @@
 
           &:hover {
             cursor: pointer;
-            color: $cor-energia-2;
+            color: $cor-health-principal;
             font-weight: 600;
             transition: all 200ms ease-in-out;
           }
@@ -67,7 +67,7 @@
 
         &:hover {
           cursor: pointer;
-          color: $cor-mae-principal;
+          color: $cor-health-principal;
           font-weight: 600;
           transition: all 200ms ease-in-out;
         }
