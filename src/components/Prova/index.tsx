@@ -14,6 +14,7 @@ import 'swiper/css/scrollbar';
 
 import thales from './assets/thales_alves.png';
 import raul from './assets/raul_paranaiba.png';
+import kleber from './assets/Kleber.png';
 
 import bia from './assets/ana_beatriz.png';
 
@@ -37,11 +38,11 @@ const Prova = () => {
     },
     {
       id: 3,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Kleber Oliveira",
+      foto: kleber,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou idealizador de um projeto de vôlei em Ituiutaba e a parceria com a Mensch transformou o projeto e minha vida, criando algo especial, fortalecendo laços e impactando vidas. Sou grato por isso.",
+      link: "https://www.instagram.com/klebersorocaba/",
     },
     {
       id: 4,

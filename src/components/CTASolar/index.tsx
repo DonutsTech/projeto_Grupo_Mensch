@@ -222,7 +222,7 @@ const CTASolar = () => {
         }}
 
       >
-         <button type='button'
+        <button type='button'
           onClick={toggleModal}
           className={Style.modal__btn}
         >
@@ -230,15 +230,15 @@ const CTASolar = () => {
         </button>
 
         <h3 className={Style.modal__titulo}>
-        Descubra quanto você irá economizar com <span>Energia Solar</span>:
+          Descubra quanto você irá economizar com <span>Energia Solar</span>:
         </h3>
 
         <h4 className={Style.modal__subtitulo}>
-        Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
+          Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
         </h4>
 
         <form className={Style.modal__form} onSubmit={onSubmit}>
-        <label htmlFor='nome' aria-label='Digite o seu nome' />
+          <label htmlFor='nome' aria-label='Digite o seu nome' />
           <input
             type='text'
             id='nome'
@@ -293,12 +293,12 @@ const CTASolar = () => {
             <button
               className={Style.modal__form__btnBox__btn}
               type='submit'
-              >
-                Confirmar
-              </button>
-              <p className={Style.modal__form__btnBox__texto}>
+            >
+              Confirmar
+            </button>
+            <p className={Style.modal__form__btnBox__texto}>
               *Confirmo que, ao realizar a simulação, autorizo o contato da equipe comercial da Mensch Energia Solar por ligação telefônica ou mensagem via WhatsApp.
-              </p>
+            </p>
           </div>
         </form>
 
