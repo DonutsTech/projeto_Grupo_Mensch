@@ -472,5 +472,356 @@
       "Cubra a tilápia com o molho de manga. Sirva com as ervilhas refogadas e seu arroz de preferência"
     ],
     "tipo": 3
+  },
+  {
+    "id": 17,
+    "titulo": "Donuts Fit e Deliciosos",
+    "subtitulo": "Saúde e sabor em cada mordida, sem culpa!",
+    "image": "/assets/receitas/donuts.jpg",
+    "tempo_de_preparo": 25,
+    "dificuldade": 2,
+    "porcoes": 20,
+    "Ingredientes": [
+      "2 xícaras de chá de farinha de aveia",
+      "2 ovos",
+      "1/2 xícara de chá de leite em pó semidesnatado ou desnatado, ou leite de coco em pó",
+      "1 colher de sopa de mel",
+      "1 colher de chá de extrato de baunilha",
+      "1 colher de sobremesa de fermento químico em pó",
+      "Cobertura da sua preferência",
+      "Granulado a gosto"
+    ],
+    "preparacao": [
+      "Em uma vasilha, coloque a farinha, os ovos, o leite em pó, o mel, a baunilha e misture bem, até ficar homogêneo.",
+      "Adicione o fermento e misture até formar uma bola.",
+      "Modele rosquinhas, distribua em uma forma untada e leve para assar em forno preaquecido a 180 °C por 15 minutos.",
+      "Passe na cobertura e no granulado.",
+      "Agora é só servir! Bom apetite."
+    ],
+    "tipo": 4
+  },
+  {
+    "id": 18,
+    "titulo": "PORTOBELLOS RECHEADOS COM PERU E QUEIJOS ITALIANOS",
+    "subtitulo": "Prepare essa incrível receita de cogumelos Portobello recheados de peru e queijos italianos",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/portobellos-rellenos-de-pavo.jpg?sfvrsn=3c919c5e_1",
+    "tempo_de_preparo": 23,
+    "dificuldade": 2,
+    "porcoes": 4,
+    "Ingredientes": [
+      "8 cogumelos Portobello médios sem talo",
+      "3 colheres de sopa de azeite",
+      "500g de peru magro moído",
+      "230g de queijo mascarpone",
+      "110g queijo gorgonzola desmanchado",
+      "1 colher de sopa de orégano",
+      "½ xícara farinha de rosca",
+      "Sal e pimenta-do-reino a gosto"
+    ],
+    "preparacao": [
+      "Adicione 1 colher de chá de azeite na Frigideira 26cm e pré-aqueça em temperatura média alta por aproximadamente 3 minutos. Adicione o peru, previamente temperado a gosto, e o alho moído. Cozinhe por 7 minutos em temperatura média, mexa durante o processo. Apague o fogo ",
+      "Na Tigela Para Misturar 4L, adicione a carne cozida sem líquido, o queijo mascarpone, a metade do queijo gorgonzola, o orégano e a farinha de rosca. Mexa bem.",
+      "Pré-aqueça o forno a 180ºC. Com a ajuda de um pincel, cubra ambos os lados dos cogumelos com azeite",
+      "Espalhe o restante do azeite sobre a Paellera 35,5cm. Pré-aqueça em temperatura média por 2 minutos. Adicione os cogumelos e doure ligeiramente cada lado por 3 minutos. Apague o fogo e coloque os cogumelos sobre a Tábua de Bambu",
+      "Recheio os cogumelos com a mistura de peru e cubra com o resto de queijo gorgonzola. Volte a colocá-los na Paellera por 10 minutos e sirva em seguida."
+    ],
+    "tipo": 3
+  },
+  {
+    "id": 19,
+    "titulo": "PATÊ DE QUEIJO BRANCO COM CHOURIÇO",
+    "subtitulo": "Sirva esse patê de queijo com chouriço e pimenta jalapenho acompanhado de torradas",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/queso_1920x580.jpg?sfvrsn=b131d6fc_1",
+    "tempo_de_preparo": 25,
+    "dificuldade": 3,
+    "porcoes": 6,
+    "Ingredientes": [
+      "¼ de cebola picada",
+      "1 pimenta jalapeño picada",
+      "170g de linguiça chouriço",
+      "Leite evaporado",
+      "1 colher de sopa de cebola em pó",
+      "1 colher de sopa de alho em pó",
+      "1 colher de chá de cominho em pó",
+      "3 xícaras de queijo branco",
+      "1 colher de sopa de amido de milho com água",
+      "Sal a gosto",
+      "Leite com baixo teor de gordura para afinar o patê",
+      "PARA DECORAR",
+      "Pimenta jalapeño fatiada a gosto",
+      "Folhas de coentro a gosto",
+      "Torradas a gosto"
+    ],
+    "preparacao": [
+      "Pré-aqueça a Frigideira de 26cm em temperatura média alta por 3 minutos. Adicione a linguiça chouriço. Reduza a temperatura para média. Cozinhe mais 2 minutos com a Frigideira meio tampada",
+      "Destampe, retire a pele e desfaça o chouriço. Adicione a cebola e a pimenta jalapeño. Misture bem com a Espátula de Silicone. Reduza a temperatura para baixa e tampe",
+      "Cozinhe mais 5 minutos. Destampe e transfira a mistura de chouriço para a Tigela Para Misturar. Reserve",
+      "Despeje o leite evaporado na Frigideira. Adiciona a cebola em pó, o alho em pó e o cominho. Misture bem com o Batedor de Ovos e Massas",
+      "Aumente a temperatura para média alta e espere até que se formem bolhas na superfície. Adicione o queijo e misture com o Batedor de Ovos e Massas até que se derreta por completo",
+      "Uma vez que o queijo tenha derretido, adicione o amido de milho. Siga mexendo até que fique espesso. Nota do Chef: se o patê está muito espesso, adicione leite pouco a pouco, incorporando com o Batedor de Ovos e Massas, até obter a consistência desejada",
+      "Apague o fogo e decore com o chouriço refogado, pimenta jalapenho fatiada e folhas de coentro. Sirva com torradas"
+    ],
+    "tipo": 6
+  },
+  {
+    "id": 20,
+    "titulo": "PÃO DE QUEIJO",
+    "subtitulo": "Aprenda a preparar esse delicioso pão de queijo",
+    "image": "/assets/receitas/paodequeijo.jpg",
+    "tempo_de_preparo": 40,
+    "dificuldade": 1,
+    "porcoes": 4,
+    "Ingredientes": [
+      "3 ovos",
+      "½ xícara de óleo",
+      "¾ de xícara de leite",
+      "3 ½ xícaras de farinha de tapioca",
+      "1 ½ xícara de queijo parmesão ralado",
+      "Sal a gosto"
+    ],
+    "preparacao": [
+      "Comece batendo os ovos, o leite e o óleo no liquidificador em velocidade média.",
+      "Retire a tampa removível e adicione a farinha de tapioca aos poucos. Bata até incorporar",
+      "Na Tigela Para Misturar, despeje o conteúdo do liquidificador. Adicione queijo ralado e sal a gosto. Misture bem",
+      "Faça bolinhas e coloque-as sobre uma bandeja. Refrigere por 30 minutos",
+      "Pré-aqueça o forno a 250ºC por 15 minutos. Reduza a temperatura para 200ºC e asse as bolinhas por 20 a 40 minutos, até dourarem."
+    ],
+    "tipo": 1
+  },
+  {
+    "id": 21,
+    "titulo": "MILANESA CASEIRA",
+    "subtitulo": "Uma receita com o sabor tradicional de um dos melhores pratos familiares",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/recipes/milanesascaseras_1920x580.jpg?sfvrsn=b059385e_1",
+    "tempo_de_preparo": 20,
+    "dificuldade": 2,
+    "porcoes": 2,
+    "Ingredientes": [
+      "500g da carne de sua preferência para milanesa",
+      "2 ovos",
+      "Farinha de rosca",
+      "2 dentes de alho",
+      "Sal a gosto",
+      "Óleo para fritar"
+    ],
+    "preparacao": [
+      "Em uma Tigela Para Misturar, misture os ovos com o alho e sal a gosto",
+      "Passar cada bife de carne pelo ovo e logo depois pela farinha de rosca até estar totalmente coberto",
+      "Adicione o óleo na Frigideira pré-aquecida em fogo médio. Coloque as milanesas na Frigideira. Doure os dois lados"
+    ],
+    "tipo": 3
+  },
+  {
+    "id": 22,
+    "titulo": "LOMBO REFOGADO",
+    "subtitulo": "Prepare um lombo refogado de maneira rápida com essa receita",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/lomo-saltado.jpg?sfvrsn=e3a396a9_1",
+    "tempo_de_preparo": 15,
+    "dificuldade": 1,
+    "porcoes": 4,
+    "Ingredientes": [
+      "1kg de lombo",
+      "2 cebolas",
+      "2 tomates",
+      "1kg de batata frita",
+      "2 unidades de pimenta-ají",
+      "3 colheres de sopa de vinagre de vinho tinto",
+      "3 colheres de sopa de molho de soja",
+      "1 colher de sopa de orégano",
+      "30g de pasta de alho",
+      "Salsa a gosto"
+    ],
+    "preparacao": [
+      "Corte a carne em pedaços médios. Tempere com sal, pimenta, alho moído e orégano. Reserve",
+      "Corte a cebola e o tomate em fatias. Reserve",
+      "Corte a pimenta-ají e a salsa em tiras. Reserve",
+      "Pré-aqueça a Frigideira Gourmet e adicione uma colher de sopa de óleo",
+      "Refogue a carne, adicione as cebolas, os tomates, a pimenta-ají, o vinagre e o molho de soja. Siga refogando",
+      "Finalize com a salsa picada e sirva acompanhado das batatas fritas"
+    ],
+    "tipo": 3
+  },
+  {
+    "id": 23,
+    "titulo": "FROZEN MOJITO",
+    "subtitulo": "Aprenda a fazer essa bebida em minutos",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/maxresdefault.jpg?sfvrsn=c375ba96_1",
+    "tempo_de_preparo": 10,
+    "dificuldade": 1,
+    "porcoes": 1,
+    "Ingredientes": [
+      "120ml de rum branco",
+      "30ml de suco de limão recém espremido",
+      "2 colheres de sopa de açúcar ou adoçante de sua preferência",
+      "¾ de xícara de hortelã ou menta fresca (somente as folhas)",
+      "2 xícaras de gelo",
+      "Folhas de menta para decorar"
+    ],
+    "preparacao": [
+      "Decore o copo com uma fatia de limão",
+      "No Liquidificador, coloque todos os ingredientes, primeiro os líquidos, depois o gelo e, por último, o açúcar. Reserva umas folhas de menta para decorar",
+      "Bata na função de pulso até obter a consistência desejada. Sirva imediatamente."
+    ],
+    "tipo": 5
+  },
+  {
+    "id": 24,
+    "titulo": "O FAMOSO BOLO FLORESTA NEGRA MAIS GOSTOSO E RÁPIDO",
+    "subtitulo": "Prepare esse delicioso bolo de chocolate e cerejas em menos de meia hora",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/selva-negra.jpg?sfvrsn=6147c0e_1",
+    "tempo_de_preparo": 23,
+    "dificuldade": 2,
+    "porcoes": 10,
+    "Ingredientes": [
+      "2 xícaras de mistura para bolo de chocolate",
+      "1 xícara de leite desnatado",
+      "2 ovos",
+      "2 xícaras de chantilly",
+      "1 colher de chá de açúcar de confeiteiro",
+      "1 colher de chá de extrato de baunilha",
+      "¼ de xícara de cacau em pó sem açúcar",
+      "24 cerejas marrasquino de frasco, 12 cortadas ao meio e 12 inteiras para decorar",
+      "1 xícara do suco do frasco das cerejas",
+      "½ xícara de chocolate ralado",
+      "Óleo em spray"
+    ],
+    "preparacao": [
+      "Adicione a mistura para bolo, o leite e os ovos na Tigela Para Misturar de 3L, misture bem com o Batedor de Ovos e Massas",
+      "Pré-aqueça a Frigideira de 26cm em temperatura média alta por 3 minutos. Remova a Frigideira do fogão por 1 minuto e despeje levemente o óleo em spray. Despeje a massa do bolo na Frigideira. Tampe e diminua a temperatura para baixa. Cozinhe por 20-23 minutos ou até que, ao inserir um palito, ele saia limpo ",
+      "Na Tigela Para Misturar de 2L, adicione o chantilly, o açúcar e o extrato de baunilha e bata até engrossar. Divida o creme em duas partes iguais. Misture uma parte com o cacau em pó e a outra com as cerejas cortadas pela metade ",
+      "Divida o bolo em duas camadas e perfure ambas com a ajuda de um garfo. Despeje o suco da cereja sobre ambas as camadas",
+      "Espalhe a mistura de creme com cerejas na camada inferior. Coloque a segunda camada em cima e cubra com a mistura de creme e cacau. Enfeite com as cerejas inteiras, o chocolate ralado e o cacau em pó. Pode servir imediatamente ou refrigerar por 30 minutos."
+    ],
+    "tipo": 4
+  },
+  {
+    "id": 25,
+    "titulo": "CHOCOLATE BRANCO QUENTE COM MORANGOS",
+    "subtitulo": "Prove essa receita original e deliciosa, preparada com chocolate branco quente com morangos",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/pinkhotchocolate_1920x580.jpg?sfvrsn=5a8e8680_1",
+    "tempo_de_preparo": 12,
+    "dificuldade": 1,
+    "porcoes": 4,
+    "Ingredientes": [
+      "5 xícaras de leite integral",
+      "140g de chocolate branco picado",
+      "½ xícara de calda de morango ou a gosto",
+      "¼ de colher de chá de sal",
+      "PARA DECORAR:",
+      "Mini marshmallows a gosto",
+      "Morangos desidratados e congelados a gosto",
+      "Morangos frescos e cortados pela metade a gosto"
+    ],
+    "preparacao": [
+      "Adicione todos os ingredientes, menos os enfeites, na Chocolatera",
+      "Cozinhe em fogo médio e misture com o Batedor de Ovos e Massas até que o chocolate derreta",
+      "Coloque o cone na Chocolatera, suba a temperatura para média alta e ferva",
+      "Quando o chocolate transbordar sobre o cone, apague o fogo",
+      "Retire o cone. Sirva o chocolate quente enfeitado com mini marshmallows, morangos desidratados e morangos frescos"
+    ],
+    "tipo": 4
+  },
+  {
+    "id": 26,
+    "titulo": "CHEESECAKE COM CALDA DE FRUTAS",
+    "subtitulo": "Deliciosa sobremesa com cream cheese, leite condensado e nata",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/pastel-de-queso-con-salsa-de-frutas.jpg?sfvrsn=f12f68c7_1",
+    "tempo_de_preparo": 40,
+    "dificuldade": 2,
+    "porcoes": 4,
+    "Ingredientes": [
+      "1 xícara de farinha de trigo",
+      "1 colher de sopa de fermento em pó",
+      "230g de cream cheese em temperatura ambiente",
+      "½ xícara de leite condensado",
+      "½ xícara de nata",
+      "2 ovos",
+      "1 colher de sopa de extrato de baunilha",
+      "CALDA:",
+      "1 xícara de frutas variadas da temporada, sem casca e sementes e cortadas em cubos",
+      "¼ de xícara de leite condensado",
+      "1 colher de chá de extrato de baunilha"
+    ],
+    "preparacao": [
+      "Na Tigela Para Misturar de 2L, misture bem a farinha e o fermento em pó. Reserve",
+      "Em uma Tigela para Misturar de 3L, misture o cream cheese, o leite condensado, a nata, os ovos e uma colher de chá de baunilha até formar uma massa homogênea. Reserve",
+      "Em seguida, misture a farinha com a massa com a ajuda do Batedor de Ovos e Massas até obter uma massa suave e fácil de mexer",
+      "Pré-aqueça a Frigideira de 26cm por 30 segundos em temperatura média alta e despeje a mistura anterior. Tampe e cozinhe em temperatura média por 21 minutos ou até que o cheesecake esteja bem cozido. Deixe descansar por 2 minutos antes de desmoldar cuidadosamente",
+      "Enquanto isso, no liquidificador, adicione todos os ingredientes da calda e bata por 15 segundos em velocidade alta",
+      "Adicione um pouco de calda sobre cada porção do cheesecake e desfrute!"
+    ],
+    "tipo": 4
+  },
+  {
+    "id": 27,
+    "titulo": "EXPERIMENTE NOVOS SABORES COM DELICIOSOS BROWNIES",
+    "subtitulo": "Prepare uma sobremesa fácil e original.",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/brownie-picoso09e72813-0835-4156-b988-0f01f06a9759.jpg?sfvrsn=f48caeb8_1",
+    "tempo_de_preparo": 15,
+    "dificuldade": 1,
+    "porcoes": 8,
+    "Ingredientes": [
+      "3 xícaras de mistura para brownies",
+      "2 ovos",
+      "1/3 xícara de leite",
+      "½ colher de chá de pimenta caiena",
+      "1 colher de chá de canela",
+      "1 colher de chá de extrato de baunilha",
+      "¼ xícara de raspas de chocolate",
+      "Calda de caramelo a gosto para decorar",
+      "Óleo em spray"
+    ],
+    "preparacao": [
+      "Na Tigela Para Misturar de 2L, misture os ingredientes a seguir com o Batedor de Ovos e Massas até obter uma mistura homogênea. Agregue-os pouco a pouco, na seguinte ordem: mistura para brownies, ovos, leite, pimenta caiena, canela, baunilha e raspas de chocolate",
+      "Pré-aqueça sua Frigideira de 26cm em temperatura média-alta por 2 minutos e meio. Despeje o óleo em spray pela Frigideira e diminua para temperatura baixa. Se assegure que o óleo não comece a ferver.",
+      "Despeje a mistura do passo 1 na Frigideira, tampe e cozinhe por 15 minutos. Apague o fogo, retire a Frigideira do fogão e deixe esfriar por 3 minutos. Inverta o brownie cuidadosamente sob a Tábua de Bambu, corte e sirva com calda de caramelo ou chocolate."
+    ],
+    "tipo": 4
+  },
+  {
+    "id": 28,
+    "titulo": "BOLO DE CHOCOLATE",
+    "subtitulo": "Prepare um bolo de chocolate com chantilly e frutas silvestres sem usar o forno",
+    "image": "https://prdcuscmscdn01.azureedge.net/royalprestige/images/royalprestigebrlibraries/product-images/chocolatecake_1920x580.jpg?sfvrsn=fdd1fe6a_1",
+    "tempo_de_preparo": 60,
+    "dificuldade": 5,
+    "porcoes": 16,
+    "Ingredientes": [
+      "BOLO DE CHOCOLATE:",
+      "2 colheres de sopa de sementes de chia, hidratados em ½ xícara de água morna até ficarem macias ",
+      "2 ½ xícaras de farinha flour",
+      "½ xícara de cacau em pó",
+      "1 xícara de açúcar ou adoçante de sua preferência",
+      "2 colheres de chá de fermento em pó",
+      "1 colher de sopa de bicarbonato de sódio",
+      "½ colher de sopa de sal marinho",
+      "1 xícara de leite de amêndoas",
+      "1 xícara de café preto quente",
+      "½ xícara de azeite",
+      "1 colher de sopa de vinagre de maçã",
+      "2 colheres de chá de extrato de baunilha",
+      "Óleo em spray",
+      "PARA DECORAR:",
+      "Morangos cortados pela metade a gosto",
+      "Mirtilos cortados pela metade a gosto",
+      "Framboesas pretas a gosto Framboesas vermelhas a gosto",
+      "Flores comestíveis (opcional)",
+      "Mel",
+      "CHANTILLY:",
+      "4 xícaras de creme de leite para bater",
+      "½ xícara de açúcar de confeiteiro, ou a gosto",
+      "½ colher de chá de sal marinho"
+    ],
+    "preparacao": [
+      "Em uma Tigela Para Misturar de 3L, adicione a farinha, o cacau em pó, o açúcar, o fermento, o bicarbonato de sódio e o sal. Misture com o Batedor de Ovos e Massas e reserve",
+      "Em outra Tigela Para Misturar de 3L, adicione as sementes de chia, o leite de amêndoas, o café, o azeite, o vinagre de maçã e o extrato de baunilha. Misture com o Batedor de Ovos e Massas. Adicione os ingredientes secos e misture até que que a mistura fique homogênea. Reserve",
+      "Unte o fundo da Frigideira de 26cm com uma camada fina de óleo em spray e despeje a massa. Tampe e cozinhe em fogo baixo por 35 minutos ou até que ao inserir um palito no centro da massa, ele saia limpo",
+      "Retire do fogo e deixe descansar por 5 minutos. Destampe e coloque cuidadosamente o bolo na Tábua de Bambu",
+      "Deixe esfriar. Com a Faca Para Pão, corte o bolo em duas camadas. Separe as camadas e deixe esfriar por completo",
+      "Enquanto isso, adicione os ingredientes do chantilly no liquidificador. Bata em velocidade baixa por poucos segundo e suba para velocidade média alta. Siga batendo até obter uma consistência espessa. Despeje em uma Tigela Para Misturar de 2L. Refrigere",
+      "Quando o bolo estiver esfriado por completo, adicione uma camada uniforme de chantilly sobre uma das metades do bolo. Coloque a outra metade sobre o chantilly e finalize adicionando uma última camada de chantilly sobre o bolo",
+      "Decore com morangos, mirtilos, framboesas e flores comestíveis. Jogue um pouco de mel por cima, corte em 8 pedaços e sirva."
+    ],
+    "tipo": 4
   }
 ]
