@@ -274,7 +274,7 @@ const Receitas = () => {
                                     *Preparação*: ${preparacao.join(', ')}\n
 
                                     Veja essa receita e outras delicias em\n https://projeto-grupo-mensch.vercel.app/health \n
-                                    E quando fizer a receita me chame
+                                    E quando fizer a receita me chame!
                                   `} 
                                 target="_blank" 
                                 rel="noreferrer" 
