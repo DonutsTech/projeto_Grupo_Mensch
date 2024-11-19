@@ -1,9 +1,11 @@
-import Teste from "@/components/Teste";
+'use client';
+
+import Nao from "@/components/Nao";
 
 export default function NotFound() {
   return (
     <>
-      <Teste />
+      <Nao />
     </>
   )
 }
