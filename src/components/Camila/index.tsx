@@ -14,7 +14,7 @@ const Camila = () => {
       <div className={Style.consultora__content}> 
         <div className={Style.consultora__content__box} >
           <h2 className={Style.consultora__content__box__titulo}>
-            Camilla Vieira
+            Titulo
           </h2>
 
           <p className={Style.consultora__content__box__paragrafo}> 
@@ -31,7 +31,7 @@ const Camila = () => {
               <button className={Style.consultora__content__box__btns__btn}>
                 Agendar uma Visita
               </button>
-              <Link href={'https://www.instagram.com/camillavieira.mensch/'} target='_blank' rel='noopener noreferrer' title='Siga a Camila no Instagram' >
+              <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noopener noreferrer' title='Siga a Mensch Health no Instagram' >
                 <Image src={instagram} alt='Instagram' className={Style.consultora__content__box__btns__icon} />
               </Link>
             </div>

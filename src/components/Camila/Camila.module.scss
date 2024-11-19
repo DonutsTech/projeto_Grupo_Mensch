@@ -49,9 +49,10 @@
       &__titulo {
         width: 100%;
         height: auto;
-        font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
-        font-family: "Tangerine", cursive;
-        font-weight: 700;
+        font-size: $font-size-titulo-2;
+        line-height: $font-height-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        font-family: $font-titulo;
         font-style: normal;
         color: $cor-white;
         text-align: end;

@@ -12,7 +12,7 @@ const ProdutosHealth = () => {
 
       <div className={Style.produtos__container}>
         <h2 className={Style.produtos__container__titulo}>
-          Lorem ipsum dolor.
+          Camilla Vieira
         </h2>
         <p className={Style.produtos__container__paragrafo}> 
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque, repellat, architecto rem consequuntur dignissimos deserunt corporis id ab, iste aut alias officia accusamus harum voluptates. Porro voluptatibus adipisci officiis!

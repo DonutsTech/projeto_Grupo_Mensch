@@ -135,11 +135,11 @@
   position: relative;
   width: 80%;
   min-width: 300px;
-  height: 80%;
+  height: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: auto;
+  // overflow: auto;
   border-radius: 16px;
   border: solid 6px $cor-health-principal;
   outline: none;
@@ -148,247 +148,462 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 128px 20px 0px 20px;
+  // padding: 128px 0px 20px 0px;
   gap: 24px;
 
-
-  &__cabecalho {
-    width: 100%;
-    height: 140px;
-    position: fixed;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    top: -10px;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-
-    &__overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: $cor-black;
-      opacity: 0.6;
-      border-top-right-radius: 16px;
-      border-top-left-radius: 16px;
-      top: 0;
-      z-index: 1;
-    }
-
-    &__img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-      object-position: center;
-      border-top-right-radius: 16px;
-      border-top-left-radius: 16px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-
-    &__close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      width: 48px;
-      height: 48px;
-      border-radius: 50px;
-      background-color: $cor-white;
-      border: solid 3px $cor-health-principal;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-      cursor: pointer;
-      font-weight: 800;
-      color: $cor-health-principal;
-
-      &:hover {
-        scale: 0.9;
-        background-color: $cor-health-principal;
-        color: $cor-white;
-        border: none;
-        transition: all 0.2s ease-in-out;
-      }
-    }
-
-    &__titulo {
-      width: 90%;
-      height: auto;
-      font-family: $font-titulo;
-      font-size: $font-size-titulo-2;
-      line-height: $font-height-titulo-2;
-      font-weight: $font-weight-titulo-2;
-      color: $cor-white;
-      text-align: center;
-      z-index: 2;
-      text-transform: capitalize;
-    }
-  }
-
-  &__container {
+  &__menu {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-    overflow-y: auto;
-    align-items: center;
-    justify-items: center;
-    gap: 24px;
-
-    @media (max-width: 1119px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 730px) {
-      grid-template-columns: 1fr;
-    }
-
-
-    &__item {
-      width: 280px;
-      height: 280px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      cursor: pointer;
-
-      &__img {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-top-right-radius: 16px;
-        border-bottom-left-radius: 16px;
-        box-shadow: none;
-      }
-
-      &__titulo {
-        width: 200px;
-        height: auto;
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 500;
-        text-align: center;
-        text-transform: capitalize;
-      }
-
-      &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-
-        .modal__container__item__img {
-          box-shadow: 0 0 16px $cor-mae-principal;
-        }
-
-        .modal__container__item__titulo {
-          color: $cor-health-principal;
-          font-weight: 800;
-        }
-      }
-    }
-  }
-
-  &__receita {
 
     &__cabecalho {
       width: 100%;
-      height: 180px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
+      height: 140px;
+      position: relative;
 
-      &__overlay { 
+      &__overlay {
+        position: absolute;
         width: 100%;
-        height: 180px;
+        height: 100%;
         background-color: $cor-black;
         opacity: 0.6;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
       }
 
-      &__img { 
+      &__img {
         width: 100%;
-        height: 180px;
+        height: 140px;
         object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+        object-position: center;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
       }
 
-      &__close { 
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        width: 48px;
-        height: 48px;
-        border-radius: 50px;
-        background-color: $cor-white;
-        border: solid 3px $cor-health-principal;
+      &__box {
+        width: 100%;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 2;
-        cursor: pointer;
-        font-weight: 800;
-        color: $cor-health-principal;
-
-        &:hover { 
-          scale: 0.9;
-          background-color: $cor-health-principal;
-          color: $cor-white;
-          border: none;
-          transition: all 0.2s ease-in-out;
-        }
-      }
-
-      &__titulo { 
-        width: 90%;
-        min-width: 300px;
-        height: auto;
-        margin: 0 auto;
-        font-family: $font-titulo;
-        font-size: $font-size-titulo-2;
-        line-height: $font-height-titulo-2;
-        font-weight: $font-weight-titulo-2;
-        color: $cor-white;
-        text-align: center;
-        text-transform: capitalize;
-        position: relative;
+        gap: 24px;
+        position: absolute;
         z-index: 3;
-      }
+        top: 0;
+        left: 0;
 
-      &__subtitulo { 
-        width: 90%;
-        margin: 0 auto;
-        min-width: 280px;
-        height: auto;
-        font-size: $font-size-texto-1;
-        line-height: $font-height-texto-1;
-        // font-weight: $font-weight-texto-1;
-        color: $cor-white;
-        text-align: center;
-        position: relative;
-        text-transform: capitalize;
-        z-index: 2;
+        &__close {
+          position: absolute;
+          top: 24px;
+          right: 24px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50px;
+          background-color: $cor-white;
+          border: solid 3px $cor-health-principal;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 2;
+          cursor: pointer;
+          font-weight: 800;
+          color: $cor-health-principal;
 
+          &:hover {
+            scale: 0.9;
+            background-color: $cor-health-principal;
+            color: $cor-white;
+            border: none;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
+        &__titulo {
+          width: 90%;
+          height: auto;
+          font-family: $font-titulo;
+          font-size: $font-size-titulo-2;
+          line-height: $font-height-titulo-2;
+          font-weight: $font-weight-titulo-2;
+          color: $cor-white;
+          text-align: center;
+          text-transform: capitalize;
+        }
       }
     }
 
+    &__container {
+      width: 100%;
+      height: calc(100% - 150px);
+      overflow: hidden;
+      
+      &__box {
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+        justify-items: center;
+        padding: 0 2%;
+        padding-top: 24px;
+        gap: 24px;
+
+        @media (max-width: 1119px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 730px) {
+          grid-template-columns: 1fr;
+        }
+
+        &__item {
+          width: 280px;
+          height: 280px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          cursor: pointer;
+
+
+          &__img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-top-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+            box-shadow: none;
+          }
+
+          &__titulo {
+            width: 200px;
+            height: auto;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: capitalize;
+          }
+
+          &:hover {
+            transform: scale(1.02);
+            transition: all 0.2s ease-in-out;
+
+            .modal__container__item__img {
+              box-shadow: 0 0 16px $cor-mae-principal;
+            }
+
+            .modal__container__item__titulo {
+              color: $cor-health-principal;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &__receita {
+    width: 100%;
+    height: 100%;
+
+    &__cabecalho {
+      width: 100%;
+      height: 220px;
+      position: relative;
+
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $cor-black;
+        opacity: 0.8;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+      }
+
+      &__box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding-top: 24px;
+
+        &__close {
+          position: absolute;
+          top: 24px;
+          right: 24px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50px;
+          background-color: $cor-white;
+          border: solid 3px $cor-health-principal;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 2;
+          cursor: pointer;
+          font-weight: 800;
+          color: $cor-health-principal;
+
+          &:hover {
+            scale: 0.9;
+            background-color: $cor-health-principal;
+            color: $cor-white;
+            border: none;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
+        &__titulo {
+          width: 90%;
+          min-width: 300px;
+          height: auto;
+          margin: 0 auto;
+          font-family: $font-titulo;
+          font-size: $font-size-titulo-2;
+          line-height: $font-height-titulo-2;
+          font-weight: $font-weight-titulo-2;
+          color: $cor-white;
+          text-align: center;
+          z-index: 3;
+
+        }
+
+        &__subtitulo {
+          width: 90%;
+          margin: 0 auto;
+          min-width: 280px;
+          height: auto;
+          font-size: $font-size-texto-2;
+          line-height: $font-height-texto-2;
+          font-weight: 500;
+          color: $cor-white;
+          text-align: center;
+        }
+      }
+    }
+
+    &__indice {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: $cor-health-principal;
+      top: 222px;
+      border-top: 3px solid $cor-white;
+
+      &__item {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        &__tempo {
+          width: calc(100% - 3px);
+          border-right: 3px solid $cor-white;
+        }
+
+        &__porcoes {
+          width: calc(100% - 3px);
+          border-left: 3px solid $cor-white;
+        }
+
+        &__texto {
+          font-size: $font-size-texto-3;
+          line-height: $font-height-texto-3;
+          font-weight: 800;
+          color: $cor-white;
+          text-align: center;
+        }
+      }
+    }
+
+
+    &__conteudo {
+      width: 100%;
+      height: calc(100% - 330px);
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 24px;
+        padding: 0 2%;
+        padding-top: 24px;
+
+        &__titulo {
+          height: auto;
+          font-family: $font-titulo;
+          font-size: $font-size-titulo-1;
+          line-height: $font-height-titulo-1;
+          font-weight: $font-weight-titulo-1;
+          color: $cor-black;
+          text-align: left;
+          text-transform: capitalize;
+        }
+
+        &__ingredientes {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 16px;
+
+          &__item {
+            width: 100%;
+            height: auto;
+            font-size: $font-size-texto-1;
+            line-height: $font-height-texto-1;
+            color: $cor-black;
+
+            span {
+              color: $cor-health-principal;
+            }
+
+            &__cat {
+              font-weight: 600;
+            }
+          }
+        }
+
+        &__preparo {
+          list-style-type: numeric;
+          width: 95%;
+          margin: 0px auto;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+
+          &__item {
+            width: 95%;
+            height: auto;
+            font-size: $font-size-texto-1;
+            line-height: $font-height-texto-1;
+            color: $cor-black;
+            text-align: left;
+            margin: 0 auto;
+
+            &::marker {
+              color: $cor-health-principal;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      &__share { 
+        width: 95%;
+        min-width: 300px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 32px auto;
+
+        &__chamada { 
+          width: 50%;
+          min-width: 280px;
+          height: auto;
+          font-size: $font-size-texto-1;
+          line-height: $font-height-texto-1;
+          text-align: center;
+
+          a {
+            color: $cor-health-principal;
+            font-weight: 600;
+            font-style: italic;
+          }
+        }
+
+        &__botao { 
+          width: 50%;
+          min-width: 280px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          height: auto;
+
+          &__texto { 
+
+            font-size: $font-size-texto-1;
+            line-height: $font-height-texto-1;
+            color: $cor-black;
+          }
+
+          &__link { 
+            width: 48px;
+            height: 48px;
+            background-color: $cor-health-principal;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover { 
+              scale: 0.9;
+              background-color: $cor-black;
+              color: $cor-health-principal;
+              transition: all 0.2s ease-in-out;
+            }
+
+            &__img { 
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+        }
+        @media (max-width: 840px) { 
+          min-width: 300px;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+
+      }
+    }
   }
 }
