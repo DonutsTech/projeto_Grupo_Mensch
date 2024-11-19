@@ -17,6 +17,8 @@ const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
   const [form, setForm] = useState({} as FormSimulacaoSolar)
   const [mensagem, setMensagem] = useState<string>('')
+  const [cliente, setCliente] = useState<string>("");
+  const [conta, setConta] = useState<number>(0);
 
   const toggleModal = () => {
     setOpenImage(!openImage);
@@ -103,6 +105,10 @@ const CTASolar = () => {
       cep: (e.currentTarget.elements.namedItem('cep') as HTMLInputElement).value,
       valor: (e.currentTarget.elements.namedItem('valor') as HTMLInputElement).value,
     }
+
+    const valorLimpo = formData.valor.replace(/[^0-9,.-]/g, '');
+    setConta(parseFloat(valorLimpo.replace(/,/g, '.')));
+    setCliente(formData.nome.split(' ')[0]);
 
     const cep = await endereco(formData.cep)
 
@@ -220,91 +226,113 @@ const CTASolar = () => {
             zIndex: '30',
           },
         }}
-
       >
         <button type='button'
-          onClick={toggleModal}
+          onClick={() => {
+            toggleModal();
+            setConta(0);
+            setCliente('');
+          }}
           className={Style.modal__btn}
         >
           x
         </button>
 
-        <h3 className={Style.modal__titulo}>
-          Descubra quanto você irá economizar com <span>Energia Solar</span>:
-        </h3>
+        {(conta > 0 && cliente.length > 0) ?
 
-        <h4 className={Style.modal__subtitulo}>
-          Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
-        </h4>
-
-        <form className={Style.modal__form} onSubmit={onSubmit}>
-          <label htmlFor='nome' aria-label='Digite o seu nome' />
-          <input
-            type='text'
-            id='nome'
-            name='nome'
-            placeholder='Nome'
-            className={Style.modal__form__input}
-            required
-            onChange={handleFormChange}
-            value={form.nome === undefined ? '' : form.nome}
-          />
-          <label htmlFor='telefone' aria-label='Digite o seu telefone' />
-          <input
-            type='text'
-            id='telefone'
-            name='telefone'
-            placeholder='Telefone'
-            className={Style.modal__form__input}
-            required
-            minLength={13}
-            onChange={handleFormChange}
-            value={form.telefone === undefined ? '' : form.telefone}
-          />
-          <label htmlFor='CEP' aria-label='Digite o seu CEP' />
-          <input
-            type='text'
-            id='CEP'
-            name='cep'
-            placeholder='CEP'
-            className={Style.modal__form__input}
-            required
-            minLength={9}
-            onChange={handleFormChange}
-            value={form.cep === undefined ? '' : form.cep}
-          />
-          <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
-          <input
-            type='text'
-            id='valor'
-            name='valor'
-            placeholder='Valor da Conta De Energia'
-            className={Style.modal__form__input}
-            required
-            onChange={handleFormChange}
-            value={form.valor === undefined || form.valor === 'R$ 0,00' ? '' : form.valor}
-          />
-          {
-            !(mensagem === '') && (
-              <p className={Style.contatos__content__form__info}>{mensagem}</p>
-            )
-          }
-          <div className={Style.modal__form__btnBox}>
-            <button
-              className={Style.modal__form__btnBox__btn}
-              type='submit'
-            >
-              Confirmar
-            </button>
-            <p className={Style.modal__form__btnBox__texto}>
-              *Confirmo que, ao realizar a simulação, autorizo o contato da equipe comercial da Mensch Energia Solar por ligação telefônica ou mensagem via WhatsApp.
-            </p>
+        (
+          <div className={Style.modal__box2}>
+            <h2>Olá {cliente}! Veja o resultado da simulação:</h2>
+            <p>Você irá economizar <span>{conta}</span> em energia solar.</p>
           </div>
-        </form>
+        )
+
+        :
+          (
+            <div className={Style.modal__box1}>
+              <h3 className={Style.modal__box1__titulo}>
+                Descubra quanto você irá economizar com <span>Energia Solar</span>:
+              </h3>
+
+              <h4 className={Style.modal__box1__subtitulo}>
+                Produza sua própria energia solar e economize. <span>Nós cuidamos de tudo</span>.
+              </h4>
+
+              <form className={Style.modal__box1__form} onSubmit={onSubmit}>
+                <label htmlFor='nome' aria-label='Digite o seu nome' />
+                <input
+                  type='text'
+                  id='nome'
+                  name='nome'
+                  placeholder='Nome'
+                  className={Style.modal__box1__form__input}
+                  required
+                  onChange={handleFormChange}
+                  value={form.nome === undefined ? '' : form.nome}
+                />
+                <label htmlFor='telefone' aria-label='Digite o seu telefone' />
+                <input
+                  type='text'
+                  id='telefone'
+                  name='telefone'
+                  placeholder='Telefone'
+                  className={Style.modal__box1__form__input}
+                  required
+                  minLength={13}
+                  onChange={handleFormChange}
+                  value={form.telefone === undefined ? '' : form.telefone}
+                />
+                <label htmlFor='CEP' aria-label='Digite o seu CEP' />
+                <input
+                  type='text'
+                  id='CEP'
+                  name='cep'
+                  placeholder='CEP'
+                  className={Style.modal__box1__form__input}
+                  required
+                  minLength={9}
+                  onChange={handleFormChange}
+                  value={form.cep === undefined ? '' : form.cep}
+                />
+                <label htmlFor='valor' aria-label='Digite o seu valor de conta' />
+                <input
+                  type='text'
+                  id='valor'
+                  name='valor'
+                  placeholder='Valor da Conta De Energia'
+                  className={Style.modal__box1__form__input}
+                  required
+                  onChange={handleFormChange}
+                  value={form.valor === undefined || form.valor === 'R$ 0,00' ? '' : form.valor}
+                />
+                {
+                  !(mensagem === '') && (
+                    <p className={Style.contatos__content__form__info}>{mensagem}</p>
+                  )
+                }
+                <div className={Style.modal__box1__form__btnBox}>
+                  <button
+                    className={Style.modal__box1__form__btnBox__btn}
+                    type='submit'
+                  >
+                    Confirmar
+                  </button>
+                  <p className={Style.modal__box1__form__btnBox__texto}>
+                    *Confirmo que, ao realizar a simulação, autorizo o contato da equipe comercial da Mensch Energia Solar por ligação telefônica ou mensagem via WhatsApp.
+                  </p>
+                </div>
+              </form>
+            </div>
+          )
+
+
+
+        }
+
 
 
       </Modal>
-    </section>
+    </section >
   )
 };
 
