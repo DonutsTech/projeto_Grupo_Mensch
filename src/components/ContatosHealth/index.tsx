@@ -94,7 +94,7 @@ const ContatosHealth = () => {
   }
 
   return (
-    <section className={Style.contatos} id='contatos__solar' aria-label='Contatos do Grupo Mensch'>
+    <section className={Style.contatos} id='contatos__health' aria-label='Contatos da Mensch Health'>
       <h2 className={Style.contatos__titulo}>
         Fale Conosco
       </h2>

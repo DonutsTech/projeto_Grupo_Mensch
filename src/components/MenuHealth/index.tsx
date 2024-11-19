@@ -1,6 +1,6 @@
 'use client';
 
-// import Scroll from 'react-scroll';
+import Scroll from 'react-scroll';
 import Image from 'next/image';
 import Style from './MenuHealth.module.scss';
 
@@ -58,56 +58,56 @@ const MenuHealth = () => {
           }}
         />
         <nav className={Style.menuDesk__nav}>
-          {/* <ul className={Style.menuDesk__nav__list}>
+          <ul className={Style.menuDesk__nav__list}>
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"#energia_solar"}
+              <Link href={"#camilla"}
                 onClick={(e) => {
                   e.preventDefault();
-                  Scroll.scroller.scrollTo('energia_solar', { duration: 500, delay: 0, smooth: true });
+                  Scroll.scroller.scrollTo('camilla', { duration: 500, delay: 0, smooth: true });
                 }}
               >
-                <p>Energia Solar</p>
+                <p>Camilla Vieira</p>
               </Link>
             </li>
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"#servicos_solar"}
+              <Link href={"#dicas"}
                 onClick={(e) => {
                   e.preventDefault();
-                  Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                  Scroll.scroller.scrollTo('dicas', { duration: 500, delay: 0, smooth: true });
                 }}
               >
-                <p>Serviços</p>
+                <p>Saúde</p>
               </Link>
             </li>
             <li className={classNames({
               [Style.menuDesk__nav__list__item]: true,
             })}>
-              <Link href={"#cta_solar"}
+              <Link href={"#receitas"}
                 onClick={(e) => {
                   e.preventDefault();
-                  Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                  Scroll.scroller.scrollTo('receitas', { duration: 500, delay: 0, smooth: true });
                 }}
               >
-                <p>Simule</p>
+                <p>Receitas</p>
               </Link>
             </li>
             <li
               className={Style.menuDesk__nav__list__item} >
               <Link
-                href={"/#contatos__solar"}
+                href={"/#contatos__health"}
                 onClick={(e) => {
                   e.preventDefault();
-                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                  Scroll.scroller.scrollTo('contatos__health', { duration: 500, delay: 0, smooth: true });
                 }}
               >
                 <p>Fale conosco</p>
               </Link>
             </li>
-          </ul> */}
+          </ul>
           <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health Solar e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
               src={whatsapp}
@@ -145,54 +145,54 @@ const MenuHealth = () => {
             </Link>
           </div>
           <nav className={Style.menuMobile__container__nav}>
-            {/* <ul className={Style.menuMobile__container__nav__list}>
+            <ul className={Style.menuMobile__container__nav__list}>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"#energia_solar"}
+                <Link href={"#camilla"}
                   onClick={(e) => {
                     e.preventDefault();
-                    Scroll.scroller.scrollTo('energia_solar', { duration: 500, delay: 0, smooth: true });
+                    Scroll.scroller.scrollTo('camilla', { duration: 500, delay: 0, smooth: true });
                   }}
                 >
-                  <p>Energia Solar</p>
+                  <p>Camilla Vieira</p>
                 </Link>
               </li>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"#servicos_solar"}
+                <Link href={"#dicas"}
                   onClick={(e) => {
                     e.preventDefault();
-                    Scroll.scroller.scrollTo('servicos_solar', { duration: 500, delay: 0, smooth: true });
+                    Scroll.scroller.scrollTo('dicas', { duration: 500, delay: 0, smooth: true });
                   }} >
-                  <p>Serviços</p>
+                  <p>Saúde</p>
                 </Link>
               </li>
               <li className={classNames({
                 [Style.menuMobile__container__nav__list__item]: true,
               })}>
-                <Link href={"#cta_solar"}
+                <Link href={"#receitas"}
                   onClick={(e) => {
                     e.preventDefault();
-                    Scroll.scroller.scrollTo('cta_solar', { duration: 500, delay: 0, smooth: true });
+                    Scroll.scroller.scrollTo('receitas', { duration: 500, delay: 0, smooth: true });
                   }}
                 >
-                  <p>Simule</p>
+                  <p>Receitas</p>
                 </Link>
               </li>
               <li className={Style.menuMobile__container__nav__list__item}>
                 <Link 
-                href={"/#contatos__solar"}
+                href={"/#contatos__health"}
                 onClick={(e) => {
                   e.preventDefault();
-                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                  Scroll.scroller.scrollTo('contatos__health', { duration: 500, delay: 0, smooth: true });
                 }}
                 >
                   <p>Fale conosco</p>
                 </Link>
               </li>
-            </ul> */}
+            </ul>
           </nav>
           <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health Solar e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
