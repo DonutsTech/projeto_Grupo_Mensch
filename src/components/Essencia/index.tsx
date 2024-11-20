@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Style from './Essencia.module.scss';
-import equipe from './image/equipe_mensch.jpg';
+import equipe from './image/equipe_mensch.png';
 import selo from './image/selo_grupoMensch.svg';
 import Link from 'next/link';
 
