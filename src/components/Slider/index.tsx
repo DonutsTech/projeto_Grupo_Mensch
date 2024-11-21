@@ -68,7 +68,7 @@ const Slider = () => {
 
               <div className={Style.slider__submarca__btn__redes} >
 
-                <Link href={'https://www.facebook.com/mchengenharia/'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Energia Solar' >
+                <Link href={'https://www.facebook.com/menschenergiasolar'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Energia Solar' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 
@@ -103,7 +103,7 @@ const Slider = () => {
 
               <div className={Style.slider__submarca__btn__redes} >
 
-                <Link href={'https://www.facebook.com/menschrefrigeracao'} target='_blank' rel='noreferrer' title='Confira o Facebook da Instalar' >
+                <Link href={'https://www.facebook.com/MenschInstalAR'} target='_blank' rel='noreferrer' title='Confira o Facebook da Instalar' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 

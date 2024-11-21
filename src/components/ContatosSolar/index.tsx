@@ -215,7 +215,7 @@ const ContatosSolar = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_instagram]: true,
             })}>
-              <Link href={'https://www.facebook.com/mchengenharia/?locale=pt_BR'} target='_blank' rel='noopener noreferrer' title='Acompanhe o Grupo Mensch no Facebook' >
+              <Link href={'https://www.facebook.com/menschenergiasolar'} target='_blank' rel='noopener noreferrer' title='Acompanhe o Grupo Mensch no Facebook' >
                 <Image src={face} alt='facebook' height={48} />
               </Link>
               <p>@mensch.energiasolar</p>
@@ -284,7 +284,7 @@ const ContatosSolar = () => {
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_instagram]: true,
         })}>
-          <Link href={'https://www.facebook.com/mchengenharia/?locale=pt_BR'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'https://www.facebook.com/menschenergiasolar'} target='_blank' rel='noopener noreferrer'>
             <Image src={face} alt='facebook' height={48} />
           </Link>
           <p>@mensch.energiasolar</p>
