@@ -118,7 +118,7 @@ const ProvaHealth = () => {
         ◆ 100% dos clientes da Mensch Energia Solar estão economizando muito dinheiro!
         </p>
       </div> */}
-      <Image src={bg} alt="Placa Solar" className={Style.prova__bg} />
+      <Image draggable="false" src={bg} alt="Placa Solar" className={Style.prova__bg} />
     </section>
   );
 };

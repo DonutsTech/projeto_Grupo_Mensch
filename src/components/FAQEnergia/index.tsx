@@ -16,7 +16,7 @@ const FAQEnergia = () => {
     {
       id: 1,
       pergunta: 'Compensa investir em energia solar?',
-      resposta: 'A energia solar é uma opção financeiramente vantajosa para residências e empresas, proporcionando economia de energia de até 80%, retorno sobre o investimento em 5-7 anos, aumento do valor da propriedade e benefícios fiscais. Além disso, contribui para a redução da emissão de gases de efeito estufa, promovendo uma energia limpa e sustentável.'
+      resposta: 'A energia solar é uma opção financeiramente vantajosa para residências e empresas, proporcionando economia de energia de até 92%, retorno sobre o investimento em até 3 anos, aumento do valor da propriedade e benefícios fiscais. Além disso, contribui para a redução da emissão de gases de efeito estufa, promovendo uma energia limpa e sustentável.'
     },
     {
       id: 2,

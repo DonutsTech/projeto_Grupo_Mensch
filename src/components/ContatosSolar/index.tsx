@@ -284,7 +284,7 @@ const ContatosSolar = () => {
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_instagram]: true,
         })}>
-          <Link href={'https://www.facebook.com/profile.php?id=100091541775500&locale=pt_BR'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'https://www.facebook.com/mchengenharia/?locale=pt_BR'} target='_blank' rel='noopener noreferrer'>
             <Image src={face} alt='facebook' height={48} />
           </Link>
           <p>@mensch.energiasolar</p>

@@ -174,30 +174,30 @@ const ContatosHealth = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_email]: true,
             })}>
-              <Link href={'mailto:energiasolar@grupomensch.com.br'} target='_blank' rel='noopener noreferrer' title='Envie um email para contato@grupomensch.com.br' >
+              <Link href={'mailto:health@grupomensch.com.br'} target='_blank' rel='noopener noreferrer' title='Envie um email para contato@grupomensch.com.br' >
                 <Image src={email} alt='Email' height={48} />
               </Link>
-              <p>energiasolar@grupomensch.com.br</p>
+              <p>health@grupomensch.com.br</p>
             </div>
 
             <div className={classNames({
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_telefone]: true,
             })}>
-              <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
+              <Link href={'https://wa.me/5534996968654/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
                 <Image src={wpp} alt='whatsapp' height={48} />
               </Link>
-              <p>(34) 9.9666-5871</p>
+              <p>(34) 9.9696-8654</p>
             </div>
 
             <div className={classNames({
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_instagram]: true,
             })}>
-              <Link href={'https://www.instagram.com/mensch.energiasolar/'} target='_blank' rel='noopener noreferrer' title='Acompanhe o Grupo Mensch no Instagram' >
+              <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noopener noreferrer' title='Acompanhe a Mensch Health no Instagram' >
                 <Image src={insta} alt='instagram' height={48} />
               </Link>
-              <p>@mensch.energiasolar</p>
+              <p>@mensch.health</p>
             </div>
 
             <div className={classNames({
@@ -207,17 +207,17 @@ const ContatosHealth = () => {
               <Link href={'https://www.facebook.com/mchengenharia/?locale=pt_BR'} target='_blank' rel='noopener noreferrer' title='Acompanhe o Grupo Mensch no Facebook' >
                 <Image src={face} alt='facebook' height={48} />
               </Link>
-              <p>@mensch.energiasolar</p>
+              <p>@mensch.health</p>
             </div>
 
             <div className={classNames({
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
+              <Link href={'https://www.linkedin.com/in/camilla-vieira-ab36b3177/'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>Mensch Energia Solar</p>
+              <p>Camilla Vieira</p>
             </div>
 
           </div>
@@ -243,30 +243,30 @@ const ContatosHealth = () => {
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_email]: true,
         })}>
-          <Link href={'mailto:energiasolar@grupomensch.com.br'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'mailto:health@grupomensch.com.br'} target='_blank' rel='noopener noreferrer'>
             <Image src={email} alt='Email' height={48} />
           </Link>
-          <p>energiasolar@grupomensch.com.br</p>
+          <p>health@grupomensch.com.br</p>
         </div>
 
         <div className={classNames({
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_telefone]: true,
         })}>
-          <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'https://wa.me/5534996968654/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer'>
             <Image src={wpp} alt='Whatsapp' height={48} />
           </Link>
-          <p>(34) 9.9666-5871</p>
+          <p>(34) 9.9696-8654</p>
         </div>
 
         <div className={classNames({
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_instagram]: true,
         })}>
-          <Link href={'https://www.instagram.com/mensch.energiasolar/'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noopener noreferrer'>
             <Image src={insta} alt='Instagram' height={48} />
           </Link>
-          <p>@mensch.energiasolar</p>
+          <p>@mensch.health</p>
         </div>
 
         <div className={classNames({
@@ -276,17 +276,17 @@ const ContatosHealth = () => {
           <Link href={'https://www.facebook.com/profile.php?id=100091541775500&locale=pt_BR'} target='_blank' rel='noopener noreferrer'>
             <Image src={face} alt='facebook' height={48} />
           </Link>
-          <p>@mensch.energiasolar</p>
+          <p>@mensch.health</p>
         </div>
 
         <div className={classNames({
               [Style.contatos__dados__item]: true,
               [Style.contatos__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer'>
+              <Link href={'https://www.linkedin.com/in/camilla-vieira-ab36b3177/'} target='_blank' rel='noopener noreferrer'>
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>Mensch Energia Solar</p>
+              <p>Camilla Vieira</p>
             </div>
 
       </div>

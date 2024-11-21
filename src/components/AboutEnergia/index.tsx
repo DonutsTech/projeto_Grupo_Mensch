@@ -33,7 +33,7 @@ const AboutEnergia = () => {
     <div className={Style.about}>
       {equipe === 1 && (
         <div className={Style.about__content}>
-          <Image src={mensch} alt="Suporte" className={Style.about__content__img} />
+          <Image draggable="false" src={mensch} alt="Suporte" className={Style.about__content__img} />
           <div className={Style.about__content__textos}>
             <h4 className={Style.about__content__textos__titulo}>
               <span>Grupo Mensch</span>
@@ -46,7 +46,7 @@ const AboutEnergia = () => {
       )}
       {equipe === 2 && (
         <div className={Style.about__content}>
-          <Image src={tecnicos} alt="tecnicos" className={Style.about__content__img} />
+          <Image draggable="false" src={tecnicos} alt="tecnicos" className={Style.about__content__img} />
           <div className={Style.about__content__textos}>
             <h4 className={Style.about__content__textos__titulo}>
               <span>Técnicos Certificados</span>
@@ -59,7 +59,7 @@ const AboutEnergia = () => {
       )}
       {equipe === 3 && (
         <div className={Style.about__content}>
-          <Image src={suporte} alt="Suporte" className={Style.about__content__img} />
+          <Image draggable="false" src={suporte} alt="Suporte" className={Style.about__content__img} />
           <div className={Style.about__content__textos}>
             <h4 className={Style.about__content__textos__titulo}>
               <span>Suporte Técnico</span>

@@ -67,6 +67,7 @@ const Receitas = () => {
               <div className={Style.receitas__tipos__item__overlay} />
               <Image
                 src={imagem}
+                draggable="false"
                 alt={nome}
                 width={280}
                 height={280}
@@ -102,7 +103,7 @@ const Receitas = () => {
                   tipos.filter((dado): dado is Tipo => dado.id !== undefined && dado.id === idTipo).map(({ imagem, nome, id }) => (
                     <div className={Style.modal__menu__cabecalho} key={id}>
                       <div className={Style.modal__menu__cabecalho__overlay} />
-                      <Image src={imagem} alt={nome} className={Style.modal__menu__cabecalho__img} width={1080} height={1080} />
+                      <Image draggable="false" src={imagem} alt={nome} className={Style.modal__menu__cabecalho__img} width={1080} height={1080} />
                       <div className={Style.modal__menu__cabecalho__box}>
                         <button className={Style.modal__menu__cabecalho__box__close} onClick={() => { setIdTipo(0); toggleModal(); }}>
                           X
@@ -125,6 +126,7 @@ const Receitas = () => {
                         >
                           <Image
                             src={image}
+                            draggable="false"
                             alt={titulo}
                             width={500}
                             height={500}
@@ -173,7 +175,7 @@ const Receitas = () => {
                   <div key={id} className={Style.modal__receita}>
                     <div className={Style.modal__receita__cabecalho}>
                       <div className={Style.modal__receita__cabecalho__overlay} ></div>
-                      <Image src={image} alt={titulo} className={Style.modal__receita__cabecalho__img} width={1920} height={1080} />
+                      <Image draggable="false" src={image} alt={titulo} className={Style.modal__receita__cabecalho__img} width={1920} height={1080} />
                       <div className={Style.modal__receita__cabecalho__box}>
                         <h2 className={Style.modal__receita__cabecalho__box__titulo}>{titulo.toLowerCase()}</h2>
                         <h3 className={Style.modal__receita__cabecalho__box__subtitulo}>{subtitulo.toLowerCase()}</h3>
@@ -188,7 +190,7 @@ const Receitas = () => {
                         [Style.modal__receita__indice__item]: true,
                         [Style.modal__receita__indice__item__tempo]: true
                       })}>
-                        <Image src={timer} alt="icone de tempo" width={24} height={24} />
+                        <Image draggable="false" src={timer} alt="icone de tempo" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto} >
                           {tempo_de_preparo} min
                         </p>
@@ -197,7 +199,7 @@ const Receitas = () => {
                         [Style.modal__receita__indice__item]: true,
                         [Style.modal__receita__indice__item__nivel]: true
                       })}>
-                        <Image src={nivel} alt="icone de nível" width={24} height={24} />
+                        <Image draggable="false" src={nivel} alt="icone de nível" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto}>
                           Nível: {dificuldade}
                         </p>
@@ -206,7 +208,7 @@ const Receitas = () => {
                         [Style.modal__receita__indice__item]: true,
                         [Style.modal__receita__indice__item__porcoes]: true
                       })}>
-                        <Image src={serve} alt="icone de porções" width={24} height={24} />
+                        <Image draggable="false" src={serve} alt="icone de porções" width={24} height={24} />
                         <p className={Style.modal__receita__indice__item__texto}>
                           Porções: {porcoes}
                         </p>
@@ -281,7 +283,7 @@ const Receitas = () => {
                                 title="Compartilhe no Whatsapp"
                                 className={Style.modal__receita__conteudo__share__botao__link}
                               >
-                                <Image src={share} alt="share" width={24} className={Style.modal__receita__conteudo__share__botao__link__img}/> 
+                                <Image draggable="false" src={share} alt="share" width={24} className={Style.modal__receita__conteudo__share__botao__link__img}/> 
                               </Link>
                             </div>
                           </div>

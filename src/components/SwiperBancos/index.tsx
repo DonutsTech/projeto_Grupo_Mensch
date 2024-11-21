@@ -84,7 +84,6 @@ const SwiperBancos = () => {
   return (
     <div className={Style.esteira}>
       <Swiper
-
         // spaceBetween={24}
         slidesPerView={ (tela > 840) ? 9 : (tela < 840 && tela > 560) ? 6 : (tela < 560 &&  tela > 420) ? 4 : 3}
         draggable={false}

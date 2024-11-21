@@ -141,7 +141,7 @@ const Slider = () => {
                 <Link href={'https://www.facebook.com/people/Grupo-Mensch/100091541775500/?locale=pt_BR'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Health' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
-                <Link href={'https://www.instagram.com/grupo.mensch/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Health' >
+                <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Health' >
                   <Image src={instagram} alt='Instagram' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
               </div>
@@ -175,7 +175,7 @@ const Slider = () => {
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 
-                <Link href={'https://www.instagram.com/grupo.mensch/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Mind' >
+                <Link href={'https://www.instagram.com/mensch.mind/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Mind' >
                   <Image src={instagram} alt='Instagram' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 

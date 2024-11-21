@@ -72,7 +72,7 @@ const MVV = () => {
                 <Image src={pin} alt='pin' /> Excelência:
               </dt>
               <dd className={Style.mvv__content__valores__dl__dd}>
-                Buscamos a melhoria constante em nossos padrões de qualidade organizacional
+                Buscamos a melhoria constante em nossos padrões de qualidade organizacional.
               </dd>
             </div>
 

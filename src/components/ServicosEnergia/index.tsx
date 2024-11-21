@@ -19,7 +19,7 @@ const ServicosEnergia = () => {
         <h2 className={Style.servicos__head__titulo}>
           Uma Jornada <br />de <span>Servir</span> e <br /><span>Transformar</span>.
         </h2>
-        <Image src={logo} alt="Mensh Energia Solar" className={Style.servicos__head__logo} />
+        <Image src={logo} draggable="false" alt="Mensh Energia Solar" className={Style.servicos__head__logo} />
       </div>
       <div className={Style.servicos__content}>
         <div className={Style.servicos__content__textos}>

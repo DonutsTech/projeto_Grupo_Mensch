@@ -8,7 +8,7 @@ import pin from './assets/pin_energia.svg';
 import residencia from './assets/residencia.jpg'
 import seloResidencia from './assets/selo_residencia.svg';
 
-import empresa from './assets/empresa.jpg';
+import empresa from './assets/empresa.png';
 import seloEmpresa from './assets/selo_negocio.svg';
 
 import rural from './assets/rural.jpg';
@@ -43,15 +43,15 @@ const GaleriaEnergia = () => {
     <div className={Style.galeria}>
       {estado === 1 && (
         <div className={Style.galeria__content}>
-          <Image src={seloResidencia} alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
-          <Image src={residencia} alt="Residencia com energia solar da Mensch" className={Style.galeria__content__img} />
+          <Image src={seloResidencia} draggable="false" alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
+          <Image src={residencia}  draggable="false" alt="Residencia com energia solar da Mensch" className={Style.galeria__content__img} />
 
           <div className={Style.galeria__content__ficha}>
             <h3 className={Style.galeria__content__ficha__titulo}>
               Para a sua <span>Casa</span>.
             </h3>
             <p className={Style.galeria__content__ficha__texto}>
-              Economize 90% na sua conta de energia!
+              Economize até 92% na sua conta de energia!
             </p>
             <ul className={Style.galeria__content__ficha__lista}>
               <li className={Style.galeria__content__ficha__lista__item}>
@@ -72,8 +72,8 @@ const GaleriaEnergia = () => {
       )}
       {estado === 2 && (
         <div className={Style.galeria__content}>
-          <Image src={seloEmpresa} alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
-          <Image src={empresa} alt="Empresa com energia solar da Mensch" className={Style.galeria__content__img} />
+          <Image src={seloEmpresa} draggable="false" alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
+          <Image src={empresa} draggable="false" alt="Empresa com energia solar da Mensch" className={Style.galeria__content__img} />
 
           <div className={Style.galeria__content__ficha}>
             <h3 className={Style.galeria__content__ficha__titulo}>
@@ -101,8 +101,8 @@ const GaleriaEnergia = () => {
       )}
       {estado === 3 && (
         <div className={Style.galeria__content}>
-          <Image src={seloRural} alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
-          <Image src={rural} alt="Fazenda com energia solar da Mensch" className={Style.galeria__content__img} />
+          <Image src={seloRural} draggable="false" alt="Selo com energia solar da Mensch" className={Style.galeria__content__selo} />
+          <Image src={rural} draggable="false" alt="Fazenda com energia solar da Mensch" className={Style.galeria__content__img} />
 
           <div className={Style.galeria__content__ficha}>
             <h3 className={Style.galeria__content__ficha__titulo}>

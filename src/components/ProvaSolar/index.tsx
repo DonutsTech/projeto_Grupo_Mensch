@@ -60,7 +60,7 @@ const ProvaSolar = () => {
     <section className={Style.prova} aria-label="Provas Sociais">
       <h2 className={Style.prova__titulo}>Nosso Sucesso!</h2>
       <h3 className={Style.prova__subtitulo}>
-        Nossos clientes comprovam nosso compromisso com você.
+        Clientes que são prova do nosso compromisso com você.
       </h3>
       <div className={Style.prova__content}>
         <Swiper
@@ -111,9 +111,9 @@ const ProvaSolar = () => {
         </Swiper>
       </div>
       <div className={Style.prova__textos}>
-        <p className={Style.prova__textos__paragrafo}>
+        {/* <p className={Style.prova__textos__paragrafo}>
         ◆ Empresa mais bem avaliada no Google da nossa região.
-        </p>
+        </p> */}
         <p className={Style.prova__textos__paragrafo}>
         ◆ 100% dos clientes da Mensch Energia Solar estão economizando muito dinheiro!
         </p>

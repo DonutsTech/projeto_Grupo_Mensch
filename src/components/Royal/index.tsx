@@ -197,7 +197,7 @@ const Royal = () => {
         {produtos.map((p, index) =>
         (
           <div className={Style.royal__produtos__item} key={index}>
-            <Image src={p.img} alt={p.nome} className={Style.royal__produtos__item__img} />
+            <Image draggable="false" src={p.img} alt={p.nome} className={Style.royal__produtos__item__img} />
             <h4 className={Style.royal__produtos__item__titulo}>
               {p.nome}
             </h4>

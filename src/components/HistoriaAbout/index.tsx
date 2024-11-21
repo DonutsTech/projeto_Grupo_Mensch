@@ -4,7 +4,7 @@ import Style from './HistoriaAbout.module.scss';
 
 import img1 from './assets/comeco.png';
 import img2 from './assets/consolidacao.jpg';
-import img3 from './assets/futuro.jpg';
+import img3 from './assets/futuro.png';
 
 import pin from './assets/pin.svg';
 import Image from 'next/image';
@@ -67,9 +67,9 @@ const HistoriaAbout = () => {
             <p className={Style.historia__content__box__texto__paragrafo} >
               <span>A Mensch será</span> reconhecida pelo significado que carrega,
               inspirando pessoas a servir, trazer sorrisos, aliviar
-              dores e espalhar felicidade. Nossa m issão é de todos
+              dores e espalhar felicidade. Nossa missão é de todos
               que enxergam a vida com o um presente e honram
-              Aquele que a deu com Am or</p>
+              Aquele que a deu com Amor.</p>
           </div>
         </div>
 

@@ -166,7 +166,7 @@ const CTASolar = () => {
             </h3>
             <ul className={Style.cta__container__box__textos__lista}>
               <li className={Style.cta__container__box__textos__lista__item}>
-                <span>◆</span> Economize até 90% na conta de luz e reduza seus gastos mensais.
+                <span>◆</span> Economize até 92% na conta de luz e reduza seus gastos mensais.
               </li>
               <li className={Style.cta__container__box__textos__lista__item}>
                 <span>◆</span> Aumente o valor da sua propriedade com uma fonte de energia limpa e renovável.
