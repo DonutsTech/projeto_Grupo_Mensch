@@ -54,6 +54,7 @@
     justify-content: flex-start;
     gap: 16px;
     overflow: auto;
+    overflow-y: hidden;
     cursor: grab;
 
     &:active {
