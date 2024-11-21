@@ -214,10 +214,10 @@ const ContatosHealth = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/in/camilla-vieira-ab36b3177/'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
+              <Link href={'https://www.linkedin.com/company/mensch-health/'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>Camilla Vieira</p>
+              <p>Mensch Health</p>
             </div>
 
           </div>
@@ -283,10 +283,10 @@ const ContatosHealth = () => {
               [Style.contatos__dados__item]: true,
               [Style.contatos__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/in/camilla-vieira-ab36b3177/'} target='_blank' rel='noopener noreferrer'>
+              <Link href={'https://www.linkedin.com/company/mensch-health/'} target='_blank' rel='noopener noreferrer'>
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
-              <p>Camilla Vieira</p>
+              <p>Mensch Health</p>
             </div>
 
       </div>
