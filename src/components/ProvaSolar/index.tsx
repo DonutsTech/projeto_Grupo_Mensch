@@ -3,7 +3,7 @@
 import Image from "next/image";
 import bg from './assets/placa_solar.jpeg';
 
-import perfil from "./assets/perfil_corte.jpg";
+// import perfil from "./assets/perfil_corte.jpg";
 import aspas from "./assets/aspas.svg";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,48 +12,51 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import Style from "./ProvaSolar.module.scss";
 
+import oleir from './assets/Oleir.png';
+import rita from './assets/Rita.png';
+
 const ProvaSolar = () => {
   const coments = [
     {
       id: 1,
-      nome: "Thalizim Batata",
-      foto: perfil,
+      nome: "Oleir Borges",
+      foto: oleir,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou empresário e cliente da Mensch há anos. A empresa entrega qualidade e um pós-venda excepcional, algo essencial hoje. Graças a eles, alcançamos economia máxima na energia. Recomendo com confiança!",
+      link: "https://www.instagram.com/oleir/",
     },
     {
       id: 2,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Rita Bertoni",
+      foto: rita,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou empresária e produtora rural. Conheci a Mensch por indicação de um sócio após buscar várias empresas que não transmitiam segurança. Contratei para minha residência e o serviço foi claro e transparente.",
+      link: "https://www.instagram.com/bertoni47/",
     },
-    {
-      id: 3,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
-    {
-      id: 4,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
-    {
-      id: 5,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
+    // {
+    //   id: 3,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
+    // {
+    //   id: 4,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
+    // {
+    //   id: 5,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
   ];
 
   return (
