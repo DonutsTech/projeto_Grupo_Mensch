@@ -3,7 +3,7 @@
 import Image from "next/image";
 import bg from "./assets/prova_img.png";
 
-import perfil from "./assets/perfil_corte.jpg";
+// import perfil from "./assets/perfil_corte.jpg";
 import aspas from "./assets/aspas.svg";
 import Link from "next/link";
 import Style from "./Prova.module.scss";
@@ -52,14 +52,14 @@ const Prova = () => {
         "Trabalhar na Mensch é viver a transformação todos os dias. Uma marca que valoriza pessoas, com integridade e honra, guiando nossa jornada de servir e impactar positivamente a vida de todos.",
       link: "https://www.instagram.com/biaa.oliiveiraa/",
     },
-    {
-      id: 5,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
+    // {
+    //   id: 5,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
   ];
 
   return (

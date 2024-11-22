@@ -115,8 +115,8 @@ const CTASolar = () => {
     }
 
     const valorLimpo = formData.valor.replace(/[^0-9.,]/g, '')
-    .replace(/\./g, '')
-    .replace(',', '.');
+      .replace(/\./g, '')
+      .replace(',', '.');
 
 
     setConta(parseFloat(valorLimpo));
@@ -256,81 +256,132 @@ const CTASolar = () => {
 
         {(conta > 0 && cliente.length > 0) ?
 
-          (
-            <div className={Style.modal__box2}>
-              <div className={Style.modal__box2__cabecalho}>
-                <h2 className={Style.modal__box2__cabecalho__titulo}>Olá <span>{cliente}</span>! Veja a baixo o resultado da simulação:</h2>
-                <p className={Style.modal__box2__cabecalho__texto}>Atualmente você paga <span>{conta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span> em sua conta de energia.</p>
-              </div>
-
-              <div className={Style.modal__box2__resultado}>
-
-                <div className={classNames({
-                  [Style.modal__box2__resultado__box]: true,
-                  [Style.modal__box2__resultado__box__investimento]: true,
-                })}>
-                  <Image src={investimento} alt="Investimento" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
-                  <h3 className={Style.modal__box2__resultado__box__titulo}>
-                    Valor de Investimento:
-                  </h3>
-                  <p className={Style.modal__box2__resultado__box__texto}>
-                    <span>De</span> {informacao?.min.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} <span>a</span> {informacao?.max.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.
-                  </p>
+          conta < 220 ?
+            (
+              <div className={Style.modal__boxMenor}>
+                <div className={Style.modal__boxMenor__cabecalho}>
+                  <h2 className={Style.modal__boxMenor__cabecalho__titulo}>Olá <span>{cliente}</span>!</h2>
+                  <p className={Style.modal__boxMenor__cabecalho__texto}>O valor de conta de energia é inferior ao mínimo recomendado de <span>220 Reais </span> ou <span>130 Kwh</span>.</p>
                 </div>
-
-                <div className={classNames({
-                  [Style.modal__box2__resultado__box]: true,
-                  [Style.modal__box2__resultado__box__placas]: true,
-                })}>
-                  <Image src={placas} alt="Placas" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
-                  <h3 className={Style.modal__box2__resultado__box__titulo}>
-                    Quantidade de Placas a ser Instaladas:
-                  </h3>
-                  <p className={Style.modal__box2__resultado__box__texto}>
-                    Serão instaladas <span>{informacao?.qtd}</span> placas.
-                  </p>
-                </div>
-
-                <div className={classNames({
-                  [Style.modal__box2__resultado__box]: true,
-                  [Style.modal__box2__resultado__box__retorno]: true,
-                })}>
-                  <Image src={retorno} alt="Retorno" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
-                  <h3 className={Style.modal__box2__resultado__box__titulo}>
-                    Retorno do investimento a partir de:
-                  </h3>
-                  <p className={Style.modal__box2__resultado__box__texto}>
-                    Aproximadamente <span>{informacao ? (Math.trunc((informacao.preco) / conta) + 1 ): 0} Meses</span>.
-                  </p>
-                </div>
-
-              </div>
-
-              <div className={Style.modal__box2__footer}>
-                <p className={Style.modal__box2__footer__texto}>
-                  *Os resultados aqui apresentados são apenas uma estimativa e podem variar a cada projeto.
+                <Image draggable="false" src={investimento} alt="Investimento" width={80} height={80} className={Style.modal__boxMenor__img} />
+                <p className={Style.modal__boxMenor__texto}>
+                  Para saber mais como investir em energia solar, entre em contato com a nossa equipe da <span>Mensh Energia Solar</span>.
                 </p>
-                <p className={Style.modal__box2__footer__texto}>
-                  Para maiores informações, entre em contato com a nossa equipe da <span>Mensh Energia Solar</span>.
-                </p>
-                <Link
-                  className={Style.modal__box2__footer__btn}
-                  href={"/#contatos__solar"}
-                  onClick={(e) => {
+                <Link href={"/#contatos__solar"} className={Style.modal__boxMenor__btn} onClick={(e) => {
+                  e.preventDefault();
+                  toggleModal();
+                  setConta(0);
+                  setCliente('');
+                  setInformacao(null);
+                  Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                }}>
+                  Fale Conosco
+                </Link>
+              </div>
+            )
+            :
+            informacao === null ?
+              (
+                <div className={Style.modal__boxMaior}>
+                  <div className={Style.modal__boxMaior__cabecalho}>
+                    <h2 className={Style.modal__boxMaior__cabecalho__titulo}>Olá <span>{cliente}</span>!</h2>
+                    <p className={Style.modal__boxMaior__cabecalho__texto}>Parabéns pelo interesse em energia solar! Sua simulação será personalizada, pois consumos acima de <span> 1260 kWh</span> exigem análise específica para atender suas necessidades com <span>precisão</span>.</p>
+                  </div>
+
+                  <Image draggable="false" src={investimento} alt="Investimento" width={80} height={80} className={Style.modal__boxMaior__img} />
+                  <p className={Style.modal__boxMaior__texto}>
+                  Oportunidades não esperam! Invista em energia solar e comece a economizar hoje mesmo. Entre em contato agora e garanta o futuro da sua economia! A <span>Mensh Energia Solar</span> tem uma solução personalizada para sua necessidade.
+                  </p>
+                  <Link href={"/#contatos__solar"} className={Style.modal__boxMaior__btn} onClick={(e) => {
                     e.preventDefault();
                     toggleModal();
                     setConta(0);
                     setCliente('');
                     setInformacao(null);
                     Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
-                  }}
-                >
-                  Fale Conosco
-                </Link>
-              </div>
+                  }}>
+                    Fale Conosco
+                  </Link>
+                </div>
+              )
 
-            </div>
-          )
+              :
+              (
+                <div className={Style.modal__box2}>
+                  <div className={Style.modal__box2__cabecalho}>
+                    <h2 className={Style.modal__box2__cabecalho__titulo}>Olá <span>{cliente}</span>! Veja a baixo o resultado da simulação:</h2>
+                    <p className={Style.modal__box2__cabecalho__texto}>Atualmente você paga <span>{conta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span> em sua conta de energia.</p>
+                  </div>
+
+                  <div className={Style.modal__box2__resultado}>
+
+                    <div className={classNames({
+                      [Style.modal__box2__resultado__box]: true,
+                      [Style.modal__box2__resultado__box__investimento]: true,
+                    })}>
+                      <Image src={investimento} alt="Investimento" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
+                      <h3 className={Style.modal__box2__resultado__box__titulo}>
+                        Valor de Investimento:
+                      </h3>
+                      <p className={Style.modal__box2__resultado__box__texto}>
+                        <span>De</span> {informacao?.min.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} <span>a</span> {informacao?.max.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.
+                      </p>
+                    </div>
+
+                    <div className={classNames({
+                      [Style.modal__box2__resultado__box]: true,
+                      [Style.modal__box2__resultado__box__placas]: true,
+                    })}>
+                      <Image src={placas} alt="Placas" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
+                      <h3 className={Style.modal__box2__resultado__box__titulo}>
+                        Quantidade de Placas a ser Instaladas:
+                      </h3>
+                      <p className={Style.modal__box2__resultado__box__texto}>
+                        Serão instaladas <span>{informacao?.qtd}</span> placas.
+                      </p>
+                    </div>
+
+                    <div className={classNames({
+                      [Style.modal__box2__resultado__box]: true,
+                      [Style.modal__box2__resultado__box__retorno]: true,
+                    })}>
+                      <Image src={retorno} alt="Retorno" width={64} height={64} className={Style.modal__box2__resultado__box__img} />
+                      <h3 className={Style.modal__box2__resultado__box__titulo}>
+                        Retorno do investimento a partir de:
+                      </h3>
+                      <p className={Style.modal__box2__resultado__box__texto}>
+                        Aproximadamente <span>{informacao ? (Math.trunc((informacao.preco) / conta) + 1) : 0} Meses</span>.
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <div className={Style.modal__box2__footer}>
+                    <p className={Style.modal__box2__footer__texto}>
+                      *Os resultados aqui apresentados são apenas uma estimativa e podem variar a cada projeto.
+                    </p>
+                    <p className={Style.modal__box2__footer__texto}>
+                      Para maiores informações, entre em contato com a nossa equipe da <span>Mensh Energia Solar</span>.
+                    </p>
+                    <Link
+                      className={Style.modal__box2__footer__btn}
+                      href={"/#contatos__solar"}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        toggleModal();
+                        setConta(0);
+                        setCliente('');
+                        setInformacao(null);
+                        Scroll.scroller.scrollTo('contatos__solar', { duration: 500, delay: 0, smooth: true });
+                      }}
+                    >
+                      Fale Conosco
+                    </Link>
+                  </div>
+
+                </div>
+              )
+
 
           :
           (

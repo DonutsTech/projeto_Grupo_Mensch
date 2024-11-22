@@ -475,6 +475,197 @@
     }
   }
 
+  &__boxMenor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 36px;
+    gap: 24px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &__cabecalho {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &__titulo {
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        line-height: $font-height-titulo-2;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-energia-principal;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__img { 
+      width: 96px;
+      height: auto;
+    }
+
+    &__texto {
+      width: 60%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
+      color: $cor-black;
+      text-align: center;
+      cursor: default;
+
+      span {
+        color: $cor-energia-principal;
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      width: 128px;
+      height: 48px;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $cor-energia-principal;
+      color: $cor-white;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-black;
+        color: $cor-energia-principal;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+
+  &__boxMaior { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 36px;
+    gap: 24px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &__cabecalho {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &__titulo {
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        line-height: $font-height-titulo-2;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-energia-principal;
+          font-weight: 600;
+        }
+      }
+    }
+    &__img { 
+      width: 96px;
+      height: auto;
+    }
+
+    &__texto {
+      width: 60%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
+      color: $cor-black;
+      text-align: center;
+      cursor: default;
+
+      span {
+        color: $cor-energia-principal;
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      width: 128px;
+      height: 48px;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $cor-energia-principal;
+      color: $cor-white;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-black;
+        color: $cor-energia-principal;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+
   &__box2 {
     width: 100%;
     height: 100%;
@@ -538,7 +729,7 @@
       padding: 20px;
       margin-left: -20px;
 
-      &__box { 
+      &__box {
         width: 100%;
         height: 280px;
         display: flex;
@@ -547,7 +738,7 @@
         justify-content: space-between;
         // gap: 16px;
 
-        &__titulo { 
+        &__titulo {
           font-family: $font-titulo;
           font-size: $font-size-titulo-1;
           font-weight: $font-weight-titulo-1;
@@ -569,6 +760,7 @@
         }
 
       }
+
       @media (max-width: 840px) {
         flex-direction: column;
         align-items: center;
@@ -584,7 +776,7 @@
       }
     }
 
-    &__footer { 
+    &__footer {
       width: 100%;
       height: auto;
       display: flex;
@@ -620,7 +812,7 @@
         font-weight: 600;
         color: $cor-white;
         box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
-        
+
         &:hover {
           scale: 0.9;
           background-color: $cor-black;
