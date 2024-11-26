@@ -73,9 +73,10 @@ const CTASolar = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'milenaleme4@hotmail.com',
-          subject: ' Mensagem Recebida pelo site - Contato do Grupo Mansch',
-          text: `${mensagemMenschSolarCalcular(dadosCep, dadosForm)}`
+          to: 'energiasolar@grupomensch.com.br',
+          subject: ' Mensagem Recebida pelo site - Contato do Grupo Mensch Solar',
+          text: `${mensagemMenschSolarCalcular(dadosCep, dadosForm)}`,
+          tel: `${process.env.TEL_SOLAR}`,
         }),
       });
 
