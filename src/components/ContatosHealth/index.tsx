@@ -15,7 +15,7 @@ import { FormContatoMascher } from '@/types';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
 import { phone } from '@/util/mask';
 import { validation } from '@/util/validation';
-import { mensagemMenschSolar } from '@/util/mensagem';
+import { mensagemGrupoMensch } from '@/util/mensagem';
 
 const ContatosHealth = () => {
   const [form, setForm] = useState({} as FormContatoMascher)
@@ -51,8 +51,9 @@ const ContatosHealth = () => {
         },
         body: JSON.stringify({
           to: 'energiasolar@grupomensch.com.br',
-          subject: ' Mensagem Recebida pelo site - Contato do Mansch Solar',
-          text: mensagemMenschSolar(formDados)
+          subject: ' Mensagem Recebida pelo site - Contato do Mensch Healt',
+          text: mensagemGrupoMensch(formDados, 'Mensch Healt'),
+          tel: `${process.env.TEL_HEALT}`,
         }),
       });
 
@@ -111,6 +112,7 @@ const ContatosHealth = () => {
             })}
             id='nome'
             placeholder='Nome'
+            name='nome'
             onChange={handleFormChange}
             value={form.nome === undefined ? '' : form.nome}
           />
@@ -123,6 +125,7 @@ const ContatosHealth = () => {
             })}
             id='email'
             placeholder='Digite o seu melhor e-mail'
+            name='email'
             onChange={handleFormChange}
             value={form.email === undefined ? '' : form.email}
           />
@@ -135,6 +138,7 @@ const ContatosHealth = () => {
             })}
             id='telefone'
             placeholder='Telefone'
+            name='telefone'
             onChange={handleFormChange}
             minLength={13}
             value={form.telefone === undefined ? '' : form.telefone}
@@ -146,6 +150,7 @@ const ContatosHealth = () => {
               [Style.contatos__content__form__input__mensagem]: true,
             })}
             id='mensagem'
+            name='mensagem'
             placeholder='Digite sua mensagem'
             onChange={handleFormChange}
             value={form.mensagem === undefined ? '' : form.mensagem}
