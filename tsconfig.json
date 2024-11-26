@@ -23,6 +23,6 @@
     }
   },
   "types": ["node"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "declarations.d.ts"                                                                                                                                                                                                                         ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/declarations.d.ts", "src/global.d.ts", "src/baileys.d.ts"],
   "exclude": ["node_modules"]
 }
