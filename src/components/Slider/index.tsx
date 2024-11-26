@@ -138,7 +138,7 @@ const Slider = () => {
                 title='Confira o site da Mensch Health'
               >Confira</button>
               <div className={Style.slider__submarca__btn__redes} >
-                <Link href={'https://www.facebook.com/people/Grupo-Mensch/100091541775500/?locale=pt_BR'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Health' >
+                <Link href={'https://www.facebook.com/menschhealth'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Health' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
                 <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Health' >
