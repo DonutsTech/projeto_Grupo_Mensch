@@ -225,7 +225,7 @@ const Contatos = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
+              <Link href={'https://www.linkedin.com/company/grupo-mensch/'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
               <p>Grupo Mensch</p>
@@ -294,7 +294,7 @@ const Contatos = () => {
               [Style.contatos__dados__item]: true,
               [Style.contatos__dados__item_linkedin]: true,
             })}>
-              <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer'>
+              <Link href={'https://www.linkedin.com/company/grupo-mensch/'} target='_blank' rel='noopener noreferrer'>
                 <Image src={linkedin} alt='linkedin' height={48} />
               </Link>
               <p>Grupo Mensch</p>

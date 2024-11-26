@@ -68,7 +68,7 @@ const Slider = () => {
 
               <div className={Style.slider__submarca__btn__redes} >
 
-                <Link href={'https://www.facebook.com/mchengenharia/'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Energia Solar' >
+                <Link href={'https://www.facebook.com/menschenergiasolar'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Energia Solar' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 
@@ -103,7 +103,7 @@ const Slider = () => {
 
               <div className={Style.slider__submarca__btn__redes} >
 
-                <Link href={'https://www.facebook.com/menschrefrigeracao'} target='_blank' rel='noreferrer' title='Confira o Facebook da Instalar' >
+                <Link href={'https://www.facebook.com/MenschInstalAR'} target='_blank' rel='noreferrer' title='Confira o Facebook da Instalar' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 
@@ -138,10 +138,10 @@ const Slider = () => {
                 title='Confira o site da Mensch Health'
               >Confira</button>
               <div className={Style.slider__submarca__btn__redes} >
-                <Link href={'https://www.facebook.com/people/Grupo-Mensch/100091541775500/?locale=pt_BR'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Health' >
+                <Link href={'https://www.facebook.com/menschhealth'} target='_blank' rel='noreferrer' title='Confira o Facebook da Mensch Health' >
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
-                <Link href={'https://www.instagram.com/grupo.mensch/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Health' >
+                <Link href={'https://www.instagram.com/mensch.health/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Health' >
                   <Image src={instagram} alt='Instagram' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
               </div>
@@ -175,7 +175,7 @@ const Slider = () => {
                   <Image src={facebook} alt='Facebook' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 
-                <Link href={'https://www.instagram.com/grupo.mensch/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Mind' >
+                <Link href={'https://www.instagram.com/mensch.mind/'} target='_blank' rel='noreferrer' title='Confira o Instagram da Mensch Mind' >
                   <Image src={instagram} alt='Instagram' className={Style.slider__submarca__btn__redes__icon} width={48} height={48} />
                 </Link>
 

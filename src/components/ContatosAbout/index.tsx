@@ -58,10 +58,10 @@ const ContatosAbout = () => {
         </div>
 
         <div className={Style.contatos__content__item}>
-          <Link href={'https://www.linkedin.com/company/menschsolar/posts/?feedView=all'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
+          <Link href={'https://www.linkedin.com/company/grupo-mensch/'} target='_blank' rel='noopener noreferrer' title='siga o Grupo Mensch no Linkedin' >
             <Image src={linkedin} alt='linkedin' height={48} />
           </Link>
-          <p>@grupo.mensch</p>
+          <p>Grupo Mensch</p>
         </div>
       </div>
       <Link href={"/#contatos__mensch"} className={Style.contatos__btn} > 

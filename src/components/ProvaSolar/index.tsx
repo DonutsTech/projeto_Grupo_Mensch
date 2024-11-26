@@ -3,7 +3,7 @@
 import Image from "next/image";
 import bg from './assets/placa_solar.jpeg';
 
-import perfil from "./assets/perfil_corte.jpg";
+// import perfil from "./assets/perfil_corte.jpg";
 import aspas from "./assets/aspas.svg";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,47 +12,52 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import Style from "./ProvaSolar.module.scss";
 
+import oleir from './assets/Oleir.png';
+import rita from './assets/Rita.png';
+import tulio from './assets/Tulio.png';
+import tocha from './assets/Tocha.png';
+import tancredo from './assets/Tancredo.png';
 const ProvaSolar = () => {
   const coments = [
     {
       id: 1,
-      nome: "Thalizim Batata",
-      foto: perfil,
+      nome: "Oleir Borges",
+      foto: oleir,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou empresário e cliente da Mensch há anos. A empresa entrega qualidade e um pós-venda excepcional, algo essencial hoje. Graças a eles, alcançamos economia máxima na energia. Recomendo com confiança!",
+      link: "https://www.instagram.com/oleir/",
     },
     {
       id: 2,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Rita Bertoni",
+      foto: rita,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou empresária e produtora rural. Conheci a Mensch por indicação de um sócio após buscar várias empresas que não transmitiam segurança. Contratei para minha residência e o serviço foi claro e transparente.",
+      link: "https://www.instagram.com/bertoni47/",
     },
     {
       id: 3,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Tulio Miguel",
+      foto: tulio,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Tenho 2 projetos solares com a Mensch, para casa e propriedade rural. Equipe atenciosa, suporte incrível e técnicos qualificados. Confio desde o início e recomendo a qualquer pessoa que precise!",
+      link: "https://www.instagram.com/tulio_rancho_minas_goias/",
     },
     {
       id: 4,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Tocha",
+      foto: tocha,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Em 2021, fiz parceria com a Mensch para reduzir o consumo de energia. Após 4 anos, coloquei mais placas. Empresa consolidada, honesta e sempre atenciosa. Só tenho a agradecer e recomendo.",
+      link: "https://www.instagram.com/barbeariaseutocha/",
     },
     {
       id: 5,
-      nome: "jonh Doo",
-      foto: perfil,
+      nome: "Tancredo",
+      foto: tancredo,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Como idealizador do projeto Van da Alegria, agradeço à Mensch pelo apoio à minha usina solar. Sempre me ajudam no que preciso. Empresa confiável, profissional e parceira. Recomendo totalmente!",
+      link: "https://www.instagram.com/projetovandaalegria/",
     },
   ];
 
@@ -60,7 +65,7 @@ const ProvaSolar = () => {
     <section className={Style.prova} aria-label="Provas Sociais">
       <h2 className={Style.prova__titulo}>Nosso Sucesso!</h2>
       <h3 className={Style.prova__subtitulo}>
-        Nossos clientes comprovam nosso compromisso com você.
+        Clientes que são prova do nosso compromisso com você.
       </h3>
       <div className={Style.prova__content}>
         <Swiper
@@ -111,9 +116,9 @@ const ProvaSolar = () => {
         </Swiper>
       </div>
       <div className={Style.prova__textos}>
-        <p className={Style.prova__textos__paragrafo}>
+        {/* <p className={Style.prova__textos__paragrafo}>
         ◆ Empresa mais bem avaliada no Google da nossa região.
-        </p>
+        </p> */}
         <p className={Style.prova__textos__paragrafo}>
         ◆ 100% dos clientes da Mensch Energia Solar estão economizando muito dinheiro!
         </p>

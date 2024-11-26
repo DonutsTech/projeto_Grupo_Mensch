@@ -23,7 +23,7 @@ const EnergiaSolar = () => {
               A energia solar converte luz em eletricidade, reduzindo contas de energia e impacto ambiental. <br />É uma opção viável para residências, empresas e fazendas, proporcionando independência e economia a longo prazo.
             </p>
             <p className={Style.section__argumento__box1__textos__texto}>
-              Com a energia solar reduz contas de energia em até 80% e aumenta o valor da sua propriedade. O retorno sobre o investimento é alcançado em até 10 anos, liberando recursos para investir em outras áreas do seu negócio ou família.
+              Com a energia solar reduz contas de energia em até 92% e aumenta o valor da sua propriedade. O retorno sobre o investimento é alcançado em até 3 anos, liberando recursos para investir em outras áreas do seu negócio ou família.
             </p>
           </div>
           <Image src={img1} alt='Casa com energia solar' className={Style.section__argumento__box1__img} />

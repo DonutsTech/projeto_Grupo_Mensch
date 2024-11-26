@@ -307,7 +307,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: auto;
+  overflow: hidden;
   border-radius: 16px;
   border: solid 6px $cor-energia-principal;
   outline: none;
@@ -317,7 +317,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 24px;
+  padding-top: 64px;
   gap: 24px;
 
   &__btn {
@@ -338,6 +338,7 @@
     color: $cor-mae-principal;
     font-weight: 600;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    z-index: 5;
 
     &:hover {
       scale: 0.9;
@@ -353,7 +354,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 24px;
+    padding: 20px 0;
     gap: 24px;
 
     &__titulo {
@@ -474,14 +475,352 @@
     }
   }
 
-  &__box2 { 
+  &__boxMenor {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 24px;
+    padding: 20px;
+    padding-top: 36px;
     gap: 24px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &__cabecalho {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &__titulo {
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        line-height: $font-height-titulo-2;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-energia-principal;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__img { 
+      width: 96px;
+      height: auto;
+    }
+
+    &__texto {
+      width: 60%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
+      color: $cor-black;
+      text-align: center;
+      cursor: default;
+
+      span {
+        color: $cor-energia-principal;
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      width: 128px;
+      height: 48px;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $cor-energia-principal;
+      color: $cor-white;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-black;
+        color: $cor-energia-principal;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+
+  &__boxMaior { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 36px;
+    gap: 24px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &__cabecalho {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &__titulo {
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        line-height: $font-height-titulo-2;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-energia-principal;
+          font-weight: 600;
+        }
+      }
+    }
+    &__img { 
+      width: 96px;
+      height: auto;
+    }
+
+    &__texto {
+      width: 60%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      font-size: $font-size-texto-3;
+      line-height: $font-height-texto-3;
+      color: $cor-black;
+      text-align: center;
+      cursor: default;
+
+      span {
+        color: $cor-energia-principal;
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      width: 128px;
+      height: 48px;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $cor-energia-principal;
+      color: $cor-white;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        scale: 0.9;
+        background-color: $cor-black;
+        color: $cor-energia-principal;
+        box-shadow: none;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+
+  &__box2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-top: 36px;
+    gap: 24px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+    &__cabecalho {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &__titulo {
+        font-family: $font-titulo;
+        font-size: $font-size-titulo-2;
+        font-weight: $font-weight-titulo-2;
+        line-height: $font-height-titulo-2;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-principal;
+        }
+      }
+
+      &__texto {
+        font-size: $font-size-texto-3;
+        line-height: $font-height-texto-3;
+        text-align: center;
+        color: $cor-black;
+
+        span {
+          color: $cor-energia-principal;
+          font-weight: 600;
+        }
+      }
+    }
+
+
+    &__resultado {
+      width: 100%;
+      min-width: 280px;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 20px;
+      margin-left: -20px;
+
+      &__box {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // gap: 16px;
+
+        &__titulo {
+          font-family: $font-titulo;
+          font-size: $font-size-titulo-1;
+          font-weight: $font-weight-titulo-1;
+          line-height: $font-height-titulo-1;
+          color: $cor-black;
+          text-align: center;
+
+        }
+
+        &__texto {
+          font-size: $font-size-texto-2;
+          font-weight: 500;
+          line-height: $font-height-texto-2;
+          color: $cor-black;
+
+          span {
+            color: $cor-energia-2;
+          }
+        }
+
+      }
+
+      @media (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__box {
+          width: 100%;
+          height: auto;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
+      }
+    }
+
+    &__footer {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+
+      &__texto {
+        font-size: $font-size-texto-1;
+        line-height: $font-height-texto-1;
+        color: $cor-black;
+        text-align: center;
+
+        span {
+          color: $cor-energia-2;
+          font-weight: 500;
+        }
+      }
+
+      &__btn {
+        margin: 16px 0;
+        width: 160px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $cor-energia-2;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        color: $cor-white;
+        box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          scale: 0.9;
+          background-color: $cor-black;
+          color: $cor-energia-principal;
+          box-shadow: none;
+          transition: all 200ms ease-in-out;
+        }
+      }
+    }
   }
 }

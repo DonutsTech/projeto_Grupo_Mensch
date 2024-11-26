@@ -8,7 +8,8 @@ import Link from 'next/link';
 import tier1 from './assets/Tier1.svg';
 import tigo from './assets/tigo.svg';
 import aldo from './assets/aldo.svg';
-import growatt from './assets/Growatt.png';
+// import growatt from './assets/Growatt.png';
+import canalSolar from './assets/canalSolar.svg';
 
 
 const SelosSolar = () => {
@@ -88,19 +89,19 @@ const SelosSolar = () => {
       })}>
         <Link
           className={Style.qualifica__box__a}
-          href={"https://www.instagram.com/p/CiLYsMGLegx/?img_index=4"}
+          href={"https://canalsolar.com.br/sistema-fv-dara-economia-de-r-43-mil-a-produtor-rural/"}
           target="_blank"
           rel="noopener noreferrer"
-          title="Postagem no instagram da Growatt foto 4"
+          title="Sistema FV dará economia de R$ 43 mil a produtor rural || Canal Solar"
         >
           <Image
-            src={growatt}
-            alt='Growatt'
+            src={canalSolar}
+            alt='Canal Solar'
             className={Style.qualifica__box__a__img}
           />
         </Link>
         <p className={Style.qualifica__box__texto}>
-          Top 10 Empresas do Brasil pela Growatt 2022.
+          Reportagem Canal Solar:<br/> Economia de 43 mil.
         </p>
       </div>
 
