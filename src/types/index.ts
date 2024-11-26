@@ -33,3 +33,10 @@ export interface Tabela {
   min: number;
   max: number;
 }
+
+export interface Data {
+  to: string;
+  subject: string;
+  text: string;
+  tel: string;
+}
