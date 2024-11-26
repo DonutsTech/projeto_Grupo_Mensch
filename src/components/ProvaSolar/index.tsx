@@ -14,7 +14,9 @@ import Style from "./ProvaSolar.module.scss";
 
 import oleir from './assets/Oleir.png';
 import rita from './assets/Rita.png';
-
+import tulio from './assets/Tulio.png';
+import tocha from './assets/Tocha.png';
+import tancredo from './assets/Tancredo.png';
 const ProvaSolar = () => {
   const coments = [
     {
@@ -33,30 +35,30 @@ const ProvaSolar = () => {
         "Sou empresária e produtora rural. Conheci a Mensch por indicação de um sócio após buscar várias empresas que não transmitiam segurança. Contratei para minha residência e o serviço foi claro e transparente.",
       link: "https://www.instagram.com/bertoni47/",
     },
-    // {
-    //   id: 3,
-    //   nome: "jonh Doo",
-    //   foto: perfil,
-    //   texto:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-    //   link: "https://www.instagram.com/grupo.mensch/",
-    // },
-    // {
-    //   id: 4,
-    //   nome: "jonh Doo",
-    //   foto: perfil,
-    //   texto:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-    //   link: "https://www.instagram.com/grupo.mensch/",
-    // },
-    // {
-    //   id: 5,
-    //   nome: "jonh Doo",
-    //   foto: perfil,
-    //   texto:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-    //   link: "https://www.instagram.com/grupo.mensch/",
-    // },
+    {
+      id: 3,
+      nome: "Tulio Miguel",
+      foto: tulio,
+      texto:
+        "Tenho 2 projetos solares com a Mensch, para casa e propriedade rural. Equipe atenciosa, suporte incrível e técnicos qualificados. Confio desde o início e recomendo a qualquer pessoa que precise!",
+      link: "https://www.instagram.com/tulio_rancho_minas_goias/",
+    },
+    {
+      id: 4,
+      nome: "Tocha",
+      foto: tocha,
+      texto:
+        "Em 2021, fiz parceria com a Mensch para reduzir o consumo de energia. Após 4 anos, coloquei mais placas. Empresa consolidada, honesta e sempre atenciosa. Só tenho a agradecer e recomendo.",
+      link: "https://www.instagram.com/barbeariaseutocha/",
+    },
+    {
+      id: 5,
+      nome: "Tancredo",
+      foto: tancredo,
+      texto:
+        "Como idealizador do projeto Van da Alegria, agradeço à Mensch pelo apoio à minha usina solar. Sempre me ajudam no que preciso. Empresa confiável, profissional e parceira. Recomendo totalmente!",
+      link: "https://www.instagram.com/projetovandaalegria/",
+    },
   ];
 
   return (

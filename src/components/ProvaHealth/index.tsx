@@ -12,15 +12,17 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import Style from "./ProvaHealth.module.scss";
 
+import marilande from './assets/Marilande.png';
+
 const ProvaHealth = () => {
   const coments = [
     {
       id: 1,
-      nome: "Thalizim Batata",
-      foto: perfil,
+      nome: "Marilande Guimaraes",
+      foto: marilande,
       texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
+        "Sou de Gurinhatã, adquiri as panelas da Royal Prestige e estou adorando a experiência. O sabor dos alimentos é outro, simplesmente maravilhoso. Estou super satisfeita com minha compra!",
+      link: "https://www.instagram.com/marilandeguimaraes/",
     },
     {
       id: 2,
