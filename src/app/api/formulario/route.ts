@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from 'nodemailer';
-import sendWhatsapp from "../whatsapp";
-//import sendWhatsapp from "../sendWhatsapp/route";
+import enviarMensagem from "./whatsaap";
 
 const transporter = nodemailer.createTransport({
   host: process.env.HOST,
@@ -34,9 +33,11 @@ export async function POST(
       text: data.text
     })
 
-    console.log(resp)
+    await enviarMensagem(data)
 
-    await sendWhatsapp(data)
+    if (resp.rejected.length > 0) {
+      return NextResponse.json({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' });
+    }
 
     return NextResponse.json({ mensagem: 'Mensagem Recebida Com Sucesso!' });
   } catch (error) {
