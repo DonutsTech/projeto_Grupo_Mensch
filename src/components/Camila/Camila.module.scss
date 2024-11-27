@@ -71,6 +71,10 @@
         text-align: end;
         // margin-top: 16px;
         // margin-bottom: 16px;
+
+        span {
+          font-weight: 600;
+        }
       }
 
       &__btns {
@@ -78,8 +82,12 @@
         height: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 24px;
+
+        @media (max-width: 840px) { 
+          justify-content: center;
+        }
 
         &__btn {
           width: 180px;

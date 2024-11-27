@@ -58,7 +58,7 @@ const Prova = () => {
       nome: "Rubens José",
       foto: rubens,
       texto:
-        "O Grupo Mensch é uma empresa idônea que planta o bem na cidade. Acompanho de perto o trabalho social que realizam, é inspirador. Uma empresa que vive o propósito e reflete o amor de Deus",
+        "O Grupo Mensch é uma empresa idônea que planta o bem na cidade. Acompanho de perto o trabalho social que realizam, é inspirador. Uma empresa que vive o propósito e reflete o amor de Deus.",
       link: "https://www.instagram.com/rubensjosealves",
     },
   ];

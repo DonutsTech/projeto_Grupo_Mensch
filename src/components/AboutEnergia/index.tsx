@@ -5,7 +5,7 @@ import Style from './AboutEnergia.module.scss';
 
 import mensch from './assets/mensch.jpg';
 import suporte from './assets/suporte.png';
-import tecnicos from './assets/tecnicos.jpg';
+import tecnicos from './assets/tecnicos.png';
 
 import Image from 'next/image';
 
