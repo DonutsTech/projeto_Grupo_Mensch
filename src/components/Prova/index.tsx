@@ -15,8 +15,9 @@ import 'swiper/css/scrollbar';
 import thales from './assets/thales_alves.png';
 import raul from './assets/raul_paranaiba.png';
 import kleber from './assets/Kleber.png';
-
 import bia from './assets/ana_beatriz.png';
+import rubens from './assets/Rubens.png';
+
 
 const Prova = () => {
   const coments = [
@@ -52,14 +53,14 @@ const Prova = () => {
         "Trabalhar na Mensch é viver a transformação todos os dias. Uma marca que valoriza pessoas, com integridade e honra, guiando nossa jornada de servir e impactar positivamente a vida de todos.",
       link: "https://www.instagram.com/biaa.oliiveiraa/",
     },
-    // {
-    //   id: 5,
-    //   nome: "jonh Doo",
-    //   foto: perfil,
-    //   texto:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-    //   link: "https://www.instagram.com/grupo.mensch/",
-    // },
+    {
+      id: 5,
+      nome: "Rubens José",
+      foto: rubens,
+      texto:
+        "O Grupo Mensch é uma empresa idônea que planta o bem na cidade. Acompanho de perto o trabalho social que realizam, é inspirador. Uma empresa que vive o propósito e reflete o amor de Deus",
+      link: "https://www.instagram.com/rubensjosealves",
+    },
   ];
 
   return (
