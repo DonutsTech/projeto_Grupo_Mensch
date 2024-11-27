@@ -158,7 +158,7 @@ const CTASolar = () => {
       <p className={Style.cta__texto}>
         Mais de 700 famílias já transformaram seu sonho de economizar em realidade colocando energia solar com a Mensch Energia Solar. Verifique essa viabilidade para você também.
       </p>
-      <div className={Style.cta__container}>
+      <div className={Style.cta__container} id='cta_solar'>
         <Image src={bg} alt="Familia" className={Style.cta__container__img} />
         <div className={Style.cta__container__box}>
           <div className={Style.cta__container__box__textos}>

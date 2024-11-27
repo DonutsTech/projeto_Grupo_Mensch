@@ -179,7 +179,7 @@ const ContatosHealth = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_email]: true,
             })}>
-              <Link href={'mailto:health@grupomensch.com.br'} target='_blank' rel='noopener noreferrer' title='Envie um email para contato@grupomensch.com.br' >
+              <Link href={'mailto:health@grupomensch.com.br'} target='_blank' rel='noopener noreferrer' title='Envie um email para health@grupomensch.com.br' >
                 <Image src={email} alt='Email' height={48} />
               </Link>
               <p>health@grupomensch.com.br</p>
