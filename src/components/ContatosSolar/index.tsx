@@ -15,7 +15,7 @@ import { FormContatoMascher } from '@/types';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
 import { phone } from '@/util/mask';
 import { validation } from '@/util/validation';
-import { mensagemMenschSolar } from '@/util/mensagem';
+import { mensagemGrupoMensch } from '@/util/mensagem';
 
 const ContatosSolar = () => {
   const [form, setForm] = useState({} as FormContatoMascher)
@@ -50,15 +50,14 @@ const ContatosSolar = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'milenaleme4@hotmail.com',
-          subject: ' Mensagem Recebida pelo site - Contato do Mansch Solar',
-          text: mensagemMenschSolar(formDados)
+          to: 'energiasolar@grupomensch.com.br',
+          subject: 'Mensagem Recebida pelo site - Contato do Mensch Solar',
+          text: mensagemGrupoMensch(formDados, 'Mensch Solar'),
+          tel: `${process.env.TEL_SOLAR}`,
         }),
       });
 
       const data = await response.json();
-
-      console.log(data)
 
       if (data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.') {
         throw new Error('Mensagem não enviada. Contate-nos por telefone.')
