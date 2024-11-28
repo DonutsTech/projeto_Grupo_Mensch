@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "|| Sobre Nós",
     description: "Ser Mensch é uma maneira de viver. Integridade, honra e fazer o bem nos impulsionam.",
-    url: 'https://projeto-grupo-mensch.vercel.app/about', //alterar
+    url: 'https://grupomensch.com.br/about', //alterar
     type: 'website',
     images: [{
-      url: "https://projeto-grupo-mensch.vercel.app/og/grupoOG.png", //alterar
+      url: "https://grupomensch.com.br/og/grupoOG.png", //alterar
       width: 1200,
       height: 430,
       alt: "Grupo Mensch",

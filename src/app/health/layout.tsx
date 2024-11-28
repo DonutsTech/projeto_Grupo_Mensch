@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "|| Mensch Health",
     description: "Viver com Saúde e Propósito.",
-    url: 'https://projeto-grupo-mensch.vercel.app/health', //alterar
+    url: 'https://grupomensch.com.br/health', //alterar
     type: 'website',
     images: [{
-      url: "https://projeto-grupo-mensch.vercel.app/og/healthOG.png", //alterar
+      url: "https://grupomensch.com.br/og/healthOG.png", //alterar
       width: 1200,
       height: 430,
       alt: "Mensch Health",

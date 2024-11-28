@@ -14,10 +14,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: '|| Mensch Energia Solar',
     description: 'Solução completa para economia e sustentabilidade! Projetos eficientes, suporte pós-venda e transformação de energia.',
-    url: 'https://projeto-grupo-mensch.vercel.app/energiasolar', //alterar
+    url: 'https://grupomensch.com.br/energiasolar', //alterar
     type: 'website',
     images: [{
-      url: 'https://projeto-grupo-mensch.vercel.app/og/solarOG.png', //alterar
+      url: 'https://grupomensch.com.br/og/solarOG.png', //alterar
       width: 1200,
       height: 430,
       alt: 'Mensch Energia Solar',

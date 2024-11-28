@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: '|| Mensch Mind',
     description: 'Conhecimento e transformação se encontram! Cursos para líderes, gestores e empreendedores que buscam crescer.',
-    url: 'https://projeto-grupo-mensch.vercel.app/mind', //alterar
+    url: 'https://grupomensch.com.br/mind', //alterar
     type: 'website',
     images: [{
-      url: "https://projeto-grupo-mensch.vercel.app/og/mindOG.png", //alterar
+      url: "https://grupomensch.com.br/og/mindOG.png", //alterar
       width: 1200,
       height: 430,
       alt: 'Mensch Mind',

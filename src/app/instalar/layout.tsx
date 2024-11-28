@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: '|| Mensch Instalar',
     description: 'Apoio para profissionais! Materiais selecionados para instaladores, eletricistas e técnicos em refrigeração.',
-    url: 'https://projeto-grupo-mensch.vercel.app/instalar', //alterar
+    url: 'https://grupomensch.com.br/instalar', //alterar
     type: 'website',
     images: [{
-      url: "https://projeto-grupo-mensch.vercel.app/og/instalarOG.png", //alterar
+      url: "https://grupomensch.com.br/og/instalarOG.png", //alterar
       width: 1200,
       height: 430,
       alt: 'Mensch Instalar',

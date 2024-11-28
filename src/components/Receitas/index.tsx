@@ -275,7 +275,7 @@ const Receitas = () => {
                                     *Ingredientes*: ${Ingredientes.join(', ')}\n
                                     *Preparação*: ${preparacao.join(', ')}\n
 
-                                    Veja essa receita e outras delicias em\n https://projeto-grupo-mensch.vercel.app/health \n
+                                    Veja essa receita e outras delicias em\n https://grupomensch.com.br/health \n
                                     E quando fizer a receita me chame!
                                   `} 
                                 target="_blank" 

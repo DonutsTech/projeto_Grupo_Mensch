@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: { 
     title: '|| Vem Ser Mesch',
     description: 'Na Mensch, nosso compromisso é Impactar Vidas, servir e transformar.',
-    url: 'https://projeto-grupo-mensch.vercel.app/social', //alterar
+    url: 'https://grupomensch.com.br/social', //alterar
     type: 'website',
     images: [{
-      url: "https://projeto-grupo-mensch.vercel.app/og/grupoOG.png", //alterar
+      url: "https://grupomensch.com.br/og/grupoOG.png", //alterar
       width: 1200,
       height: 430,
       alt: "Grupo Mensch",
