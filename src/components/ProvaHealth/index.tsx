@@ -3,7 +3,7 @@
 import Image from "next/image";
 import bg from './assets/vida_saudavel.jpg';
 
-import perfil from "./assets/perfil_corte.jpg";
+// import perfil from "./assets/perfil_corte.jpg";
 import aspas from "./assets/aspas.svg";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,38 +24,38 @@ const ProvaHealth = () => {
         "Sou de Gurinhatã, adquiri as panelas da Royal Prestige e estou adorando a experiência. O sabor dos alimentos é outro, simplesmente maravilhoso. Estou super satisfeita com minha compra!",
       link: "https://www.instagram.com/marilandeguimaraes/",
     },
-    {
-      id: 2,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
-    {
-      id: 3,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
-    {
-      id: 4,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
-    {
-      id: 5,
-      nome: "jonh Doo",
-      foto: perfil,
-      texto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
-      link: "https://www.instagram.com/grupo.mensch/",
-    },
+    // {
+    //   id: 2,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
+    // {
+    //   id: 3,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
+    // {
+    //   id: 4,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
+    // {
+    //   id: 5,
+    //   nome: "jonh Doo",
+    //   foto: perfil,
+    //   texto:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos veritatis harum laboriosam inventore, voluptate sequi?  Omnis doloremque magni a nemo ab temporibus, commodi excepturi consequuntur illo.",
+    //   link: "https://www.instagram.com/grupo.mensch/",
+    // },
   ];
 
   return (
