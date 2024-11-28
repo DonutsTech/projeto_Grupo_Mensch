@@ -22,11 +22,18 @@ import Scroll from 'react-scroll';
 
 const CTASolar = () => {
   const [openImage, setOpenImage] = useState<boolean>(false);
-  const [form, setForm] = useState({} as FormSimulacaoSolar)
-  const [mensagem, setMensagem] = useState<string>('')
+  const [form, setForm] = useState({} as FormSimulacaoSolar);
+  const [mensagem, setMensagem] = useState<string>('');
   const [cliente, setCliente] = useState<string>("");
   const [conta, setConta] = useState<number>(0);
-  const [informacao, setInformacao] = useState<Tabela | null>(null)
+  const [informacao, setInformacao] = useState<Tabela | null>(null);
+
+  useEffect(() => {
+    const currentHash = window.location.href.split('#')[1];
+    if (currentHash === 'cta_solar') {
+      setOpenImage(true)
+    }
+  }, []);
 
   const toggleModal = () => {
     setOpenImage(!openImage);
@@ -147,8 +154,6 @@ const CTASolar = () => {
       }
     }, 10000);
   }, [mensagem]);
-
-  console.log(informacao)
 
   return (
     <section className={Style.cta} aria-label="Veja Quanto Você Pode Ganhar com Energia Solar" id="cta_solar">

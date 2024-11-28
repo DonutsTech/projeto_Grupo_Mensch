@@ -3,7 +3,6 @@ import "./globals.css";
 // import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
 
-
 export const metadata: Metadata = {
   title: "|| Grupo Mensch",
   description: "Ser Mensch é agir com integridade, empatia e compromisso, honrando a Deus e fazendo o bem.",

@@ -69,7 +69,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
           </h3>
           <div className={Style.linktree__container__contatos__links}>
 
-            <Link 
+            <Link
               href={'https://maps.app.goo.gl/9Sm1SKBUT6cfn8Pd7'}
               target="_blank"
               rel="noopener"
@@ -79,7 +79,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
               <Image src={gps} alt='Localização' width={48} height={48} className={Style.linktree__container__contatos__links__item__icon} />
             </Link>
 
-            <Link 
+            <Link
               href={email}
               target="_blank"
               rel="noopener"
@@ -89,7 +89,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
               <Image src={emailIcon} alt='Email Icon' width={48} height={48} className={Style.linktree__container__contatos__links__item__icon} />
             </Link>
 
-            <Link 
+            <Link
               href={whatsapp}
               target="_blank"
               rel="noopener"
@@ -99,7 +99,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
               <Image src={wpp} alt='Whatsapp Icon' width={48} height={48} className={Style.linktree__container__contatos__links__item__icon} />
             </Link>
 
-            <Link 
+            <Link
               href={instagram}
               target="_blank"
               rel="noopener"
@@ -109,7 +109,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
               <Image src={insta} alt='instagram Icon' width={48} height={48} className={Style.linktree__container__contatos__links__item__icon} />
             </Link>
 
-            <Link 
+            <Link
               href={facebook}
               target="_blank"
               rel="noopener"
@@ -119,7 +119,7 @@ const Linktree = ({ empresa, logo, tag, acesso, email, whatsapp, instagram, face
               <Image src={face} alt='Facebook Icon' width={48} height={48} className={Style.linktree__container__contatos__links__item__icon} />
             </Link>
 
-            <Link 
+            <Link
               href={linkedin}
               target="_blank"
               rel="noopener"

@@ -16,8 +16,8 @@ export default function Page() {
       link: '/'
     }
   ]
-  
-    return ( 
+
+    return (
       <>
         <Linktree
           empresa="Mensch Energia Solar"
