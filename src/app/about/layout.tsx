@@ -3,7 +3,6 @@ import "../globals.css";
 import Menu from "@/components/Menu";
 // import Footer from "@/components/Footer";
 
-
 export const metadata: Metadata = {
   title: "|| Sobre Nós",
   description: "Ser Mensch é uma maneira de viver. Integridade, honra e fazer o bem nos impulsionam.",

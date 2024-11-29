@@ -16,8 +16,8 @@ export default function Page() {
       link: '/social'
     }
   ]
-  
-    return ( 
+
+    return (
       <>
         <Linktree
           empresa="Grupo Mensch"

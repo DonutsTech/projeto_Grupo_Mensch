@@ -3,12 +3,11 @@ import "../globals.css";
 import Menu from "@/components/Menu";
 // import Footer from "@/components/Footer";
 
-
 export const metadata: Metadata = {
   title: "|| Vem Ser Mesch",
   description: "Na Mensch, nosso compromisso é Impactar Vidas, servir e transformar.",
 
-  openGraph: { 
+  openGraph: {
     title: '|| Vem Ser Mesch',
     description: 'Na Mensch, nosso compromisso é Impactar Vidas, servir e transformar.',
     url: 'https://grupomensch.com.br/social', //alterar
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  }
+  },
 };
 
 export default function RootLayout({

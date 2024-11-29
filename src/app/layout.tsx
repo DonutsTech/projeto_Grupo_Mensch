@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "|| Grupo Mensch",
@@ -42,6 +43,7 @@ export default function RootLayout({
         {/* <Menu page={''}/> */}
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-FE9N7BP8ZW" />
       </body>
     </html>
   );
