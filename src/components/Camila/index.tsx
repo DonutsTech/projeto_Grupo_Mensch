@@ -18,17 +18,17 @@ const Camila = () => {
           </h2>
 
           <p className={Style.consultora__content__box__paragrafo}>
-            a marca que torna saúde e bem-estar pilares fundamentais.
+          A marca nasceu com o propósito de transformar a qualidade de vida das pessoas, trazendo saúde e bem-estar mesmo em meio à correria do dia a dia. Por meio dos produtos Royal Prestige, oferecemos soluções que tornam a alimentação mais nutritiva e equilibrada.
           </p>
+
           <p className={Style.consultora__content__box__paragrafo}>
-            Com foco em alimentação saudável, incentivo à atividade física e cuidados com o corpo e a mente, oferece produtos e soluções que aliam tempo e qualidade, ajudando você a conquistar mais energia para o que realmente importa.
+          Estudos comprovam que o preparo em nossas panelas preserva mais nutrientes, como no caso do brócolis, promovendo refeições mais saudáveis. Mais do que isso, a Mensch Health inspira mudanças positivas, como a prática de exercícios físicos e a adoção de hábitos que contribuem para uma vida mais leve.
           </p>
+
           <p className={Style.consultora__content__box__paragrafo}>
-            Nossa missão é simplificar sua jornada rumo a uma vida mais saudável e plena, promovendo equilíbrio, vitalidade e escolhas inteligentes.
+          Prática e saudável, nossa missão é incentivar a busca por uma rotina que priorize o bem-estar. Viva melhor, com mais disposição e equilíbrio!
           </p>
-          <p className={Style.consultora__content__box__paragrafo}>
-            <span>Mensch Health</span>, viva com mais saúde e qualidade todos os dias!
-          </p>
+
 
           <div className={Style.consultora__content__box__btns}>
             <Link
