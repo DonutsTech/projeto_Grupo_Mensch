@@ -1,18 +1,13 @@
+// import BannerMold from "@/components/BannerMold";
 
-import MainEnergiaSolar from "@/components/MainEnergiaSolar";
-import './page.css';
-import MenuSolar from "@/components/MenuSolar";
-import BannerMold from "@/components/BannerMold";
 
-export default function Energiasolar() {
-
+export default function Teste() {
 
   return (
     <>
-      <MenuSolar />
-      <BannerMold
+      {/* <BannerMold
         cor="#1A2228"
-        opacity={0.5}
+        opacity={0.7}
         titulo={<>
           Transforme despesas em <span>economia </span>e <span>conforto</span>.
         </>}
@@ -22,8 +17,7 @@ export default function Energiasolar() {
         logo="/assets/logos/mensch_solar_white.svg"
         type="solar"
         video="/assets/videos/video_solar.mp4"
-      />
-      <MainEnergiaSolar />
+      /> */}
     </>
   )
 }
