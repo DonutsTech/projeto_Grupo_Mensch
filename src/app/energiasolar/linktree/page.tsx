@@ -25,7 +25,7 @@ export default function Page() {
           tag='solar'
           acesso={acesso}
           email="mailto:contato@grupomensch.com.br"
-          whatsapp="https://wa.me/5534996665871/?text=Ol%C3%A1%20venho%20do%20seu%20site%20e%20quero%20falar%20com%20voc%C3%AA!"
+          whatsapp="https://wa.me/5534997779331/?text=Ol%C3%A1%20venho%20do%20seu%20site%20e%20quero%20falar%20com%20voc%C3%AA!"
           instagram="https://www.instagram.com/mensch.energiasolar/"
           facebook="https://www.facebook.com/menschenergiasolar"
           linkedin="https://www.linkedin.com/company/menschsolar/posts/?feedView=all"

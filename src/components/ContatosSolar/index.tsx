@@ -194,10 +194,10 @@ const ContatosSolar = () => {
               [Style.contatos__content__redes__dados__item]: true,
               [Style.contatos__content__redes__dados__item_telefone]: true,
             })}>
-              <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
+              <Link href={'https://wa.me/5534997779331/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
                 <Image src={wpp} alt='whatsapp' height={48} />
               </Link>
-              <p>(34) 9.9666-5871</p>
+              <p>(34) 9.9777-9331</p>
             </div>
 
             <div className={classNames({
@@ -263,10 +263,10 @@ const ContatosSolar = () => {
           [Style.contatos__dados__item]: true,
           [Style.contatos__dados__item_telefone]: true,
         })}>
-          <Link href={'https://wa.me/5534996665871/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer'>
+          <Link href={'https://wa.me/5534997779331/?text=Olá venho do seu site e quero falar com você!'} target='_blank' rel='noopener noreferrer'>
             <Image src={wpp} alt='Whatsapp' height={48} />
           </Link>
-          <p>(34) 9.9666-5871</p>
+          <p>(34) 9.9777-9331</p>
         </div>
 
         <div className={classNames({

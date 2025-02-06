@@ -26,7 +26,7 @@ const BannerSocial = () => {
       Vem Ser <span>Mensch</span>.
     </h1>
     </div>
-    <video  autoPlay loop muted className={Style.banner__video} >
+    <video playsInline autoPlay loop muted className={Style.banner__video} >
       <source src="/assets/videos/social_maior.mp4" type="video/mp4" />
     </video>
     

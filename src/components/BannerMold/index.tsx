@@ -84,7 +84,7 @@ const BannerMold = ({
           )}
           
       </div>
-      <video autoPlay loop muted className={Style.banner__video}>
+      <video playsInline autoPlay loop muted className={Style.banner__video}>
         <source src={video} type="video/mp4" />
       </video>
     </div>
