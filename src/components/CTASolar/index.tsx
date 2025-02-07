@@ -192,7 +192,7 @@ const CTASolar = () => {
             </ul>
           </div>
           <div className={Style.cta__container__box__2}>
-            <video autoPlay muted loop className={Style.cta__container__box__2__video}>
+            <video playsInline autoPlay muted loop className={Style.cta__container__box__2__video}>
               <source src="/assets/videos/video_simule.mp4" type="video/mp4" />
             </video>
             <button className={Style.cta__container__box__2__btn} onClick={toggleModal}>

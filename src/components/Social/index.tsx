@@ -13,7 +13,7 @@ const Social = () => {
     <section className={Style.social}>
       <Image src={selo} alt='Grupo Mensh' className={Style.social__logo} />
 
-      <video autoPlay loop muted className={Style.social__video} >
+      <video playsInline autoPlay loop muted className={Style.social__video} >
         <source src="/assets/videos/social_menor.mp4" type="video/mp4" />
       </video>
 
