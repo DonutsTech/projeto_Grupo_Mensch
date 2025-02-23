@@ -20,9 +20,21 @@ transporter.verify((error, success) => {
   }
 });
 
-export async function POST(
-  req: Request
-) {
+// Configuração do CORS
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*", 
+  "Access-Control-Allow-Methods": "POST, OPTIONS", 
+  "Access-Control-Allow-Headers": "Content-Type, Authorization", 
+};
+
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
+}
+
+export async function POST(req: Request) {
   try {
     const data = await req.json();
 
@@ -31,19 +43,26 @@ export async function POST(
       to: data.to,
       subject: data.subject,
       text: data.text
-    })
+    });
 
-    await enviarMensagem(data)
+    await enviarMensagem(data);
 
     if (resp.rejected.length > 0) {
-      return NextResponse.json({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' });
+      return new NextResponse(
+        JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
+        { status: 400, headers: corsHeaders }
+      );
     }
 
-    return NextResponse.json({ mensagem: 'Mensagem Recebida Com Sucesso!' });
+    return new NextResponse(
+      JSON.stringify({ mensagem: 'Mensagem Recebida Com Sucesso!' }),
+      { status: 200, headers: corsHeaders }
+    );
   } catch (error) {
-    console.log(error)
-    return NextResponse.json({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' });
+    console.error(error);
+    return new NextResponse(
+      JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
+      { status: 500, headers: corsHeaders }
+    );
   }
 }
-
-
