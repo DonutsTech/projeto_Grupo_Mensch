@@ -22,9 +22,9 @@ transporter.verify((error, success) => {
 
 // Configuração do CORS
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "*", 
-  "Access-Control-Allow-Methods": "POST, OPTIONS", 
-  "Access-Control-Allow-Headers": "Content-Type, Authorization", 
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
 };
 
 export async function OPTIONS() {
@@ -36,7 +36,10 @@ export async function OPTIONS() {
 
 export async function POST(req: Request) {
   try {
+    console.log("Recebendo requisição POST...");
+
     const data = await req.json();
+    console.log("Dados recebidos:", data);
 
     const resp = await transporter.sendMail({
       from: process.env.EMAIL_USER,
@@ -45,9 +48,12 @@ export async function POST(req: Request) {
       text: data.text
     });
 
+    console.log("Mensagem enviada com sucesso:", resp);
+
     await enviarMensagem(data);
 
     if (resp.rejected.length > 0) {
+      console.log("E-mail rejeitado:", resp.rejected);
       return new NextResponse(
         JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
         { status: 400, headers: corsHeaders }
@@ -59,7 +65,7 @@ export async function POST(req: Request) {
       { status: 200, headers: corsHeaders }
     );
   } catch (error) {
-    console.error(error);
+    console.error("Erro ao processar a requisição:", error);
     return new NextResponse(
       JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
       { status: 500, headers: corsHeaders }
