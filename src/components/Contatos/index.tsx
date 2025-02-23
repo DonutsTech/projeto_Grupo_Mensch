@@ -10,13 +10,13 @@ import linkedin from './assets/linkedin_icon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
-import { FormContatoMascher } from '@/types';
+import { FormContatoMensch } from '@/types';
 import { phone } from '@/util/mask';
 import { validation } from '@/util/validation';
 import { mensagemGrupoMensch } from '@/util/mensagem';
 
 const Contatos = () => {
-  const [form, setForm] = useState({} as FormContatoMascher)
+  const [form, setForm] = useState({} as FormContatoMensch)
   const [mensagem, setMensagem] = useState<string>('')
 
   const handleFormChange = useCallback(
@@ -32,7 +32,7 @@ const Contatos = () => {
     [form],
   );
 
-  const enviarDados = async (formDados: FormContatoMascher) => {
+  const enviarDados = async (formDados: FormContatoMensch) => {
     try {
       const response = await fetch('/api/formulario', {
         method: 'POST',
@@ -54,7 +54,7 @@ const Contatos = () => {
       }
 
       if (!(data.mensagem === 'Mensagem não enviada. Contate-nos por telefone.')) {
-        setForm({} as FormContatoMascher)
+        setForm({} as FormContatoMensch)
         setMensagem(data.mensagem)
       }
 
@@ -67,7 +67,7 @@ const Contatos = () => {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    const FormData: FormContatoMascher = {
+    const FormData: FormContatoMensch = {
       nome: (e.currentTarget.elements.namedItem('nome') as HTMLInputElement).value,
       email:  (e.currentTarget.elements.namedItem('email') as HTMLInputElement).value,
       telefone:  (e.currentTarget.elements.namedItem('telefone') as HTMLInputElement).value,

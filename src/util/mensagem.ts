@@ -1,6 +1,6 @@
-import { Endereco, FormContatoMascher, FormSimulacaoSolar } from "@/types";
+import { Endereco, FormContatoMensch, FormSimulacaoSolar } from "@/types";
 
-export function mensagemGrupoMensch(formDados: FormContatoMascher, nome: string) {
+export function mensagemGrupoMensch(formDados: FormContatoMensch, nome: string) {
   return `
     Prezado(a) Administrador(a),
 

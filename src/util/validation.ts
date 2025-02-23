@@ -1,4 +1,4 @@
-import { FormContatoMascher, FormSimulacaoSolar, Tabela } from "@/types";
+import { FormContatoMensch, FormSimulacaoSolar, Tabela } from "@/types";
 
 export const validateEmail = (email: string) => {
   const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -14,7 +14,7 @@ export const isUpperCase = (str: string) => {
   return str === str.toUpperCase();
 }
 
-export function validation(value: FormContatoMascher) {
+export function validation(value: FormContatoMensch) {
   if (value.nome.trim() === '' || value.telefone.trim() === '' || value.nome === undefined || value.telefone === undefined ) {
     return 'O nome e o telefone são obrigatórios'
   }

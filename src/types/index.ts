@@ -1,4 +1,4 @@
-export interface FormContatoMascher {
+export interface FormContatoMensch {
   nome: string;
   email: string;
   telefone: string;
