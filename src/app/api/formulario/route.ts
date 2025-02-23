@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import enviarMensagem from "./whatsaap";
 
 const transporter = nodemailer.createTransport({
-  host: process.env.HOST,
+  host: "smtp.gmail.com",
   port: 465,
   secure: true,
   auth: {
