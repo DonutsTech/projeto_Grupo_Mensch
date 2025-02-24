@@ -44,7 +44,7 @@ const ContatosHealth = () => {
 
   const enviarDados = async (formDados: FormContatoMensch) => {
     try {
-      const response = await fetch('/api/formulario', {
+      const response = await fetch('/app/api/formulario/route.ts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

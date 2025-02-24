@@ -63,7 +63,7 @@ const CTASolar = () => {
   );
 
   const endereco = async (cep: string) => {
-    const response = await fetch('/api/endereco', {
+    const response = await fetch('/app/api/formulario/route.ts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const CTASolar = () => {
 
   const enviarDados = async (dadosCep: Endereco, dadosForm: FormSimulacaoSolar) => {
     try {
-      const response = await fetch('/api/formulario', {
+      const response = await fetch('/app/api/formulario/route.ts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
