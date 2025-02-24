@@ -2,6 +2,22 @@ import { NextResponse } from "next/server";
 import nodemailer from 'nodemailer';
 // import enviarMensagem from "./whatsaap";
 
+
+// Configuração do CORS
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
+}
+
+
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -23,7 +39,6 @@ transporter.verify((error, success) => {
 });
 
 export async function POST(req: Request) {
-  console.log('oi')
 
   try {
     const data = await req.json();
@@ -38,19 +53,22 @@ export async function POST(req: Request) {
 
     if (resp.rejected.length > 0) {
       return new NextResponse(
-        JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' })
+        JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
+        { status: 400, headers: corsHeaders }
       );
     }
 
     return new NextResponse(
-      JSON.stringify({ mensagem: 'Mensagem Recebida Com Sucesso!' })
+      JSON.stringify({ mensagem: 'Mensagem Recebida Com Sucesso!' }),
+      { status: 200, headers: corsHeaders }
     );
 
   } catch (error) {
     console.error("Erro ao processar a requisição:", error);
     console.log(error);
     return new NextResponse(
-      JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' })
+      JSON.stringify({ mensagem: 'Mensagem não enviada. Contate-nos por telefone.' }),
+      { status: 500, headers: corsHeaders }
     );
 
   }
