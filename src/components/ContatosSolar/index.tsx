@@ -44,16 +44,18 @@ const ContatosSolar = () => {
 
   const enviarDados = async (formDados: FormContatoMensch) => {
     try {
-      const response = await fetch('/app/api/formulario/route.ts', {
+      const response = await fetch('https://fvpc9zk6oc.execute-api.us-east-1.amazonaws.com/dev/sendemail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.TOKEN_EMAIL}`
         },
         body: JSON.stringify({
+          user: `${process.env.EMAIL_USER}`,
+          pass: `${process.env.EMAIL_PASS}`,
           to: 'energiasolar@grupomensch.com.br',
           subject: 'Mensagem Recebida pelo site - Contato do Mensch Solar',
-          text: mensagemGrupoMensch(formDados, 'Mensch Solar'),
-          tel: `${process.env.TEL_SOLAR}`,
+          text: mensagemGrupoMensch(formDados, 'Mensch Solar')
         }),
       });
 

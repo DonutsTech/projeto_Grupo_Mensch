@@ -63,33 +63,37 @@ const CTASolar = () => {
   );
 
   const endereco = async (cep: string) => {
-    const response = await fetch('/app/api/formulario/route.ts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        cep
-      }),
-    });
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
 
     const data = await response.json()
 
-    return data;
+    if (data.error) {
+      return 'cep inválido'
+    }
+
+    return {
+      rua: data.logradouro,
+      bairro: data.bairro,
+      estado: data.estado,
+      uf: data.uf,
+      cep: data.cep
+    }
   }
 
   const enviarDados = async (dadosCep: Endereco, dadosForm: FormSimulacaoSolar) => {
     try {
-      const response = await fetch('/app/api/formulario/route.ts', {
+      const response = await fetch('https://fvpc9zk6oc.execute-api.us-east-1.amazonaws.com/dev/sendemail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.TOKEN_EMAIL}`
         },
         body: JSON.stringify({
+          user: `${process.env.EMAIL_USER}`,
+          pass: `${process.env.EMAIL_PASS}`,
           to: 'energiasolar@grupomensch.com.br',
           subject: ' Mensagem Recebida pelo site - Contato do Grupo Mensch Solar',
           text: `${mensagemMenschSolarCalcular(dadosCep, dadosForm)}`,
-          tel: `${process.env.TEL_SOLAR}`,
         }),
       });
 
