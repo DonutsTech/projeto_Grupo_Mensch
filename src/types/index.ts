@@ -40,3 +40,7 @@ export interface Data {
   text: string;
   tel: string;
 }
+
+export interface Error {
+  mensagem: string
+}

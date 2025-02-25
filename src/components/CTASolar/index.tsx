@@ -10,7 +10,7 @@ import { FormEvent, useCallback, useEffect, useState } from 'react';
 import { Endereco, FormSimulacaoSolar, Tabela } from '@/types';
 import { cep, currency, phone } from '@/util/mask';
 import SwiperBancos from '../SwiperBancos';
-import { chamarNumero, validationModal } from '@/util/validation';
+import { chamarNumero, validationModal, validatorCEP } from '@/util/validation';
 import { mensagemMenschSolarCalcular } from '@/util/mensagem';
 import tabela from '@/util/tabelaSolar.json';
 
@@ -62,21 +62,27 @@ const CTASolar = () => {
     [form],
   );
 
-  const endereco = async (cep: string) => {
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+  const endereco = async (cep: string): Promise<Endereco | { mensagem: string }> => {
+    try {
+      const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
 
-    const data = await response.json()
+      const data = await response.json()
 
-    if (data.error) {
-      return 'cep inválido'
-    }
+      if (data.error) {
+        return { mensagem: 'cep inválido' };
+      }
 
-    return {
-      rua: data.logradouro,
-      bairro: data.bairro,
-      estado: data.estado,
-      uf: data.uf,
-      cep: data.cep
+      return {
+        rua: data.logradouro,
+        bairro: data.bairro,
+        estado: data.estado,
+        uf: data.uf,
+        cep: data.cep
+      };
+
+    } catch (error) {
+      console.log(error);
+      return { mensagem: 'cep inválido' };
     }
   }
 
@@ -115,7 +121,6 @@ const CTASolar = () => {
   }
 
 
-
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -145,7 +150,7 @@ const CTASolar = () => {
       if (!(mensagem === '')) {
         setMensagem(mensagem)
       } else {
-        enviarDados(cep, formData)
+        enviarDados(validatorCEP(cep), formData)
       }
 
     }

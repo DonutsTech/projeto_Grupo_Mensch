@@ -1,4 +1,4 @@
-import { FormContatoMensch, FormSimulacaoSolar, Tabela } from "@/types";
+import { Endereco, FormContatoMensch, FormSimulacaoSolar, Tabela } from "@/types";
 
 export const validateEmail = (email: string) => {
   const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -46,4 +46,18 @@ export function validationModal(value: FormSimulacaoSolar) {
 
 export function chamarNumero(lista: Tabela[], solicitado: number) : Tabela | null {
   return lista.find(numero => numero.kwh >= solicitado) || null;
+}
+
+export function validatorCEP(cep: Endereco | {mensagem: string }): Endereco {
+  if (cep && 'mensagem' in cep ) {
+    return {
+      bairro: '',
+      cep: '',
+      estado: '',
+      rua: '',
+      uf: ''
+    }
+  }
+
+  return cep
 }
