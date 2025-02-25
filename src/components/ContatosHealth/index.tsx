@@ -56,7 +56,6 @@ const ContatosHealth = () => {
           to: 'contato@grupomensch.com.br',
           subject: ' Mensagem Recebida pelo site - Contato do Mensch Healt',
           text: mensagemGrupoMensch(formDados, 'Mensch Healt'),
-          tel: `${process.env.TEL_HEALT}`,
         }),
       });
 
