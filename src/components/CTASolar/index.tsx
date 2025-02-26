@@ -92,7 +92,7 @@ const CTASolar = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.TOKEN_EMAIL}`
+          'Authorization': `Bearer wBa6i42xLa5mW1hr8zCVa4g08yke4erWK9TkBrRgfrdYFxx80Pxzt0uB39WAZdmu4vtyQdG2QCuV`
         },
         body: JSON.stringify({
           name: 'Mensch',
