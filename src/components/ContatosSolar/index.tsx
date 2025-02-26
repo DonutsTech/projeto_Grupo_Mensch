@@ -51,8 +51,7 @@ const ContatosSolar = () => {
           'Authorization': `Bearer ${process.env.TOKEN_EMAIL}`
         },
         body: JSON.stringify({
-          user: `${process.env.EMAIL_USER}`,
-          pass: `${process.env.EMAIL_PASS}`,
+          name: 'Mensch',
           to: 'energiasolar@grupomensch.com.br',
           subject: 'Mensagem Recebida pelo site - Contato do Mensch Solar',
           text: mensagemGrupoMensch(formDados, 'Mensch Solar')
