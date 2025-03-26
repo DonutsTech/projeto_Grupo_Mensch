@@ -25,7 +25,7 @@ const FAQEnergia = () => {
     },
     {
       id: 3,
-      pergunta: "Qual a durabilidade do sistema solar da Mensh?",
+      pergunta: "Qual a durabilidade do sistema solar da Mensch?",
       resposta: "Nossos painéis solares têm uma vida útil projetada de 25 anos ou mais, garantindo uma geração de energia confiável e eficiente por décadas."
     }
   ]
