@@ -35,11 +35,9 @@ const MenuHealth = () => {
 
   useEffect(() => {
     if (windowWidth < 840) {
-      // setSuspenso(false)
       setModal(false);
     }
     else if (windowWidth > 840) {
-      // setSuspenso(false);
       setModal(false);
     }
   }, [windowWidth]);
@@ -108,7 +106,7 @@ const MenuHealth = () => {
               </Link>
             </li>
           </ul>
-          <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health Solar e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
+          <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
               src={whatsapp}
               alt="Whatsapp Logo"
@@ -194,7 +192,7 @@ const MenuHealth = () => {
               </li>
             </ul>
           </nav>
-          <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health Solar e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
+          <Link href={'https://wa.me/5534996968654/?text=Olá venho da página Mensch Health e quero falar com você!'} target='_blank' rel='noopener noreferrer' title='Entre em contato via Whatsapp' >
             <Image
               src={whatsapp}
               alt="Whatsapp Logo"
